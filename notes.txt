@@ -1,0 +1,30 @@
+
+REACT JS
+
+- libreria declarativa : se describe el resultado final deseado en vez de mostrar todos los pasos. 
+se hace más facil crear patrones e interacciones.
+- libreria para aplicativos web
+- trabajo predecible : se trabaja con estados 
+- eficiente : los cambios se hacen en los elementos cambiados y no todo el DOM
+- Trabaja con componentes de elementos HTML
+
+
+COMPONENTES
+
+- Fragmento de la interfaz que cumple una unica funcion 
+- reautilizables
+- independientes
+- son autocontenidos, no filtran estilos o funciones a otros componentes
+
+COMPONENTE CLASE
+
+COMPONENTE FUNCIONAL
+-  actualizado 
+
+JSX
+- la forma en que REACT permite usar la programación declarativa, imperativa y FUNCIONAL
+- Javascript + XML (etiquetas HTML)
+
+
+VITE
+- 
