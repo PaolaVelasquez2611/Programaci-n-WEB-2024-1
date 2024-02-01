@@ -27,4 +27,7 @@ JSX
 
 
 VITE
-- 
+- npm create vite@latest [Insert Name]
+- cd [Name]
+- npm install
+- npm run dev
