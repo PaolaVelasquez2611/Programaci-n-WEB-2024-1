@@ -13,9 +13,9 @@ export function App() {
     return (
         <>
             <FooterPhone> </FooterPhone>
-            <Header></Header>
             <Body></Body>
             <Footer></Footer>
+            <Header></Header>
             
         </> //fragment es una etiqueta vacia. no se puede renderizar componentes sueltos
 
