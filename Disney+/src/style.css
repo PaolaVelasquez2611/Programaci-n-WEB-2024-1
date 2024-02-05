@@ -21,7 +21,7 @@ h1 {
 }
 
 #app {
-  max-width: 100%;
+  width: 100%;
   padding: 1rem;
   text-align: center;
 }
@@ -236,7 +236,7 @@ body {
 
 }
 
-#box {
+#disney {
 
   width: 16%;
   background: linear-gradient(to bottom, #30313D, #20212C);
@@ -247,14 +247,42 @@ body {
   
 }
 
-#box:hover {
+#disney:hover {
   border: 2px solid white; /* White border on hover */
   transform: scale(1.1); /* Increase size on hover */
-  background-image: url('https://i.pinimg.com/originals/4b/e3/53/4be353c5dfb290422be018e67f89c9db.gif');
+  background-image: url('https://j.gifs.com/WnDrzn.gif');
+  background-size:cover;
+  background-repeat: no-repeat;
    
 }
 
-#box img {
+#disney img {
+  width: 55%;
+  position: relative;
+  margin-top: 14%;
+  
+}
+
+#pixar {
+
+  width: 16%;
+  background: linear-gradient(to bottom, #30313D, #20212C);
+  height: 15vh;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.78);
+  justify-content: center;
+  
+}
+
+#pixar:hover {
+  border: 2px solid white; /* White border on hover */
+  transform: scale(1.1); /* Increase size on hover */
+  background-image: url('https://i.pinimg.com/originals/62/46/20/624620b175c1643497921bda5e764d29.gif');
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+#pixar img {
   width: 55%;
   position: relative;
   margin-top: 14%;
@@ -262,51 +290,135 @@ body {
 }
 
 
+#marvel {
 
+  width: 16%;
+  background: linear-gradient(to bottom, #30313D, #20212C);
+  height: 15vh;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.78);
+  justify-content: center;
+  
+}
 
+#marvel:hover {
+  border: 2px solid white; /* White border on hover */
+  transform: scale(1.1); /* Increase size on hover */
+  background-image: url('https://i.makeagif.com/media/6-06-2019/4uz62I.gif');
+  background-size:cover;
+  background-repeat: no-repeat;
+}
 
+#marvel img {
+  width: 55%;
+  position: relative;
+  margin-top: 14%;
+  
+}
 
+#national {
 
+  width: 16%;
+  background: linear-gradient(to bottom, #30313D, #20212C);
+  height: 15vh;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.78);
+  justify-content: center;
+  
+}
 
+#national:hover {
+  border: 2px solid white; /* White border on hover */
+  transform: scale(1.1); /* Increase size on hover */
+  background-image: url('https://i.imgur.com/uyItau1.gif');
+  background-size:cover;
+  background-repeat: no-repeat;
+   
+}
+
+#national img {
+  width: 55%;
+  position: relative;
+  margin-top: 14%;
+  
+}
+
+#starwars {
+
+  width: 16%;
+  background: linear-gradient(to bottom, #30313D, #20212C);
+  height: 15vh;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.78);
+  justify-content: center;
+  
+}
+
+#starwars:hover {
+  border: 2px solid white; /* White border on hover */
+  transform: scale(1.1); /* Increase size on hover */
+  background-image: url('https://pa1.aminoapps.com/6694/c4fa8ff034986d3f21c219fca3d96e9fea9a2046_00.gif');
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+#starwars img {
+  width: 55%;
+  position: relative;
+  margin-top: 14%;
+  
+}
 
 
 #studiogroup {
   display: flex;
   flex-direction: row;
-  width: 100%;
-  height: 20vh;
-  margin-top: -2.5%;
+  height: 18vh;
+  margin-top: -3%;
   justify-content: space-around;
   
 }
 
+
+
+
+
 #moviebox {
-  background: linear-gradient(to bottom, #30313D, #20212C);
-  height: 15vh;
-  border-radius: 10px;
+  background: linear-gradient(to bottom, #f8f9ff, #20212C);
+  height: 18vh;
+  border-radius: 5px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.215);
   margin: 10px;
-  width: 100%;
+  width: 35vh;
+  margin-top: 0%;
+  
+
 
 }
 
 #moviebox:hover {
   border: 2px solid white; /* White border on hover */
   transform: scale(1.1); /* Increase size on hover */
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.743);
+
 }
 
 #moviebox img {
- 
   height: 100%;
-  border-radius: 10px;
+  border-radius: 5px;
+  width: 30vh;
 }
 
 #movieboxgroup {
   display: flex;
   flex-direction: row;
+  align-items: center;
   overflow-x: scroll; /* Change to 'auto' to allow scrolling */
   width: 100%;
-  margin-top: -2.5%;
+  height: 25vh;
+  margin-top: -1%;
+  margin-left: 1%;
+  
 
 }
 
@@ -318,8 +430,8 @@ body {
 h3 {
   text-align: left;
   padding-left: 2%;
-  margin-top: 0;
-  margin-bottom: 2.5%;
+  margin-top: 1%;
+  margin-bottom: 0%;
   font-family: 'Montserrat', sans-serif;}
 
 
