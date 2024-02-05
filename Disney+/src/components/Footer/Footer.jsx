@@ -4,7 +4,7 @@ export function Footer() {
     return (
 
         <footer>
-            <h3>Paola Velasquez</h3>
+            <p>Paola Velasquez</p>
         </footer>
     )
 }

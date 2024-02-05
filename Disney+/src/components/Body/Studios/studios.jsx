@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box } from '../Movies/Box'
+import { Studio } from '../Movies/studio'
 
 
 export function Studios() {
@@ -7,11 +7,11 @@ export function Studios() {
 
         <div id="studiogroup">
                 
-                    <Box id="disney" url='https://www.edigitalagency.com.au/wp-content/uploads/Disney-logo-white-png.png'></Box>
-                    <Box id="pixar" url='./src/assets/pixar.png'></Box>
-                    <Box id="marvel" url='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png'></Box>
-                    <Box id="starwars" url='./src/assets/starwars.png'></Box>
-                    <Box id="national" url='./src/assets/national.png'></Box>
+                    <Studio class="disney" url='https://www.edigitalagency.com.au/wp-content/uploads/Disney-logo-white-png.png'></Studio>
+                    <Studio class="pixar" url='./src/assets/pixar.png'></Studio>
+                    <Studio class="marvel" url='https://upload.wikimedia.org/wikipedia/commons/thumb/b/b9/Marvel_Logo.svg/2560px-Marvel_Logo.svg.png'></Studio>
+                    <Studio class="starwars" url='./src/assets/starwars.png'></Studio>
+                    <Studio class="national" url='./src/assets/national.png'></Studio>
       
         </div>
 

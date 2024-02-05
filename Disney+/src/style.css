@@ -5,7 +5,7 @@
 
   color-scheme: light dark;
   background: linear-gradient(to bottom, #060606, #262A39);
-  color: rgba(0, 0, 0, 0.87);
+  color: rgba(255, 255, 255, 0.87);
 
 
   font-synthesis: none;
@@ -250,11 +250,9 @@ body {
 #box:hover {
   border: 2px solid white; /* White border on hover */
   transform: scale(1.1); /* Increase size on hover */
+  background-image: url('https://i.pinimg.com/originals/4b/e3/53/4be353c5dfb290422be018e67f89c9db.gif');
+   
 }
-
-  
-
-
 
 #box img {
   width: 55%;
@@ -262,6 +260,14 @@ body {
   margin-top: 14%;
   
 }
+
+
+
+
+
+
+
+
 
 
 #studiogroup {
@@ -273,6 +279,51 @@ body {
   justify-content: space-around;
   
 }
+
+#moviebox {
+  background: linear-gradient(to bottom, #30313D, #20212C);
+  height: 15vh;
+  border-radius: 10px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.215);
+  margin: 10px;
+  width: 100%;
+
+}
+
+#moviebox:hover {
+  border: 2px solid white; /* White border on hover */
+  transform: scale(1.1); /* Increase size on hover */
+}
+
+#moviebox img {
+ 
+  height: 100%;
+  border-radius: 10px;
+}
+
+#movieboxgroup {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll; /* Change to 'auto' to allow scrolling */
+  width: 100%;
+  margin-top: -2.5%;
+
+}
+
+/* Optional: Add some padding to the movie items for better visibility */
+#movieboxgroup #moviebox {
+  margin-right: 10px;
+}
+
+h3 {
+  text-align: left;
+  padding-left: 2%;
+  margin-top: 0;
+  margin-bottom: 2.5%;
+  font-family: 'Montserrat', sans-serif;}
+
+
+
 
 
 @media only screen and (max-width: 600px) {

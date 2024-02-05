@@ -1,6 +1,6 @@
 import React from 'react'
 
-export function Box(props) {
+export function Studio(props) {
     const {url} = props
     return (
 
