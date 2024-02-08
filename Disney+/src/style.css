@@ -502,7 +502,19 @@ h3 {
 
 
 @media only screen and (max-width: 600px) {
+
+
+  h3 {
+    font-size: 0.8rem}
   
+  
+ body {
+  margin-top: 4%;
+ }
+
+
+
+
   #logo {
     position: fixed;
     top: 3%;
@@ -551,6 +563,52 @@ h3 {
   }
 
 
+  #disney{
+    height: 3.2rem;
+    margin-top: 6%;
+  }
+
+  #disney img{
+    margin-top: 30%;
+  }
+  #pixar{
+    height: 3.2rem;
+    margin-top: 6%;
+  }
+  #pixar img{
+    margin-top: 30%;
+  }
+  #starwars{
+    height: 3.2rem;
+    margin-top: 6%;
+  }
+  #starwars img{
+    margin-top: 30%;
+  }
+  #marvel{
+    height: 3.2rem;
+    margin-top: 6%;
+  }
+  #marvel img{
+    margin-top: 30%;
+  }
+  #national{
+    height: 3.2rem;
+    margin-top: 6%;
+  }
+  #national img{
+    margin-top: 30%;
+  }
+
+#studiogroup {
+  margin-top: 1%;
+  margin-bottom: -5%;
+}
+
+#movieboxgroup {
+  margin-top: -2%;
+}
+
   #footerphone {
     display: block;
     width: 100%;
@@ -586,6 +644,11 @@ h3 {
   }
 }
 
+footer {
+  color: #808080;
+  font-size: 0.3rem;
+  padding-bottom: 15%;
+}
 
 
 
