@@ -512,7 +512,11 @@ h3 {
   margin-top: 4%;
  }
 
-
+ footer {
+  color: #808080;
+  font-size: 0.3rem;
+  padding-bottom: 15%;
+}
 
 
   #logo {
@@ -644,11 +648,7 @@ h3 {
   }
 }
 
-footer {
-  color: #808080;
-  font-size: 0.3rem;
-  padding-bottom: 15%;
-}
+
 
 
 
