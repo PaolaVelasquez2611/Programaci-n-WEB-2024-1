@@ -5,7 +5,7 @@ export function Logo() {
   
   return (
    
-      <img id="logo" src={imageUrl} alt="Disney Logo" id='logo' />
+      <img id="logo" src={imageUrl} alt="Disney Logo" />
 
   );
 }

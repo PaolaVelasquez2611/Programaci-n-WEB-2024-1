@@ -126,7 +126,7 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  margin-top: 4%;
+  margin-top: 3.2%;
   flex-direction: column;
   align-items: center;
 
@@ -430,9 +430,72 @@ body {
 h3 {
   text-align: left;
   padding-left: 2%;
-  margin-top: 1%;
-  margin-bottom: 0%;
+  margin-top: 0%;
+  margin-bottom: 0.5%;
   font-family: 'Montserrat', sans-serif;}
+
+
+
+  footer {
+    background-color: #19191f;
+    margin-top: 8%;
+    padding: 10px;
+  }
+
+
+#termsdiv {
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 10%;
+  justify-content: space-around;
+  color: #4e4f51;
+
+}
+
+#termsdiv :hover{
+ color: #808080;
+
+}
+
+#aboutdiv {
+
+  display: flex;
+  flex-direction: row;
+  width: 70%;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15%;
+  justify-content: space-around;
+  color: #808080;
+  font-weight: bold;
+
+  
+}
+
+
+#aboutdiv  :hover {
+  color: rgb(86, 139, 246);
+}
+
+#copyrightdiv {
+  color: #30313D;
+
+  
+}
+
+#logo2 {
+
+  margin-top: 4%;
+  width: 18%;
+  margin-left: 0%;
+
+  
+}
+
+
 
 
 
