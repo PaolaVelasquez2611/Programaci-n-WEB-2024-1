@@ -1,3 +1,4 @@
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -86,7 +87,56 @@ h1 {
 
 }
 
+#profbutton img{
+  width: 100%;
+ 
+}
 
+#profbutton {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+  background-color: #f9f9f9;
+  background-image: url(https://emi9d8rzue7.exactdn.com/wp-content/uploads/2021/12/Encanto-Avatar.png?strip=all&lossy=1&resize=800%2C800&ssl=1);
+  background-size:cover;
+  background-repeat: no-repeat;
+}
+
+#navmenu {
+  background-color: #050505;
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  width: 13%;
+  position: fixed;
+  top: 20px;
+  right:8px;
+
+}
+
+#navmenu li {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2px;
+  width: 100%;
+  color: #808080;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+h4 {
+  color: rgb(101, 42, 42)
+}
+
+#navmenu img{
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+}
 
 #profilediv {
   display: flex;
@@ -109,12 +159,17 @@ h1 {
   margin: 4%;
 }
 
-#header {
+ 
+
+
+header {
   display: flex;
   flex-direction: row;
+  background-color: #292930;
   backdrop-filter: blur(100%);
 
 }
+
 
 #footerphone {
   display: none;

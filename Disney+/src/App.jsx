@@ -12,10 +12,11 @@ import { FooterPhone } from "./components/Footer/FooterPhone";
 export function App() {
     return (
         <>
+            <Header></Header>
             <FooterPhone> </FooterPhone>
             <Body></Body>
             <Footer></Footer>
-            <Header></Header>
+            
             
         </> //fragment es una etiqueta vacia. no se puede renderizar componentes sueltos
 
