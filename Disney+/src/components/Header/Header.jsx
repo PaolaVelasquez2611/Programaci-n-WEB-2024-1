@@ -1,4 +1,4 @@
-import React from 'react'
+
 import { Category } from './Category/category'
 import { Logo } from './Logo/logo'
 import { Nav } from './Logo/Nav/headernav'
