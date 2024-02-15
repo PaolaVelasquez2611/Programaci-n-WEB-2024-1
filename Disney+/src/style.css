@@ -23,7 +23,7 @@ h1 {
 
 #app {
   width: 100%;
-  padding: 1rem;
+  padding: 0rem;
   text-align: center;
 }
 
@@ -37,7 +37,6 @@ h1 {
 
 #logo {
   position: fixed;
-  top: 1.5%;
   left: 3%;
   width: 6%;
 
@@ -54,9 +53,9 @@ h1 {
   align-items: baseline;
   margin-right: 0%;
   margin-left: 0%;
-  top: 3%;
   font-family: 'Montserrat', sans-serif;
   font-size: small;
+  font-weight: 600;
 
 
 }
@@ -79,7 +78,6 @@ h1 {
   flex-direction: row;
   justify-content: space-around;
   position: fixed;
-  top: 2%;
   width: 60%;
   left: 12%;
 
@@ -87,10 +85,6 @@ h1 {
 
 }
 
-#profbutton img{
-  width: 100%;
- 
-}
 
 #profbutton {
   width: 45px;
@@ -101,6 +95,8 @@ h1 {
   background-image: url(https://emi9d8rzue7.exactdn.com/wp-content/uploads/2021/12/Encanto-Avatar.png?strip=all&lossy=1&resize=800%2C800&ssl=1);
   background-size:cover;
   background-repeat: no-repeat;
+  z-index: 100;
+  margin-left: 6%;
 }
 
 #navmenu {
@@ -110,26 +106,76 @@ h1 {
   display: flex;
   flex-direction: column;
   padding: 1%;
-  width: 13%;
+  padding-top: 5%;
+  width: 20%;
   position: fixed;
-  top: 20px;
-  right:8px;
+  top: -20px;
+  right:0px;
+  z-index: 8;
+  padding-left: 2%;
+  
+  
+}
 
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+h5:hover {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
 }
 
 #navmenu li {
+  
   display: flex;
   flex-direction: row;
   align-items: center;
   margin-left: 2px;
   width: 100%;
   color: #808080;
-  font-family: 'Montserrat', sans-serif;
+  
+  
+  
 
 }
 
+#addbutton {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+  background-color: #807f7f56;
+  background-image: url(../.././src/assets/add.svg);
+  background-size:20px;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+#addbutton:hover {
+  background-color: #b1afaf56;
+}
+
+#addprofilediv {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
+
 h4 {
-  color: rgb(101, 42, 42)
+  color: rgb(200, 42, 42);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  
 }
 
 #navmenu img{
@@ -144,20 +190,16 @@ h4 {
   flex-direction: row;
   position: fixed;
   width: 15%;
-  top: 1.5%;
-  left: 90%;
+  left: 91%;
   font-size: small;
   align-items: center;
   font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  z-index: 8;
 }
 
-#profilediv img {
-  width: 25%;
-}
 
-#profilediv p {
-  margin: 4%;
-}
+
 
  
 
@@ -165,8 +207,17 @@ h4 {
 header {
   display: flex;
   flex-direction: row;
-  background-color: #292930;
+  align-items: center;
+  background-color: #00000053;
   backdrop-filter: blur(100%);
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  padding-top: 2px;
+  right: 0;
+  left: 0;
+  z-index: 10;
+
 
 }
 
@@ -181,7 +232,8 @@ body {
   display: flex;
   min-width: 320px;
   min-height: 100vh;
-  margin-top: 3.2%;
+  margin-top: 6%;
+
   flex-direction: column;
   align-items: center;
 
@@ -593,9 +645,9 @@ h3 {
     /* Adjust font size for smaller screens */
   }
 
-  #profilediv {
+  #profilediv  {
     display: none;
-
+    
   }
 
   #banner img{
@@ -621,7 +673,7 @@ h3 {
 
   }
 
-
+  
   #disney{
     height: 3.2rem;
     margin-top: 6%;

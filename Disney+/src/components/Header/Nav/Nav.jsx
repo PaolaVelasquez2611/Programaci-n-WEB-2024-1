@@ -1,32 +1,34 @@
 import React from 'react';
+import { AddProfile } from '../Profile/AddProfile';
+import { Profile } from '../Profile/profile';
 
 export function Nav({currentMenu}) {
   return (
     currentMenu 
     ? (
       <ul id="navmenu">
+
+    <li>
+      <AddProfile></AddProfile>
+    </li>
+
         <li>
-          <img id="navicon" src="./src/assets/user.png" alt="navegation icons" />
-          <h5>Your Account</h5>
+          <h5>Edit Profiles</h5>
         </li>
 
         <li>
-          <img id="navicon" src="./src/assets/download.png" alt="navegation icons" />
-          <h5>Your Downloads</h5>
+          <h5>App Settings</h5>
         </li>
 
         <li>
-          <img id="navicon" src="./src/assets/notifications.png" alt="navegation icons" />
-          <h5>Notifications</h5>
+          <h5>Account</h5>
         </li>
 
         <li>
-          <img id="navicon" src="./src/assets/settings.png" alt="navegation icons" />
-          <h5>Privacy Settings</h5>
+          <h5>Help</h5>
         </li>
 
         <li>
-          <img id="navicon" src="./src/assets/logout.png" alt="navegation icons" />
           <h4>LogOut</h4>
         </li>
       </ul>
