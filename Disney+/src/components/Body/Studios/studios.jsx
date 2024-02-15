@@ -1,5 +1,5 @@
 import React from 'react'
-import { Studio } from './studio'
+import { Studio } from './Studio'
 
 
 export function Studios() {

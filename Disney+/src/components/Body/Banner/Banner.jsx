@@ -1,7 +1,7 @@
 
 
 import React from 'react'
-import { Featured } from "./Featured/featured";
+import { Featured } from "./Featured/Featured";
 
 export function Banner() {
     return (

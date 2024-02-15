@@ -1,11 +1,18 @@
 
-import { Category } from './Category/category'
-import { Logo } from './Logo/logo'
-import { Nav } from './Logo/Nav/headernav'
-import { Profile } from './Profile/profile'
-
+import { useState } from 'react'
+import { Category } from './Category/Category'
+import { Logo } from './Logo/Logo'
+import { Nav } from './Nav/Nav'
+import { Profile } from './Profile/Profile'
 
 export function Header() {
+
+    const [showMenu , setShowMenu] = useState(false)
+    const handleShowMenu = () => {
+        console.log('works')
+        setShowMenu(!showMenu)
+    }
+
     return (
         <header>
         
@@ -20,9 +27,9 @@ export function Header() {
             <Category id="display1" text= "SERIES" iconUrl="./src/assets/tv.png"></Category>
             </div>
 
-            <Nav> </Nav>
+            <Nav currentMenu={showMenu}></Nav>
 
-            <Profile name="Paola"></Profile>
+            <Profile name="Paola" onClick={handleShowMenu}> </Profile>
        
             
         </header>

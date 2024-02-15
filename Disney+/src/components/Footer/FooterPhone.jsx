@@ -1,6 +1,6 @@
 import React from 'react'
 import { Profile } from '../Header/Profile/profile'
-import { IconsPhone } from './Phone/icons/icons'
+import { IconsPhone } from './Phone/icons/IconsPhone'
 
 
 
