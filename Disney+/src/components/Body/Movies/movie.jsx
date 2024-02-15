@@ -4,7 +4,7 @@ export function Movie(props) {
     const {url} = props
     return (
 
-        <div id="moviebox">
+        <div className="movie-box">
         <img src={url} />
         </div>
             

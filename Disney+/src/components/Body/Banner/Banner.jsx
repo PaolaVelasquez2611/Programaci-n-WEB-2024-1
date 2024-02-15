@@ -6,9 +6,9 @@ import { Featured } from "./Featured/Featured";
 export function Banner() {
     return (
 
-        <div id="banner">
+        <div className="banner">
 
-            <div id="slider">
+            <div className="slider">
                 <ul>
                     <Featured featuredurl='./src/assets/Featured/f1.png'></Featured>
                     <Featured featuredurl='./src/assets/Featured/f2.png'></Featured>

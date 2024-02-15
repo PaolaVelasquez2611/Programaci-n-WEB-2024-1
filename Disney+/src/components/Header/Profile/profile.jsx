@@ -8,9 +8,9 @@ export function Profile(props) {
   } = props
 
   return (
-   <div id="profilediv">
+   <div className='profile-div'>
     <p>{name}</p>
-      <button id="profbutton" alt="Profile Button" onClick={onClick}> </button>
+      <button id="profile-button" alt="Profile Button" onClick={onClick}> </button>
    </div> 
   );
 }

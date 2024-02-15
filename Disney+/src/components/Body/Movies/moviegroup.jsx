@@ -7,7 +7,7 @@ export function MovieGroup({title, movies, id}) {
         <>
             <h3>{title}</h3>
             
-            <div id="movieboxgroup">
+            <div className="movie-box-div">
             {
                 movies.map((movie)=> {
                     return  <Movie url={movie.url} key={movie.id}/>

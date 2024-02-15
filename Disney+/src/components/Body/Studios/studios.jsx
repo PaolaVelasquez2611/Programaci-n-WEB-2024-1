@@ -5,7 +5,7 @@ import { Studio } from './Studio'
 export function Studios() {
     return (
 
-        <div id="studiogroup">
+        <div className="studio-div">
                 
                     <Studio id="disney" url='https://www.edigitalagency.com.au/wp-content/uploads/Disney-logo-white-png.png'></Studio>
                     <Studio id="pixar" url='./src/assets/pixar.png'></Studio>

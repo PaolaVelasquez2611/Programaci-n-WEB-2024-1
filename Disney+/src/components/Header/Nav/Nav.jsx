@@ -6,7 +6,7 @@ export function Nav({currentMenu}) {
   return (
     currentMenu 
     ? (
-      <ul id="navmenu">
+      <ul className='nav-menu'>
 
     <li>
       <AddProfile></AddProfile>

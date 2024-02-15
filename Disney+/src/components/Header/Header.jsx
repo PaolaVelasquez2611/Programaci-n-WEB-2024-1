@@ -18,7 +18,7 @@ export function Header() {
         
             <Logo></Logo>
 
-            <div id="categorymenu">
+            <div className='category-menu'>
             <Category id="homebutton" text= 'HOME' iconUrl='https://icon-library.com/images/white-home-icon-png/white-home-icon-png-21.jpg'></Category>
             <Category id="homebutton" text= "SEARCH" iconUrl="https://www.freeiconspng.com/uploads/search-icon-png-29.png"></Category>
             <Category id="display1" text= "WATCHLIST" iconUrl="https://icon-library.com/images/white-plus-icon/white-plus-icon-3.jpg"></Category>

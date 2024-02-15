@@ -4,7 +4,7 @@ export function About() {
   
   return (
    
-    <div id= "aboutdiv" >
+    <div className= "about-div" >
 
     <p id="about">About Disney+</p> 
     <p id="about">Disney+ Help</p> 

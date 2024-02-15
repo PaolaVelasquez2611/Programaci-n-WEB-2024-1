@@ -7,7 +7,7 @@ import { IconsPhone } from './Phone/icons/IconsPhone'
 export function FooterPhone() {
     return (
         <section>
-            <div id="footerphone">
+            <div className="footer-phone">
             <IconsPhone iconUrl='./src/assets/homegray.png'></IconsPhone>
             <IconsPhone iconUrl="./src/assets/searchgrays.png"></IconsPhone>
             <IconsPhone iconUrl="./src/assets/download.png"></IconsPhone>

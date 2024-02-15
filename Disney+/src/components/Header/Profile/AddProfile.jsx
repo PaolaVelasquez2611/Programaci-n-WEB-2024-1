@@ -5,8 +5,8 @@ export function AddProfile(props) {
 
   return (
   
-  <div id="addprofilediv">  
-      <button id="addbutton" alt="Add Profile Button"></button>
+  <div className='add-profile-div'>  
+      <button className="add-button" alt="Add Profile Button"></button>
       <p>Add Profile</p>
    </div> 
   );

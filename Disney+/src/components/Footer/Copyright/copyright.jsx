@@ -4,7 +4,7 @@ export function CopyRight() {
   
   return (
    
-    <div id= "copyrightdiv" >
+    <div className= "copyright-div" >
 
     <p>©Disney, All Rights Reserved, Disney Entertainment</p> 
     

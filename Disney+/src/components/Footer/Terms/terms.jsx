@@ -7,7 +7,7 @@ export function Terms() {
     
    return (
     
-     <div id= "termsdiv" >
+     <div className= "terms-div" >
  
      <p>Terms of Use</p> 
      <p>Additional Content Information</p> 

@@ -1,4 +1,3 @@
-
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -14,195 +13,6 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
-}
-
-#app {
-  width: 100%;
-  padding: 0rem;
-  text-align: center;
-}
-
-@media (prefers-color-scheme: light) {
-  :root {
-    background-color: linear-gradient(to right, #000000, #808080);
-  }
-}
-
-
-
-#logo {
-  position: fixed;
-  left: 3%;
-  width: 6%;
-
-}
-
-#logo:hover {
-  filter: drop-shadow(0 0 2em #8e8eec);
-}
-
-#category {
-  display: flex;
-  color: #f9f9f9;
-  flex-direction: row;
-  align-items: baseline;
-  margin-right: 0%;
-  margin-left: 0%;
-  font-family: 'Montserrat', sans-serif;
-  font-size: small;
-  font-weight: 600;
-
-
-}
-
-#category img {
-  width: 15px;
-  margin-right: 7%;
-}
-
-#category:hover {
-  filter: drop-shadow(0 0 2em #fcfcff);
-}
-
-#category:hover a {
-  text-decoration: underline;
-}
-
-#categorymenu {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  position: fixed;
-  width: 60%;
-  left: 12%;
-
-
-
-}
-
-
-#profbutton {
-  width: 45px;
-  height: 45px;
-  border-radius: 50px;
-  border: none;
-  background-color: #f9f9f9;
-  background-image: url(https://emi9d8rzue7.exactdn.com/wp-content/uploads/2021/12/Encanto-Avatar.png?strip=all&lossy=1&resize=800%2C800&ssl=1);
-  background-size:cover;
-  background-repeat: no-repeat;
-  z-index: 100;
-  margin-left: 6%;
-}
-
-#navmenu {
-  background-color: #050505;
-  color: white;
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  padding: 1%;
-  padding-top: 5%;
-  width: 20%;
-  position: fixed;
-  top: -20px;
-  right:0px;
-  z-index: 8;
-  padding-left: 2%;
-  
-  
-}
-
-h5 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-}
-
-h5:hover {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 15px;
-  color: rgb(255, 255, 255);
-}
-
-#navmenu li {
-  
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  margin-left: 2px;
-  width: 100%;
-  color: #808080;
-  
-  
-  
-
-}
-
-#addbutton {
-  width: 45px;
-  height: 45px;
-  border-radius: 50px;
-  border: none;
-  background-color: #807f7f56;
-  background-image: url(../.././src/assets/add.svg);
-  background-size:20px;
-  background-position-x: center;
-  background-position-y: center;
-  background-repeat: no-repeat;
-  margin-right: 10px;
-}
-
-#addbutton:hover {
-  background-color: #b1afaf56;
-}
-
-#addprofilediv {
-  display: flex;
-  flex-direction: row;
-  margin-top: 15%;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 5%;
-}
-
-h4 {
-  color: rgb(200, 42, 42);
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  
-}
-
-#navmenu img{
-  width: 20px;
-  height: 20px;
-  padding: 5px;
-}
-
-#profilediv {
-  display: flex;
-  color: #f9f9f9;
-  flex-direction: row;
-  position: fixed;
-  width: 15%;
-  left: 91%;
-  font-size: small;
-  align-items: center;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  z-index: 8;
-}
-
-
-
-
- 
-
 
 header {
   display: flex;
@@ -221,11 +31,179 @@ header {
 
 }
 
-
-#footerphone {
-  display: none;
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
 }
 
+h4 {
+  color: rgb(200, 42, 42);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+
+}
+
+h3 {
+  text-align: left;
+  padding-left: 2%;
+  margin-top: 0%;
+  margin-bottom: 0.5%;
+  font-family: 'Montserrat', sans-serif;
+}
+
+h5 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+
+h5:hover {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: rgb(255, 255, 255);
+}
+
+#app {
+  width: 100%;
+  padding: 0rem;
+  text-align: center;
+}
+
+
+#logo {
+  position: fixed;
+  left: 3%;
+  width: 6%;
+
+}
+
+#logo:hover {
+  filter: drop-shadow(0 0 2em #8e8eec);
+}
+
+.category {
+  display: flex;
+  color: #f9f9f9;
+  flex-direction: row;
+  align-items: baseline;
+  margin-right: 0%;
+  margin-left: 0%;
+  font-family: 'Montserrat', sans-serif;
+  font-size: small;
+  font-weight: 600;
+
+
+}
+
+.category img {
+  width: 15px;
+  margin-right: 7%;
+}
+
+.category:hover {
+  filter: drop-shadow(0 0 2em #fcfcff);
+}
+
+.category-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  position: fixed;
+  width: 60%;
+  left: 12%;
+
+
+
+}
+
+.profile-div {
+  display: flex;
+  color: #f9f9f9;
+  flex-direction: row;
+  position: fixed;
+  width: 15%;
+  left: 91%;
+  font-size: small;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  z-index: 8;
+}
+
+#profile-button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+  background-color: #f9f9f9;
+  background-image: url(https://emi9d8rzue7.exactdn.com/wp-content/uploads/2021/12/Encanto-Avatar.png?strip=all&lossy=1&resize=800%2C800&ssl=1);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 100;
+  margin-left: 6%;
+}
+
+.nav-menu {
+  background-color: #050505;
+  color: white;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  padding: 1%;
+  padding-top: 5%;
+  width: 20%;
+  position: fixed;
+  top: -20px;
+  right: 0px;
+  z-index: 8;
+  padding-left: 2%;
+
+
+}
+
+.nav-menu li {
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 2px;
+  width: 100%;
+  color: #808080;
+}
+
+.nav-menu img {
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+}
+
+.add-button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  border: none;
+  background-color: #807f7f56;
+  background-image: url(../.././src/assets/add.svg);
+  background-size: 20px;
+  background-position-x: center;
+  background-position-y: center;
+  background-repeat: no-repeat;
+  margin-right: 10px;
+}
+
+.add-button:hover {
+  background-color: #b1afaf56;
+}
+
+.add-profile-div {
+  display: flex;
+  flex-direction: row;
+  margin-top: 15%;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5%;
+}
 
 body {
   margin: 0;
@@ -239,7 +217,7 @@ body {
 
 }
 
-#banner {
+.banner {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -251,21 +229,21 @@ body {
   border-radius: 10px;
 }
 
-#banner img {
+.banner img {
   width: 97%;
   height: 80%;
   opacity: 1;
   border-radius: 10px;
   animation: slide 28s infinite alternate ease-in-out;
-  
+
 }
 
-#banner img:hover {
+.banner img:hover {
   border: 1px solid white;
   width: 97%;
-  }
+}
 
-#banner ul {
+.banner ul {
 
   display: flex;
   padding: 0;
@@ -274,7 +252,6 @@ body {
   border-radius: 10px;
 
 }
-
 
 @keyframes slide {
 
@@ -289,11 +266,11 @@ body {
   14.28% {
     margin-left: -200%;
   }
-  
+
 
   21.42% {
     margin-left: -200%;
-    
+
   }
 
   28.56% {
@@ -322,26 +299,37 @@ body {
 
   71.4% {
     margin-left: -600%;
+  }
+
+  78.54% {
+    margin-left: -600%;
+  }
+
+  85.68% {
+    margin-left: -800%;
+  }
+
+  92.82% {
+    margin-left: -800%;
+  }
+
+  100% {
+    margin-left: -800%;
+  }
+
+
 }
 
-78.54% {
-  margin-left: -600%;
-}
 
-85.68% {
-  margin-left: -800%;
-}
-
-92.82% {
-  margin-left: -800%;
-}
-
-100% {
-  margin-left: -800%;
-}
-
+.studio-div {
+  display: flex;
+  flex-direction: row;
+  height: 18vh;
+  margin-top: -3%;
+  justify-content: space-around;
 
 }
+
 
 #disney {
 
@@ -351,23 +339,25 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.78);
   justify-content: center;
-  
+
 }
 
 #disney:hover {
-  border: 2px solid white; /* White border on hover */
-  transform: scale(1.1); /* Increase size on hover */
+  border: 2px solid white;
+  /* White border on hover */
+  transform: scale(1.1);
+  /* Increase size on hover */
   background-image: url('https://j.gifs.com/WnDrzn.gif');
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
-   
+
 }
 
 #disney img {
   width: 55%;
   position: relative;
   margin-top: 14%;
-  
+
 }
 
 #pixar {
@@ -378,14 +368,16 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.78);
   justify-content: center;
-  
+
 }
 
 #pixar:hover {
-  border: 2px solid white; /* White border on hover */
-  transform: scale(1.1); /* Increase size on hover */
+  border: 2px solid white;
+  /* White border on hover */
+  transform: scale(1.1);
+  /* Increase size on hover */
   background-image: url('https://i.pinimg.com/originals/62/46/20/624620b175c1643497921bda5e764d29.gif');
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -393,9 +385,8 @@ body {
   width: 55%;
   position: relative;
   margin-top: 14%;
-  
-}
 
+}
 
 #marvel {
 
@@ -405,14 +396,16 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.78);
   justify-content: center;
-  
+
 }
 
 #marvel:hover {
-  border: 2px solid white; /* White border on hover */
-  transform: scale(1.1); /* Increase size on hover */
+  border: 2px solid white;
+  /* White border on hover */
+  transform: scale(1.1);
+  /* Increase size on hover */
   background-image: url('https://i.makeagif.com/media/6-06-2019/4uz62I.gif');
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -420,7 +413,7 @@ body {
   width: 55%;
   position: relative;
   margin-top: 14%;
-  
+
 }
 
 #national {
@@ -431,23 +424,25 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.78);
   justify-content: center;
-  
+
 }
 
 #national:hover {
-  border: 2px solid white; /* White border on hover */
-  transform: scale(1.1); /* Increase size on hover */
+  border: 2px solid white;
+  /* White border on hover */
+  transform: scale(1.1);
+  /* Increase size on hover */
   background-image: url('https://i.imgur.com/uyItau1.gif');
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
-   
+
 }
 
 #national img {
   width: 55%;
   position: relative;
   margin-top: 14%;
-  
+
 }
 
 #starwars {
@@ -458,14 +453,16 @@ body {
   border-radius: 10px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.78);
   justify-content: center;
-  
+
 }
 
 #starwars:hover {
-  border: 2px solid white; /* White border on hover */
-  transform: scale(1.1); /* Increase size on hover */
+  border: 2px solid white;
+  /* White border on hover */
+  transform: scale(1.1);
+  /* Increase size on hover */
   background-image: url('https://pa1.aminoapps.com/6694/c4fa8ff034986d3f21c219fca3d96e9fea9a2046_00.gif');
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -473,24 +470,11 @@ body {
   width: 55%;
   position: relative;
   margin-top: 14%;
-  
+
 }
 
 
-#studiogroup {
-  display: flex;
-  flex-direction: row;
-  height: 18vh;
-  margin-top: -3%;
-  justify-content: space-around;
-  
-}
-
-
-
-
-
-#moviebox {
+.movie-box {
   background: linear-gradient(to bottom, #f8f9ff, #20212C);
   height: 18vh;
   border-radius: 5px;
@@ -498,59 +482,52 @@ body {
   margin: 10px;
   width: 35vh;
   margin-top: 0%;
-  
+
 
 
 }
 
-#moviebox:hover {
-  border: 2px solid white; /* White border on hover */
-  transform: scale(1.1); /* Increase size on hover */
+.movie-box:hover {
+  border: 2px solid white;
+  /* White border on hover */
+  transform: scale(1.1);
+  /* Increase size on hover */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.743);
 
 }
 
-#moviebox img {
+.movie-box img {
   height: 100%;
   border-radius: 5px;
   width: 30vh;
 }
 
-#movieboxgroup {
+.movie-box-div {
   display: flex;
   flex-direction: row;
   align-items: center;
-  overflow-x: scroll; /* Change to 'auto' to allow scrolling */
+  overflow-x: scroll;
+  /* Change to 'auto' to allow scrolling */
   width: 100%;
   height: 25vh;
   margin-top: -1%;
   margin-left: 1%;
-  
+
 
 }
 
-/* Optional: Add some padding to the movie items for better visibility */
-#movieboxgroup #moviebox {
-  margin-right: 10px;
+
+footer {
+  background-color: #19191f;
+  margin-top: 8%;
+  padding: 10px;
 }
 
-h3 {
-  text-align: left;
-  padding-left: 2%;
-  margin-top: 0%;
-  margin-bottom: 0.5%;
-  font-family: 'Montserrat', sans-serif;}
+.footer-phone {
+  display: none;
+}
 
-
-
-  footer {
-    background-color: #19191f;
-    margin-top: 8%;
-    padding: 10px;
-  }
-
-
-#termsdiv {
+.terms-div {
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -559,15 +536,19 @@ h3 {
   margin-left: 10%;
   justify-content: space-around;
   color: #4e4f51;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 300;
+  font-size: 13.2px;
+
 
 }
 
-#termsdiv :hover{
- color: #808080;
+.terms-div :hover {
+  color: #808080;
 
 }
 
-#aboutdiv {
+.about-div {
 
   display: flex;
   flex-direction: row;
@@ -577,20 +558,19 @@ h3 {
   margin-left: 15%;
   justify-content: space-around;
   color: #808080;
-  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 450;
 
-  
 }
 
-
-#aboutdiv  :hover {
-  color: rgb(86, 139, 246);
+.about-div :hover {
+  color: rgb(255, 255, 255);
 }
 
-#copyrightdiv {
+.copyright-div {
   color: #30313D;
 
-  
+
 }
 
 #logo2 {
@@ -599,32 +579,16 @@ h3 {
   width: 18%;
   margin-left: 0%;
 
-  
+
 }
-
-
-
-
-
 
 
 @media only screen and (max-width: 600px) {
 
 
   h3 {
-    font-size: 0.8rem}
-  
-  
- body {
-  margin-top: 4%;
- }
-
- footer {
-  color: #808080;
-  font-size: 0.3rem;
-  padding-bottom: 15%;
-}
-
+    font-size: 0.8rem
+  }
 
   #logo {
     position: fixed;
@@ -639,18 +603,22 @@ h3 {
     filter: drop-shadow(0 0 2em #8e8eec);
   }
 
-  #category {
+  .category {
     font-size: 8px;
     display: none;
     /* Adjust font size for smaller screens */
   }
 
-  #profilediv  {
+  .profile-div {
     display: none;
-    
+
   }
 
-  #banner img{
+  body {
+    margin-top: 8%;
+  }
+
+  .banner img {
     display: flex;
     flex-direction: row;
     overflow-x: hidden;
@@ -660,67 +628,84 @@ h3 {
     margin-left: 10%;
     margin-right: 10%;
     border-radius: 10px;
-  
+
   }
 
-  #banner img:hover {
-    border:none;
-    }
+  .banner img:hover {
+    border: none;
+  }
 
-  #banner {
+  .banner {
     margin-left: 0.8%;
     margin-top: 10%;
 
   }
 
-  
-  #disney{
+  #disney {
     height: 3.2rem;
     margin-top: 6%;
   }
 
-  #disney img{
-    margin-top: 30%;
-  }
-  #pixar{
-    height: 3.2rem;
-    margin-top: 6%;
-  }
-  #pixar img{
-    margin-top: 30%;
-  }
-  #starwars{
-    height: 3.2rem;
-    margin-top: 6%;
-  }
-  #starwars img{
-    margin-top: 30%;
-  }
-  #marvel{
-    height: 3.2rem;
-    margin-top: 6%;
-  }
-  #marvel img{
-    margin-top: 30%;
-  }
-  #national{
-    height: 3.2rem;
-    margin-top: 6%;
-  }
-  #national img{
+  #disney img {
     margin-top: 30%;
   }
 
-#studiogroup {
-  margin-top: 1%;
-  margin-bottom: -5%;
-}
+  #pixar {
+    height: 3.2rem;
+    margin-top: 6%;
+  }
 
-#movieboxgroup {
-  margin-top: -2%;
-}
+  #pixar img {
+    margin-top: 30%;
+  }
 
-  #footerphone {
+  #starwars {
+    height: 3.2rem;
+    margin-top: 6%;
+  }
+
+  #starwars img {
+    margin-top: 30%;
+  }
+
+  #marvel {
+    height: 3.2rem;
+    margin-top: 6%;
+  }
+
+  #marvel img {
+    margin-top: 30%;
+  }
+
+  #national {
+    height: 3.2rem;
+    margin-top: 6%;
+  }
+
+  #national img {
+    margin-top: 30%;
+  }
+
+  .studio-div {
+    margin-top: 1%;
+    margin-bottom: -5%;
+  }
+
+  .movie-box-div {
+    margin-top: -2%;
+  }
+
+  footer {
+    color: #808080;
+    font-size: 0.3rem;
+    padding-bottom: 15%;
+  }
+
+  .terms-div{
+    font-size: 0.2rem;
+  }
+
+  .footer-phone {
     display: block;
     width: 100%;
     position: fixed;
@@ -736,23 +721,25 @@ h3 {
     /* Shadow for better contrast */
   }
 
-  #footerphone>* {
+  .footer-phone>* {
     display: inline-block;
     margin-right: 30px;
     /* Adjust the margin between elements */
   }
 
-  #footerphone img {
+  .footer-phone img {
     width: 10%;
     justify-content: space-around;
 
 
   }
 
-  #footerphone img:hover {
+  .footer-phone img:hover {
     transform: scale(1.1);
     transition: transform 0.2s;
   }
+
+
 }
 
 
@@ -761,3 +748,17 @@ h3 {
 
 
 
+
+
+
+
+  
+
+
+  
+
+ 
+
+  
+
+  
