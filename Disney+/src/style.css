@@ -498,13 +498,12 @@ body {
 
 
 .movie-box {
+  margin-left: 12px;
   background: linear-gradient(to bottom, #f8f9ff, #20212C);
   height: 18vh;
   border-radius: 6px;
   box-shadow: 0 0 25px rgba(0, 0, 0, 0.215);
-  margin-left: 2%;
-  margin: 10px;
-  width: 35vh;
+  width: 30vh;
   margin-top: 0%;
   
 
@@ -512,10 +511,9 @@ body {
 
 .movie-box:hover {
   border: 2px solid white;
-  /* White border on hover */
   transform: scale(1.1);
-  /* Increase size on hover */
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.743);
+  
 
 }
 
@@ -539,7 +537,7 @@ body {
 
 footer {
   background-color: #19191f;
-  margin-top: 8%;
+  margin-top: 5%;
   padding: 10px;
 }
 
