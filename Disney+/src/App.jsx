@@ -2,7 +2,7 @@ import { Body } from "./components/Body/Body";
 import { Footer } from "./components/Footer/Footer";
 import { Header } from "./components/Header/Header";
 import React from 'react'
-import { FooterPhone } from "./components/Footer/FooterPhone";
+import { NavPhone } from "./components/Footer/NavPhone";
 
 
 
@@ -13,7 +13,7 @@ export function App() {
     return (
         <>
             <Header></Header>
-            <FooterPhone> </FooterPhone>
+            <NavPhone> </NavPhone>
             <Body></Body>
             <Footer></Footer>
             

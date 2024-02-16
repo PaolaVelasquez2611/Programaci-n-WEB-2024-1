@@ -541,7 +541,7 @@ footer {
   padding: 10px;
 }
 
-.footer-phone {
+.nav-phone {
   display: none;
 }
 
@@ -609,6 +609,37 @@ footer {
   h3 {
     font-size: 0.8rem
   }
+  header {
+
+    z-index: 1;
+  }
+  .nav-phone {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    justify-content: space-around;
+    background-color: rgba(255, 255, 255, 0.14);
+    padding: 10px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 3;
+    
+  }
+
+  .nav-phone img {
+    width: 10%;
+    justify-content: space-around;
+    z-index: 3;
+
+
+  }
+
+  .nav-phone img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+  }
 
   #logo {
     position: fixed;
@@ -633,6 +664,36 @@ footer {
     display: none;
 
   }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    margin-top: 0%;
+    width: 100%;
+    padding: 1%;
+    height: 100%;
+    position: fixed;
+    margin-top: 0%;
+    z-index: 1;
+  }
+
+  
+  .nav-menu li {
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    width: 100%;
+    color: #808080;
+    
+  }
+  
+  .nav-menu img {
+    width: 20px;
+    height: 20px;
+    padding: 5px;
+  }
+  
 
   body {
     margin-top: 8%;
@@ -725,39 +786,7 @@ footer {
     font-size: 0.2rem;
   }
 
-  .footer-phone {
-    display: block;
-    width: 100%;
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background-color: rgba(255, 255, 255, 0.14);
-    /* Frosted glass background color */
-    padding: 10px;
-    /* Add padding for better visibility */
-    backdrop-filter: blur(10px);
-    /* Frosted glass effect using backdrop-filter */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    /* Shadow for better contrast */
-  }
-
-  .footer-phone>* {
-    display: inline-block;
-    margin-right: 30px;
-    /* Adjust the margin between elements */
-  }
-
-  .footer-phone img {
-    width: 10%;
-    justify-content: space-around;
-
-
-  }
-
-  .footer-phone img:hover {
-    transform: scale(1.1);
-    transition: transform 0.2s;
-  }
+  
 
 
 }

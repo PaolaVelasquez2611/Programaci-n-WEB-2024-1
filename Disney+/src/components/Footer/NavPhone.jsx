@@ -1,13 +1,12 @@
 import React from 'react'
-import { Profile } from '../Header/Profile/profile'
 import { IconsPhone } from './Phone/icons/IconsPhone'
 
 
 
-export function FooterPhone() {
+export function NavPhone() {
     return (
         <section>
-            <div className="footer-phone">
+            <div className="nav-phone">
             <IconsPhone iconUrl='./src/assets/homegray.png'></IconsPhone>
             <IconsPhone iconUrl="./src/assets/searchgrays.png"></IconsPhone>
             <IconsPhone iconUrl="./src/assets/download.png"></IconsPhone>
