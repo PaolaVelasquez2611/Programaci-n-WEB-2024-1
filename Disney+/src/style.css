@@ -606,32 +606,40 @@ footer {
 @media only screen and (max-width: 600px) {
 
 
+
   h3 {
     font-size: 0.8rem
   }
-  header {
 
+  header {
     z-index: 1;
   }
+
+  
+
   .nav-phone {
+    z-index: 2;
     display: flex;
     position: fixed;
     width: 100%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    padding-right: 30%;
     bottom: 0;
     left: 0;
-    justify-content: space-around;
+    justify-content:left;
+    padding-left: 12%;
     background-color: rgba(255, 255, 255, 0.14);
-    padding: 10px;
     backdrop-filter: blur(10px);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    z-index: 3;
+  
     
   }
 
   .nav-phone img {
-    width: 10%;
-    justify-content: space-around;
-    z-index: 3;
+    width: 30px;
+    margin-right: 15%;
+
 
 
   }
@@ -660,10 +668,18 @@ footer {
     /* Adjust font size for smaller screens */
   }
 
-  .profile-div {
-    display: none;
-
+  .profile-div button {
+    width: 20px;
+   position: fixed;
+   left: 77%;
+   bottom: 1%;
+  justify-content: space-around;
+  z-index: 10;
   }
+
+  .profile-div p {
+    display: none;
+  } 
 
   .nav-menu {
     display: flex;

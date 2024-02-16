@@ -1,5 +1,6 @@
 
 import { useState } from 'react'
+import { NavPhone } from './Nav/NavPhone'
 import { Category } from './Category/Category'
 import { Logo } from './Logo/Logo'
 import { Nav } from './Nav/Nav'
@@ -15,9 +16,8 @@ export function Header() {
 
     return (
         <header>
-        
+            <NavPhone> </NavPhone>
             <Logo></Logo>
-
             <div className='category-menu'>
             <Category id="homebutton" text= 'HOME' iconUrl='https://icon-library.com/images/white-home-icon-png/white-home-icon-png-21.jpg'></Category>
             <Category id="homebutton" text= "SEARCH" iconUrl="https://www.freeiconspng.com/uploads/search-icon-png-29.png"></Category>
