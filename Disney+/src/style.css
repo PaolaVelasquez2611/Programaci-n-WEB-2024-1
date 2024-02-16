@@ -615,8 +615,6 @@ footer {
     z-index: 1;
   }
 
-  
-
   .nav-phone {
     z-index: 2;
     display: flex;
@@ -801,9 +799,6 @@ footer {
   .terms-div{
     font-size: 0.2rem;
   }
-
-  
-
 
 }
 
