@@ -2,6 +2,6 @@
 
 export const Counter = ({countNumber}) => {
   return (
-    <h3>{countNumber} </h3>
+    <h3 className="counter">{countNumber} </h3>
   )
 }

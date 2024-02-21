@@ -5,7 +5,7 @@ export const Header = () => {
     return (
 
         <header>
-            <img className= 'cow-drawing' src='./src/assets/cow.png'></img>
+            <img className= 'logo' src='./src/assets/cow.png'></img>
             <Title>
             </Title>
 
