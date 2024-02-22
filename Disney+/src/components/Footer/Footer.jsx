@@ -6,7 +6,6 @@ import { Terms } from './Terms/terms'
 
 export function Footer() {
     return (
-
         <footer>
             <Logo2></Logo2>
             <About></About>

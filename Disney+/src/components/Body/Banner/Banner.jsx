@@ -1,15 +1,9 @@
-
-
-import React from 'react'
 import { featured } from '../../../data/featured';
 import { Featured } from "./Featured/Featured";
-
-
 
 export function Banner() {
     const featured_url = featured
     console.log (featured_url)
-   
     return (
 
         <div className="banner">
@@ -17,8 +11,7 @@ export function Banner() {
                 <ul>
                     {featured_url.map (({id,url})=>(
                         <Featured featuredurl={url} key={id}/>
-                    ))}
-                
+                    ))}   
                 </ul>
             </div>
         </div>
