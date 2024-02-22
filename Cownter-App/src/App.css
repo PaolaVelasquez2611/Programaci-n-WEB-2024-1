@@ -18,3 +18,7 @@
 .counter {
   font-size: 5em;
 }
+
+.cow-images img {
+  width: 80px;
+}
