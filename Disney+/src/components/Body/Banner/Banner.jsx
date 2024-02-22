@@ -1,36 +1,27 @@
 
 
 import React from 'react'
+import { featured } from '../../../Data/featured';
 import { Featured } from "./Featured/Featured";
 
+
+
 export function Banner() {
+    const featured_url = featured
+    console.log (featured_url)
+   
     return (
 
         <div className="banner">
-
             <div className="slider">
                 <ul>
-                    <Featured featuredurl='./src/assets/Featured/f1.png'></Featured>
-                    <Featured featuredurl='./src/assets/Featured/f2.png'></Featured>
-                    <Featured featuredurl='./src/assets/Featured/f3.png'></Featured>
-                    <Featured featuredurl='./src/assets/Featured/f4.png'></Featured>
-                    <Featured featuredurl='./src/assets/Featured/f5.png'></Featured>
-                    <Featured featuredurl='./src/assets/Featured/f6.png'></Featured>
-                    <Featured featuredurl='./src/assets/Featured/f7.png'></Featured>
-                    <Featured featuredurl='./src/assets/Featured/f8.png'></Featured>
-                    <Featured featuredurl='./src/assets/Featured/f9.png'></Featured>
-                    <Featured featuredurl='./src/assets/Featured/f10.png'></Featured>
-                    <Featured featuredurl='./src/assets/Featured/f11.png'></Featured>
-                    <Featured featuredurl='./src/assets/Featured/f12.png'></Featured>
-                    <Featured featuredurl='./src/assets/Featured/f13.png'></Featured>
-                    <Featured featuredurl='./src/assets/Featured/f14.png'></Featured>
-
+                    {featured_url.map (({id,url})=>(
+                        <Featured featuredurl={url} key={id}/>
+                    ))}
+                
                 </ul>
             </div>
-
-
         </div>
-
     )
 }
 
