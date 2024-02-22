@@ -1,4 +1,3 @@
-import React from 'react'
 import { movies } from '../../Data/movies'
 import { movies2 } from '../../Data/movies2'
 import { movies3 } from '../../Data/movies3'
@@ -6,11 +5,9 @@ import { Banner } from './Banner/Banner'
 import { MovieGroup } from './Movies/MovieGroup'
 import { Studios } from './Studios/Studios'
 
-
 const movieData = movies
 const movieData2 = movies2
 const movieData3 = movies3
-
 
 export function Body() {
     return (

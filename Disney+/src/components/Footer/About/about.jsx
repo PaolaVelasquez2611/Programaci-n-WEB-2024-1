@@ -1,18 +1,11 @@
-import React from 'react';
-
-export function About() {
-  
+export function About({ texts }) {
   return (
-   
-    <div className= "about-div" >
-
-    <p id="about">About Disney+</p> 
-    <p id="about">Disney+ Help</p> 
-    <p id="about">Careers</p> 
-    <p id="about">Contact Us</p> 
-    <p id="about">Advertise With Us</p> 
-    <p id="about">Disney Visa® Card</p> 
-
+    <div className="about-div" >
+      {
+        texts.map(({ id, text }) => (
+          <p className="about" key={id}>{text}</p>
+        ))
+      }
     </div>
 
   );

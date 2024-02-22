@@ -1,12 +1,9 @@
-import React from 'react'
+export function Movie({ url }) {
 
-export function Movie(props) {
-    const {url} = props
     return (
-
         <div className="movie-box">
-        <img src={url} />
+            <img src={url} />
         </div>
-            
+
     )
 }
