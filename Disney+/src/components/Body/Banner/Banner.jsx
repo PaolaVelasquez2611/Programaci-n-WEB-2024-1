@@ -1,7 +1,7 @@
 
 
 import React from 'react'
-import { featured } from '../../../Data/featured';
+import { featured } from '../../../data/featured';
 import { Featured } from "./Featured/Featured";
 
 
