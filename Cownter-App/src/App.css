@@ -12,7 +12,7 @@
   transition: filter 300ms;
 }
 .logo:hover {
-  filter: drop-shadow(0 0 2em #cb5886);
+  filter: drop-shadow(0 0 2em #b9dcee);
 }
 
 .counter {
@@ -22,3 +22,4 @@
 .cow-images img {
   width: 80px;
 }
+

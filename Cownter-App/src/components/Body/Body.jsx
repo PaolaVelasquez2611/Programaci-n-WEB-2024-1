@@ -1,6 +1,5 @@
 import { useState } from "react"
-import { Button } from "./Buttons/Button"
-import { Counter } from "./Counter/Counter"
+import {Button,Counter} from "./index"
 import addSound from '../../assets/cow-sound-add.mp3'
 import subtractSound from '../../assets/cow-sound-sub.mp3'
 import cowImage from '../../assets/poster.png';
@@ -39,13 +38,27 @@ export const Body = () => {
     };
     return (
         <>
-            <Counter countNumber={currentCounter}>  </Counter>
-            <div className="cow-images">{renderCowImages()}</div>
-            <div className="buttons-div">
-                <Button title="-" type="substract" onClick={changeCounter}></Button>
-                <Button title="+" type="add" onClick={changeCounter}></Button>
+            <Counter countNumber={currentCounter} />
+            <div className="cow-images">
+                {renderCowImages()}
             </div>
-            <Button title="Reset" type="reset" onClick={changeCounter}></Button>
+            <div className="buttons-div">
+                <Button title="-"
+                    type="substract"
+                    id="substract"
+                    onClick={changeCounter}>
+                </Button>
+                <Button title="+"
+                    type="add"
+                    id="add"
+                    onClick={changeCounter}>
+                </Button>
+            </div>
+            <Button title="Reset"
+                type="reset"
+                id="reset"
+                onClick={changeCounter}>
+            </Button>
         </>
 
     );
