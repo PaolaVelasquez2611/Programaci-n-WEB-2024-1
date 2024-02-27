@@ -26,7 +26,6 @@ export const Body = () => {
         } else if (type === "reset") {
             setCurrentCounter(0)
             setCowImages(0);
-
         }
     }
     const renderCowImages = () => {

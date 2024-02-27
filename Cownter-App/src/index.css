@@ -147,3 +147,12 @@ button {
   width: 100%;
   left: 0;
 }
+
+@media (max-width: 400px) {
+  :root {
+    color: #a6a6a6;
+    background-color: #ffffff;
+  }
+
+}
+
