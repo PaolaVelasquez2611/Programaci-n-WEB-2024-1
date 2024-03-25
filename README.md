@@ -1,16 +1,8 @@
-# Programacion-WEB-2024-1
-Curso de Programación WEB 2024-1 
-Paola Velasquez
+# React + Vite
 
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-**Contenido**
+Currently, two official plugins are available:
 
-Clases:
-- C1 Intro React --> Introducción a React e Instalación de VITE
-- C2 Componentes --> Creación de componentes sin funcionalidad usando react
-
-
-
-Labs:
-
-- L1 Landing Page --> Creación de Disney + usando componentes en react
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
