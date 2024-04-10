@@ -10,6 +10,6 @@ export const CatSentence = ({text}) => {
     )
 }
 
-TodoItem.propTypes = {
+CatSentence.propTypes = {
     text:PropTypes.string.isRequired,
   };

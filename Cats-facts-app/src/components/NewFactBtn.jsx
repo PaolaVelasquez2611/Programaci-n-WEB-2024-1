@@ -9,6 +9,7 @@ export const NewFactBtn = ({onclick}) => {
 
     )
 }
-TodoItem.propTypes = {
+/* 
+NewFactBtn.propTypes = {
     onclick:PropTypes.func.isRequired,
-  };
+  }; */
