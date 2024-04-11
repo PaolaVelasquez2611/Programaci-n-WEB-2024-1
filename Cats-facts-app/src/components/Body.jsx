@@ -1,26 +1,49 @@
 import { useEffect, useState } from 'react'
 import { getFact } from '../services/fetch-sentence'
 import './Body.css'
-import { CatSentence, CatImg, NewFactBtn } from './index'
+import { CatSentence, CatImg, NewFactBtn, Loader } from './index'
 
 export const Body = () => {
 
     const [fact, setFact] = useState(null)
+    const [isLoading, setIsLoading] = useState(null)
+    const [error, setError] = useState(null)
 
     const getFactResponse = async() => {
-        const factResponse = await getFact()
-        setFact(factResponse)
+        setIsLoading(true)
+        try {
+            const factResponse = await getFact()
+            setFact(factResponse)
+        } catch (error) {
+            setError(error)
+        } finally{
+            setIsLoading(false)
+        }
     }
 
     useEffect(()=>{
         getFactResponse()
     }, [])
 
+
     return (
         <main>
             <h1> Cat Facts !</h1>
-            <CatImg></CatImg>
-            <CatSentence text={fact}></CatSentence>
+           {
+            (isLoading === true)
+            ? (<>
+                <Loader/>
+               </>
+               )
+            : (
+                <>
+                <CatImg></CatImg>
+                <CatSentence text={fact}></CatSentence>  
+                </>
+            ) 
+}
+{/*             <CatImg></CatImg>
+            <CatSentence text={fact}></CatSentence>   */}     
             <NewFactBtn onClick={getFactResponse}></NewFactBtn>
         </main>
 
