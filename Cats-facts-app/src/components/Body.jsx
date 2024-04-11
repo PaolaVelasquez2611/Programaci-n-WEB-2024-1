@@ -19,6 +19,7 @@ export const Body = () => {
         <main>
             <h1> Cat Facts !</h1>
             <CatImg></CatImg>
+            <CatSentence text={fact}></CatSentence>
         </main>
 
     )
