@@ -1,12 +1,25 @@
+import { useEffect, useState } from 'react'
+import { getFact } from '../services/fetch-sentence'
 import './Body.css'
-import { CatImg } from './CatImg'
+import { CatSentence, CatImg, NewFactBtn } from './index'
 
 export const Body = () => {
+
+    const [fact, setFact] = useState(null)
+
+    const getFactResponse = async() => {
+        const factResponse = await getFact()
+        setFact(factResponse)
+    }
+
+    useEffect(()=>{
+        getFactResponse()
+    }, [])
     return (
-        <body>
+        <main>
             <h1> Cat Facts !</h1>
             <CatImg></CatImg>
-        </body>
+        </main>
 
     )
 }
