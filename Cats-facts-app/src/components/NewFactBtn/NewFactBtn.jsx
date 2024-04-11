@@ -1,15 +1,21 @@
 import './NewFactBtn.css'
 import PropTypes from 'prop-types'
 
-export const NewFactBtn = ({onclick}) => {
+export const NewFactBtn = ({onClick}) => {
+    
+    const handleOnClick = () => {
+        onClick();
+        console.log('clicked looking for a new fact!')
+    }
+
     return (
-        <button>
+        <button onClick={handleOnClick}>
             <label>New Fact</label>
         </button>
 
     )
 }
-/* 
+
 NewFactBtn.propTypes = {
-    onclick:PropTypes.func.isRequired,
-  }; */
+    onClick:PropTypes.func.isRequired,
+  };

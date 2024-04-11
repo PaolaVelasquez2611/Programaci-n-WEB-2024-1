@@ -15,11 +15,13 @@ export const Body = () => {
     useEffect(()=>{
         getFactResponse()
     }, [])
+
     return (
         <main>
             <h1> Cat Facts !</h1>
             <CatImg></CatImg>
             <CatSentence text={fact}></CatSentence>
+            <NewFactBtn onClick={getFactResponse}></NewFactBtn>
         </main>
 
     )
