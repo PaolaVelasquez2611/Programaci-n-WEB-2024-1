@@ -1,0 +1,29 @@
+body {
+    background: #000405;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 900;
+  }
+  
+  p {
+    font-size: 8vw;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+  }
+  
+  .fancy {
+    @supports (background-clip: text) or (-webkit-background-clip: text) {
+      background-image: 
+        url("https://www.shutterstock.com/shutterstock/photos/2096809699/display_1500/stock-vector-colorful-line-doodle-seamless-pattern-creative-minimalist-style-art-background-trendy-design-with-2096809699.jpg");
+      background-size: 110% auto;
+      background-position: center;
+      color: transparent;
+      -webkit-background-clip: text;
+      background-clip: text;
+    }
+  }

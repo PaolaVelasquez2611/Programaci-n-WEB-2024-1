@@ -4,7 +4,7 @@ import { CatImg } from './CatImg'
 export const Body = () => {
     return (
         <body>
-            <h1> Cat Facts !</h1>
+            <p>Learn Random Cat <span class="fancy">Facts</span></p>
             <CatImg></CatImg>
         </body>
 
