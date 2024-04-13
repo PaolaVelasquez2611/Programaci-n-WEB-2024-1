@@ -1,7 +1,7 @@
 import './NewFactBtn.css'
 import PropTypes from 'prop-types'
 
-export const NewFactBtn = ({onClick}) => {
+export const NewFactBtn = ({onClick, text}) => {
     
     const handleOnClick = () => {
         onClick();
@@ -13,7 +13,7 @@ export const NewFactBtn = ({onClick}) => {
         className='button-fact' 
         role="button" 
         onClick={handleOnClick}>
-            <label>New Fact</label>
+            <label>{text}</label>
         </button>
 
     )
@@ -21,4 +21,5 @@ export const NewFactBtn = ({onClick}) => {
 
 NewFactBtn.propTypes = {
     onClick:PropTypes.func.isRequired,
+    text:PropTypes.string.isRequired
   };
