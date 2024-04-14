@@ -40,8 +40,8 @@ export const Body = () => {
 
     return (
         <main>
-            <h1>Learn Random Cat
-                <span 
+            <h1>Learn Random Cat  
+                 <span 
                     className="fancy">
                         Facts
                 </span>
