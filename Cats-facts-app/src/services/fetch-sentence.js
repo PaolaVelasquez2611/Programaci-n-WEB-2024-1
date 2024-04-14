@@ -6,6 +6,6 @@ export const getFact = async() =>{
             return data.fact
         } catch (error) {
             console.error('There was an error getting the fact', error)
-            return 'unknown'
+            return "Sorry, we're looking what happened"
         }
 }

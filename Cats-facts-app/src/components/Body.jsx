@@ -26,6 +26,7 @@ export const Body = () => {
             }, 2000)
         } catch (error) {
             setError(error)
+            setIsLoading(false)
         }
     }
 
