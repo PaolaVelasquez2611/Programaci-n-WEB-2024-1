@@ -6,6 +6,6 @@ export const getImg = async(text) =>{
         return img
     } catch (error) {
         console.error('There was an error getting the image', error)
-        return 'unknown'
+        return 'https://i.imgflip.com/1n186m.jpg'
     }
 }
