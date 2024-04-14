@@ -48,15 +48,16 @@ export const Body = () => {
 
     return (
         <main>
-            <h1>Learn Random Cat
-                <span
-                    className="fancy">
-                    Facts
-                </span>
+            <h1>
+                Learn more about<br></br>Cat&nbsp;
+                    <span className="fancy">
+                        Facts
+                    </span>
             </h1>
-            <CatImg 
+
+            <CatImg
                 src={image}
-                />
+            />
             <CatSentence
                 text={fact} />
             <NewFactBtn
