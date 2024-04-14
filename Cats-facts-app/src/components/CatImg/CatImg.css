@@ -1,0 +1,11 @@
+img {
+    width: 80%;
+   
+  }
+
+
+  @media screen and (min-width: 700px) {
+    img {
+        width: 40%;
+    }
+  }

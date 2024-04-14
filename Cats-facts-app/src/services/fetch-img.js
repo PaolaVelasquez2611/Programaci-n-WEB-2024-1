@@ -6,6 +6,6 @@ export const getImg = async(text) =>{
         return img
     } catch (error) {
         console.error('There was an error getting the image', error)
-        return 'https://i.imgflip.com/1n186m.jpg'
+        return 'https://i0.wp.com/katzenworld.co.uk/wp-content/uploads/2019/06/funny-cat.jpeg?fit=1020%2C1020&ssl=1'
     }
 }

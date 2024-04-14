@@ -4,12 +4,13 @@ p {
     line-height: 1;
     font-size: 14px;
     font-weight: 220;
+    padding: 1% 20% 1% 20%;
   }
   
  
   @media screen and (min-width: 700px) {
     p {
-      font-size: 1.8vw; 
+      font-size: 1.4vw; 
     }
   }
 

@@ -48,8 +48,9 @@ export const Body = () => {
 
     return (
         <main>
+            <h2>Learn more about</h2>
             <h1>
-                Learn more about<br></br>Cat&nbsp;
+                Cat&nbsp;
                     <span className="fancy">
                         Facts
                     </span>
