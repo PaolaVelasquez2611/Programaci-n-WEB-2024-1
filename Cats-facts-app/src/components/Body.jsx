@@ -1,6 +1,5 @@
 import { useEffect, useState } from 'react'
-import { getImg } from '../services/fetch-img'
-import { getFact } from '../services/fetch-sentence'
+import { getFact, getImg } from '../services'
 import './Body.css'
 import { CatSentence, CatImg, NewFactBtn, Loader, ErrorAlert } from './index'
 
