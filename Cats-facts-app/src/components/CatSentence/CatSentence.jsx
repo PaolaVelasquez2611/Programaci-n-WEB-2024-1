@@ -7,6 +7,6 @@ export const CatSentence = ({text}) => {
     )
 }
 
-/* CatSentence.propTypes = {
-    text:PropTypes.string.isRequired,
-  }; */
+CatSentence.propTypes = {
+    text:PropTypes.string,
+  };

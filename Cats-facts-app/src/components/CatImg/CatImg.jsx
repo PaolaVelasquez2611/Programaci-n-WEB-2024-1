@@ -11,5 +11,5 @@ export const CatImg = ({ src }) => {
 }
 
 CatImg.propTypes = {
-    src:PropTypes.string.isRequired,
+    src:PropTypes.string,
   }; 
