@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 export const CatSentence = ({text}) => {
     return (
-            <p>{text}</p>
+        <p>{text}</p>
     )
 }
 

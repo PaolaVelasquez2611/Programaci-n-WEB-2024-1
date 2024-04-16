@@ -6,7 +6,6 @@ export const CatImg = ({ src }) => {
         <div className='image-container'>
             <img src={src} alt='Image not found'></img>
         </div>
-
     )
 }
 
