@@ -14,7 +14,7 @@ export const Body = () => {
 
     if (isLoading) {
         return (
-            <Loader />
+        <Loader />
         )
     }
     if (error) {
