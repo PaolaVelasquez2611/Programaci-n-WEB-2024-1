@@ -1,5 +1,5 @@
 export const AdminLogin = () => {
   return (
-    <div>AdminLogin</div>
+    <p>Hello! i'm AdminLogin screen</p>
   )
 }
