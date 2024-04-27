@@ -6,10 +6,10 @@ export const Landing = () => {
   return (
     <>
     <div>
-      <MemberCard
-      img="https://www.pngall.com/wp-content/uploads/2016/04/Happy-Person-Free-Download-PNG.png"
-      name="Juan Esteban Ramirez" 
-      role="CEO - Developer"/>
+      <BrandCard
+      icon="https://cdn-icons-png.flaticon.com/512/18/18560.png"
+      title="UI/UX Design"
+      description="To achieve a better look and unforgettable experiences to the users"/>
     </div>
     </>
   )
