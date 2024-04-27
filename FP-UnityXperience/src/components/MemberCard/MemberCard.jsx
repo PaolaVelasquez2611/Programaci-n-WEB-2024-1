@@ -4,23 +4,23 @@ export const MemberCard = (props) => {
     const {img, name, role, social} = props
 
   return (
-    <article>
-        <div>
+    <article className="member-card">
+        <div className="member-img">
             <img src={img}/>
         </div>
-        <p>{name}</p>
-        <p>{role}</p>
-        <div>
-            <button>
+        <p className="member-name">{name}</p>
+        <p className="member-role">{role}</p>
+        <div className="member-social">
+            <button className="social-logo">
                 <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png"/>
             </button>
-            <button>
+            <button className="social-logo">
                 <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/>
             </button>
-            <button>
+            <button className="social-logo">
                 <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png"/>
             </button>
-            <button>
+            <button className="social-logo">
                 <img src="https://cdn-icons-png.flaticon.com/512/152/152816.png"/>
             </button>
         </div>

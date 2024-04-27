@@ -1,0 +1,70 @@
+.member-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.50);;
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px);
+    width: 68vw;
+    height: 338px;
+    border-radius: 10px;
+}
+
+.member-img{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-radius: 10px;
+    height: 120px;
+    width: 82%;
+    margin-top: 42px;
+    background-color: rgba(6, 22, 58, 1);
+}
+
+.member-img img{
+    height: 152px;
+    width: 92%;
+}
+
+.member-name{
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    margin-bottom: 0;
+}
+
+.member-role{
+    font-size: 20px;
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.member-social{
+    display: flex;
+    flex-direction: row;
+    margin-top: 30px;
+    gap: 15px;
+}
+
+.social-logo{
+    min-width: 25px;
+    max-width: 25px;
+    height: 25px;
+    border-radius: 8px;
+    border: transparent;
+    padding: 0;
+    background-color: transparent;
+}
+
+.social-logo:hover {
+    background: transparent;
+}
+.social-logo:focus,
+.social-logo:focus-visible {
+    outline: transparent;
+}
+
+.member-social img{
+    width: 25px;
+    height: 25px;
+}
