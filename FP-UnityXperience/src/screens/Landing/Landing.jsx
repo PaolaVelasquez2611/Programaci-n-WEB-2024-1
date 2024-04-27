@@ -1,12 +1,14 @@
 import { ProjectCard } from "../../components/ProjectCard/ProjectCard"
 import { MemberCard } from "../../components/MemberCard/MemberCard"
+import { BrandCard } from "../../components/BrandCard/BrandCard"
 
 export const Landing = () => {
   return (
     <>
     <div>
-      <MemberCard/>
+      <BrandCard/>
       <ProjectCard/>
+      <MemberCard/>
     </div>
     </>
   )
