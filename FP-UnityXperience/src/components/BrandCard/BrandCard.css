@@ -1,0 +1,42 @@
+.brand-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.25);;
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); 
+    width: 248px;
+    height: 350px;
+    border-radius: 12px;
+}
+
+.brand-card img{
+    width: 37px;
+    height: 37px;
+    margin-top: 40px;
+}
+
+.brand-title{
+    font-size: 20px;
+    color: var(--blue-cian);
+    font-weight: bold;
+    margin-top: 35px;
+    margin-bottom: 0;
+}
+
+.brand-description{
+    text-align: center;
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 0;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+.more-info-brand{
+    margin-top: 25px;
+    width: 116px;
+    height: 44px;
+    font-size: 18px;
+    padding: 0;
+}

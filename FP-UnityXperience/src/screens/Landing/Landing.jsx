@@ -1,7 +1,12 @@
+import { Footer, Header, Skills } from "../../components"
+
 export const Landing = () => {
   return (
     <>
-    <div>Landing</div>
+    <p>Hello! i'm Landing screen</p>
+    <Header />
+    <Skills />
+    <Footer />
     </>
   )
 }

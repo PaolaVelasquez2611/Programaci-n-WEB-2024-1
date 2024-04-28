@@ -1,18 +1,12 @@
 // import { useState } from 'react'
 import './App.css'
-import { Footer } from './components/Footer/Footer'
-// import { Button } from './components/Button/Button'
-import { Header } from './components/Header/Header'
-// import { Input } from './components/Input/Input'
+import { AppRouter } from './router/AppRouter'
 
 function App() {
-  // const [count, setCount] = useState(0)
 
   return (
     <>
-      <Header/>
-      <Footer/>
-      
+      <AppRouter />
     </>
   )
 }

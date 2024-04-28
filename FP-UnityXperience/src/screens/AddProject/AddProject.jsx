@@ -1,5 +1,5 @@
 export const AddProject = () => {
   return (
-    <div>AddProject</div>
+    <p>Hello! i'm AddProject screen</p>
   )
 }

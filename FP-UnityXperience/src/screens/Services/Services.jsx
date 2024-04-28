@@ -1,5 +1,5 @@
 export const Services = () => {
   return (
-    <div>Services</div>
+    <p>Hello! i'm Services screen</p>
   )
 }

@@ -1,12 +1,14 @@
 import { Nav } from "./Nav/Nav";
 import './Header.css'
 
-
 export function Header (){
     return(
         
         <div className="Container">
-        <img className="logo" src="../../src/assets/Logo.png" alt="Logo UnityXperience" />
+        <img 
+            className="logo" 
+            src="../../src/assets/Logo.png" 
+            alt="Logo UnityXperience" />
         <Nav text="Projects"/>
         <Nav text="Services"/>
         <Nav text="About Us"/>
