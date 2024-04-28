@@ -1,4 +1,30 @@
-
 .input{
-    width: 290px;
+    width: 100%;
+    min-width: 290px;
+    background: rgba(255, 255, 255, 0.2); 
+    border: 1px solid rgba(255, 255, 255, 0.20);
+    border-radius: 8px;
+    color: white;
+    min-height: 30px;
+    margin-top: 0px;
+    font-size: 12px;
+    backdrop-filter: blur(10px); 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input::placeholder {
+    padding-left: 3%;
+    color: rgba(255, 250, 250, 0.4); /* #FFFAFA at 40% opacity */
+}
+
+.input-div{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 0 auto;
+}
+
+p{
+    margin-bottom: 2px;
+    font-size: 14px;
 }

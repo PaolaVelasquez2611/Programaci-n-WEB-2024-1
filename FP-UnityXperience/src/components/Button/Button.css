@@ -10,6 +10,7 @@ button {
     cursor: pointer;
     transition: border-color 0.25s;
     border-color: var(--blue-cian);
+    margin: 6%;
   }
   button:hover {
     background: linear-gradient(135deg, var(--blue-cian), var(--blue-purple));

@@ -1,5 +1,5 @@
 export const Aboutus = () => {
   return (
-    <div>Aboutus</div>
+    <p>Hello! i'm Aboutus screen</p>
   )
 }

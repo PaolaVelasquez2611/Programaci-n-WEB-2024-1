@@ -1,16 +1,11 @@
-import { useState } from 'react'
 import './App.css'
-import { Button } from './components/Button/Button'
-import { Input } from './components/Input/Input'
-import { Landing } from './screens/Landing/Landing'
+import { AppRouter } from './router/AppRouter'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-     <Landing/>
-      
+      <AppRouter />
     </>
   )
 }
