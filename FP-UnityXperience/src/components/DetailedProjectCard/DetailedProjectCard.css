@@ -43,18 +43,21 @@
 
 .images-left img{
     width: 10vw;
+    max-width: 144px;
     height: 125px;
     border-radius: 6px;
 }
 
 .images-center img{
     width: 36vw;
+    max-width: 520px;
     height: 275px;
     border-radius: 6px;
 }
 
 .images-right img{
     width: 10vw;
+    max-width: 144px;
     height: 275px;
     border-radius: 6px;
 }
