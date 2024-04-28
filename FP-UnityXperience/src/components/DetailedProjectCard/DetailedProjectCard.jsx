@@ -4,33 +4,40 @@ export const DetailedProjectCard = (props) => {
     const {img, title, tags, description, owner} = props
 
   return (
-    <article>
-        <section>
-            <div>
-                <img src={img}/>
-                <img src={img}/>
+    <article className="project-information">
+        <div className="blur-background"></div>
+        <div className="project-content">
+            <section className="project-images">
+                <div className="images-left">
+                    <img src={img}/>
+                    <img src={img}/>
+                </div>
+                <div className="images-center">
+                    <img src={img}/>
+                </div>
+                <div className="images-right">
+                    <img src={img}/>
+                </div>
+            </section>
+            <p className="project-info-title">{title}</p>
+            <div className="project-tags">
+                <p>{tags}</p>
+                <p>{tags}</p>
+                <p>{tags}</p>
             </div>
-            <div>
-                <img src={img}/>
-            </div>
-            <div>
-                <img src={img}/>
-            </div>
-        </section>
-        <p>{title}</p>
-        <div>
-            <p>{tags}</p>
-            <p>{tags}</p>
-            <p>{tags}</p>
+            <p className="project-info">{description}</p>
+            <section className="owners-info">
+                <p>{owner}</p>
+                <div>
+                    <button className="view-project">
+                        <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png"/>
+                    </button>
+                    <button className="view-project">
+                        <img src="https://cdn-icons-png.flaticon.com/512/152/152816.png"/>
+                    </button>
+                </div>
+            </section>
         </div>
-        <p>{description}</p>
-        <section>
-            <p>{owner}</p>
-            <div>
-                <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png"/>
-                <img src="https://cdn-icons-png.flaticon.com/512/152/152816.png"/>
-            </div>
-        </section>
     </article>
   )
 }
