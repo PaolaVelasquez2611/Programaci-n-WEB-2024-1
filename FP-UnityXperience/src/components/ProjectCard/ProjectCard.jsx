@@ -1,5 +1,6 @@
 import './ProjectCard.css'
 import { Button } from '../Button/Button'
+import { projects } from '../../data/projects'
 
 export const ProjectCard = (props) => {
     const {img, title, description, tags} = props
@@ -10,9 +11,9 @@ export const ProjectCard = (props) => {
         <p className='project-title'>{title}</p>
         <p className='project-description'>{description}</p>
         <div className='tags'>
-            <p>{tags}</p>
-            <p>{tags}</p>
-            <p>{tags}</p>
+          {tags.map((tag) => (
+              <p key={crypto.randomUUID()}>{tag}</p>
+            ))}
         </div>
         <Button className="more-information" text="See more"/>
     </article>

@@ -1,3 +1,5 @@
 export * from './Skills/Skills'
 export * from './Footer/Footer'
 export * from './Header/Header'
+export * from './/ProjectCard/ProjectCard'
+export * from './DetailedProjectCard/DetailedProjectCard'

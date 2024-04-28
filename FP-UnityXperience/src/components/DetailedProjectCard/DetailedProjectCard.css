@@ -1,6 +1,7 @@
 .project-information {
     position: relative; 
     display: flex;
+    display: none;
     flex-direction: column;
     height: 560px;
     width: 63vw;
