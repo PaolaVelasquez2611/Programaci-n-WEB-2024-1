@@ -1,0 +1,55 @@
+.Container {
+    display: flex; 
+    align-items: center; 
+    background: rgba(255, 255, 255, 0.50);;
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    border-radius:8px;
+    padding-right: 50px;
+    padding-left: 30px;
+
+  }
+  
+  #logo {
+    margin-right: 5px;
+    margin-left: 10px; 
+  }
+  
+
+  .Nav a {
+    color: white;
+  text-decoration: none;
+  }
+  
+  .Nav ul li  {
+    margin-right: 10px;
+        list-style: none;
+    color: white;
+  }
+  .hamClick{
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .Container {
+      padding: 20px;
+    }
+  
+    #logo {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  
+    .Nav {
+      display: none;
+    }
+    .hamburguer-menu{
+        width: 50px;
+    }
+    .hamClick{
+      display: block;
+       background-color: transparent;
+        border-color: transparent;
+    }
+
+  }
+  
