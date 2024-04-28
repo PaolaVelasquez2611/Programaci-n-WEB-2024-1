@@ -1,6 +1,5 @@
 import './ProjectCard.css'
 import { Button } from '../Button/Button'
-import { projects } from '../../data/projects'
 
 export const ProjectCard = (props) => {
     const {img, title, description, tags} = props
