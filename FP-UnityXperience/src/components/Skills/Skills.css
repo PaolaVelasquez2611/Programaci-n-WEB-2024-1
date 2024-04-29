@@ -1,11 +1,12 @@
-li:hover span {
+.skill-item:hover span {
     opacity: 1;
     border-radius: .75rem;
     border-width: 1.5px
 }
 
 .skill-span{
-   @apply inset-0 flex items-center justify-center text-xs absolute top-0 left-0 right-0 bottom-0 bg-opacity-80 bg-[#18161B]/70 font-bold text-white text-center opacity-0 transition-opacity duration-300 pointer-events-none rounded-lg
+    @apply inset-0 flex items-center justify-center text-xs absolute top-0 left-0 right-0 bottom-0 bg-opacity-80 bg-[#18161B]/70 font-bold -text--white40 text-center 
+   opacity-0 transition-opacity duration-300 pointer-events-none rounded-lg
 }
 
 

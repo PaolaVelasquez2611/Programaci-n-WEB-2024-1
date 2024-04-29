@@ -1,0 +1,25 @@
+.container{
+    width: 100%;
+}
+
+.span-calendar-icon{
+    @apply absolute flex items-center justify-center w-6 h-6 rounded-full -left-3 ring-8 -ring--blue-cian/40
+}
+
+.job-charge{
+    color: var(--blue-cian);
+}
+
+.company-text{
+    color: var(--orange);
+}
+
+.time-text{
+    color: #a8f1fc;
+    @apply font-extralight
+}
+
+.dash{
+    color: white;
+    @apply font-normal mx-3
+}
