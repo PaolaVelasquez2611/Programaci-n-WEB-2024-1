@@ -1,4 +1,5 @@
 import { Footer, Header, Skills } from "../../components"
+import { Scroller } from "../../components/Scroller/Scroller"
 
 export const Landing = () => {
   return (
@@ -6,6 +7,7 @@ export const Landing = () => {
     <p>Hello! i'm Landing screen</p>
 {/*     <Header /> */}
     <Skills />
+    <Scroller />
   {/*   <Footer /> */}
     </>
   )
