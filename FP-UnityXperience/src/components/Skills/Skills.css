@@ -1,4 +1,8 @@
+
 .skill-item:hover span {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 300ms;
     opacity: 1;
     border-radius: .75rem;
     border-width: 1.5px
