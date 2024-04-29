@@ -1,10 +1,22 @@
+import './Projects.css'
 import { Footer, Header, ProjectCard, DetailedProjectCard } from "../../components"
 import { projects } from "../../data/projects"
+
 
 export const Projects = () => {
   return (
     <>
       <Header/>
+
+      <section className="filter-projects">
+        <input type="text" placeholder="Search a project" />
+        <button>
+          <img src="../src/assets/filter.png"/>
+        </button>
+      </section>
+
+      <h1 className="title-screen">UnityXperience Projects </h1>
+
       <section className="projects-container">
         {projects.map((project) => (
               <ProjectCard
@@ -22,7 +34,9 @@ export const Projects = () => {
         tags="ProCreate"
         description="This is a marketing project for the guacamole brand Bego, this was an academic exercise"
         owner="Juan Esteban Ramirez Perdomo & Ana Sofia Henao"/>
+
       </section>
+
       <Footer/>
     </>
   )

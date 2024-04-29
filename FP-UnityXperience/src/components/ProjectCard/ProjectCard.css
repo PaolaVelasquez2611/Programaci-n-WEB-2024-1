@@ -1,11 +1,12 @@
 .project-card{
     display: flex;
     flex-direction: column;
-    background-color: 363539;
+    position: relative;
+    background: rgba(255, 255, 255, 0.10);;
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
     width: 55vw;
     height: 294px;
     border-radius: 10px;
-    margin-left: 40px;
 }
 
 .project-thumbnail{
@@ -32,7 +33,7 @@
 .tags{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    gap: 20px;
     margin-top: 12px;
     margin-left: 8px;
     margin-right: 8px;
@@ -48,6 +49,7 @@
 .more-information{
     display: flex;
     align-items: center;
+    justify-content: center;
     margin-top: 18px;
     margin-bottom: 10px;
     margin-left: 8px;
