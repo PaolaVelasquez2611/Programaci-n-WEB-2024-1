@@ -1,4 +1,4 @@
-import { ExperienceLine } from "../../components/ExperienceLine/ExperienceLine"
+import { ExperienceLine } from "../../components"
 
 export const Profile = () => {
   return (
