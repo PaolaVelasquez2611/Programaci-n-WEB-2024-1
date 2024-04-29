@@ -10,9 +10,10 @@
 
   }
   
-  #logo {
-    margin-right: 5px;
-    margin-left: 10px; 
+  .logo {
+    margin-right: 60px; 
+    width: 300px;
+    padding: 15px;
   }
   
 
@@ -31,24 +32,24 @@
   }
   @media (max-width: 768px) {
     .Container {
-      padding: 20px;
-    }
-  
-    #logo {
-      margin-right: 0;
-      margin-bottom: 10px;
+      padding: 10px;
     }
   
     .Nav {
       display: none;
     }
     .hamburguer-menu{
-        width: 50px;
+        width: 30px;
+        height: auto;
     }
-    .hamClick{
+    .hamClick {
       display: block;
-       background-color: transparent;
-        border-color: transparent;
+      background-color: transparent;
+      border-color: transparent;
+      margin-right: 25px;
+      width: 30px;
+        height: auto;
+      
     }
 
   }

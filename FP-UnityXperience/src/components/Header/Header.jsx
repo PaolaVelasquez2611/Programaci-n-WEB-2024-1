@@ -14,7 +14,7 @@ export function Header (){
         <Nav text="About Us"/>
         <Nav text="Contact"/>
         <button className="hamClick">
-        <img className="hamburguer-menu" src="../../src/assets/hamburguer-menu.png" alt=""/>
+        <img className="hamburguer-menu" src="../../src/assets/SVG/hamburguer-menu.svg" alt=""/>
         </button>
        
 
