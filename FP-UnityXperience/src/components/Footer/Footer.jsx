@@ -1,4 +1,5 @@
 import { NavFooter } from './NavFooter/NavFooter'
+import { footerData, footerData2} from '../../data/footerData'
 import './Footer.css'
 
 export function Footer (){
@@ -7,18 +8,25 @@ export function Footer (){
         <div className="Container-footer">
             <img className="logo-footer" src="../../src/assets/Logo-footer.png" alt="Logo UnityXperience" />
         <section>
-            <NavFooter title="Navigation"/>
-            <NavFooter text="Home"/>
-            <NavFooter text="Projects"/>
-            <NavFooter text="Services"/>
-            <NavFooter text="About Us"/>
-            <NavFooter text="Contact"/>
+            {footerData.map(({id,title,text})=>{
+                return(
+                    <>
+                    <NavFooter key={id} title={title}/>
+                    <NavFooter key={id} text={text}/>
+                    </>
+                )
+            })}
         </section>
         <section>
-            <NavFooter title="Contact Us"/>
-            <NavFooter description="318-496-4527"/>
-            <NavFooter description="@UnityXperience "/>
-            <NavFooter description="UnityXperience@gmail.com"/>
+        {footerData2.map(({id,title,text})=>{
+                return(
+                    <>
+                    <NavFooter key={id} title={title}/>
+                    <NavFooter key={id} text={text}/>
+                    </>
+                )
+            })}
+            
         <section className='buttons-social'>
             <button className='social-btn'>
                 <img src="../../src/assets/github.png" 
