@@ -19,7 +19,7 @@ export function Footer (){
             <NavFooter description="318-496-4527"/>
             <NavFooter description="@UnityXperience "/>
             <NavFooter description="UnityXperience@gmail.com"/>
-        <section>
+        <section className='buttons-social'>
             <button className='social-btn'>
                 <img src="../../src/assets/github.png" 
                      alt="" />
