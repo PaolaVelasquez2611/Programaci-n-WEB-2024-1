@@ -87,6 +87,13 @@ padding-left: 50px;
   .logo-footer {
     display: none;
   }
+
+
+.Nav-Footer ul li{
+  padding-top: 5px;
+    list-style: none;
+    color: white;
+}
 }
 
 
