@@ -1,7 +1,7 @@
 import './ServicesCard.css'
 
 export const ServicesCard = (props) => {
-    const {img, title, description} = props
+    const {img, title, description, services} = props
 
   return (
     <article className="service-card">
@@ -10,12 +10,9 @@ export const ServicesCard = (props) => {
         <p className="service-description">{description}</p>
         <div className="services">
           <ul>
-            <li>Design Audit</li>
-            <li>Interactive Design Prototyping</li>
-            <li>UI / UX Design</li>
-            <li>Graphic Design</li>
-            <li>Product Design</li>
-            <li>Brand Style Guide</li>
+          {services.map((service) => {
+              return <li key={crypto.randomUUID()}>{service}</li>
+            })}
           </ul>
         </div>
     </article>
