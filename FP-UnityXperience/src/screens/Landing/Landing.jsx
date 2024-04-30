@@ -5,10 +5,10 @@ export const Landing = () => {
   return (
     <>
     <p>Hello! i'm Landing screen</p>
-{/*     <Header /> */}
+{/*     <Header /> */} {/* Improve the responsive */}
     <Skills />
     <Scroller />
-  {/*   <Footer /> */}
+  {/*   <Footer /> */} {/* Improve the responsive */}
     </>
   )
 }
