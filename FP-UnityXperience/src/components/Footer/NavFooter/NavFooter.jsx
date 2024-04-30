@@ -1,15 +1,14 @@
 export function NavFooter (props){
 
-    const {text, title, description, title2} = props
+    const {text, title, title2} = props
     return(
         <nav>
-            <div className="Nav-Footer">
+            <div className="Nav-Footer flex items-center justify-center">
                 <ul>
                     <li>
-                        <h2>{title}</h2>
+                        <h2 className="title" ><a href="#"> {title}</a></h2>
                         <a href="#">{text}</a>
-                        <p>{description}</p>
-                        <h2><a href="#">{title2}</a></h2>
+                        <h2 className="title" ><a href="#">{title2}</a></h2>
                     </li>
                 </ul>
             </div>

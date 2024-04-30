@@ -1,0 +1,90 @@
+.card-profile {
+    margin-top: 80px;
+    width: 800px;
+    height: 200px;
+    display: grid; 
+    grid-template-columns: auto 1fr;
+    background: rgba(255, 255, 255, 0.50);
+    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px);
+    border-radius: 5px;
+}
+.profile-card {
+    display: flex;
+    align-items: flex-start; 
+}
+
+.img-profile {
+    width: 200px;
+    margin-top: -100px;
+    
+}
+
+.card-info {
+    width: 400px;
+    height: 163px;
+    margin-left: 90px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.buttons-social-card{
+    margin-left: 250px;
+}
+.social-btn-card{
+    margin-top: 5px;
+    margin-right: 5px;
+    border-color: transparent;
+}
+
+@media (max-width: 768px) {
+
+    .card-profile {
+        
+        margin-top: 80px;
+        width: 300px;
+        display: flex; /* Usa flexbox para organizar verticalmente */
+        flex-direction: column; /* Apila los elementos verticalmente */
+        align-items: center; /* Centra los elementos horizontalmente */
+        background: rgba(255, 255, 255, 0.50);
+        box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+        backdrop-filter: blur(6px);
+        border-radius: 5px;
+        margin-bottom: 300px;
+    }
+    .profile-card {
+        margin-bottom: 20px; /* Ajusta el espacio entre la imagen y la info */
+    }
+    
+    .img-profile {
+        width: 200px;
+        margin-top: -100px; /* Ajusta el posicionamiento vertical */
+    }
+    
+    .card-info {
+        width: 100%;
+        max-width: 400px; 
+        margin-top: 20px; 
+        margin-left: 0px;
+    }
+    
+    .buttons-social-card {
+       margin-left: 50px;
+        max-width: 400px; 
+        display: flex;
+        justify-content: center; 
+        
+    }
+
+    .social-btn-card {
+        margin: 5px; 
+       
+    }
+    
+
+
+}
