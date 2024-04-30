@@ -1,4 +1,3 @@
-import { propTypes } from 'react-bootstrap/esm/Image'
 import './AboutUsCard.css'
 
 export function AboutUsCard(props) {
@@ -13,8 +12,3 @@ export function AboutUsCard(props) {
     );
 }
 
-AboutUsCard.propTypes = {
-    title: propTypes.string,
-    text: propTypes.string,
-    image:propTypes.string
-}
