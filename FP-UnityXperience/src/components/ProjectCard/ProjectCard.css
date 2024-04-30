@@ -4,14 +4,14 @@
     position: relative;
     background: rgba(255, 255, 255, 0.10);;
     box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
-    width: 55vw;
+    width: 60vw;
     max-width: 320px;
-    height: 294px;
+    height: 310px;
     border-radius: 10px;
 }
 
 .project-thumbnail{
-    height: 103px;
+    height: 100px;
     border-top-left-radius: 11px;
     border-top-right-radius: 11px;
 }
@@ -19,26 +19,27 @@
 .project-title{
     font-size: 15px;
     font-weight: bold;
-    margin-top: 20px;
+    margin-top: 15px;
     margin-bottom: 0;
-    margin-left: 8px;
+    margin-left: 15px;
 }
 
 .project-description{
     font-size: 12px;
-    margin-top: 12px;
+    height: 60px;
+    margin-top: 5px;
     margin-bottom: 0;
-    margin-left: 8px;
-    margin-right: 8px;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .tags{
     display: flex;
     flex-direction: row;
-    gap: 10px;
-    margin-top: 12px;
-    margin-left: 8px;
-    margin-right: 8px;
+    gap: 15px;
+    margin-top: 25px;
+    margin-left: 15px;
+    margin-left: 15px;
 }
 
 .tags p{
@@ -52,10 +53,28 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 18px;
+    margin-top: 15px;
     margin-bottom: 10px;
-    margin-left: 8px;
+    margin-left: 15px;
     width: 84px;
     height: 24px;
     font-size: 12px;
+}
+
+@media (min-width: 530px){
+    .project-title{
+        font-size: 18px;
+    }
+
+    .project-description{
+        font-size: 14px;
+    }
+
+    .tags{
+        margin-top: 15px;
+    }
+
+    .tags p{
+        font-size: 14px;
+    }
 }
