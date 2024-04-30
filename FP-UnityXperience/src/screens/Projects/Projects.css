@@ -61,11 +61,13 @@
     margin-bottom: 40px;
 }
 
-@media (min-width: 750px){
+@media (min-width: 770px){
     .projects-container{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 35px;
+        max-width: 835px;
     }
 }
