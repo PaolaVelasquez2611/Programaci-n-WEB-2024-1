@@ -10,20 +10,20 @@ export function Footer (){
         <section>
             {footerData.map(({id,title,text})=>{
                 return(
-                    <>
-                    <NavFooter key={id} title={title}/>
-                    <NavFooter key={id} text={text}/>
-                    </>
+                    <section key={id}>
+                    <NavFooter  title={title}/>
+                    <NavFooter  text={text}/>
+                    </section>
                 )
             })}
         </section>
         <section>
         {footerData2.map(({id,title,text})=>{
                 return(
-                    <>
-                    <NavFooter key={id} title={title}/>
-                    <NavFooter key={id} text={text}/>
-                    </>
+                    <section key={id} >
+                    <NavFooter title={title}/>
+                    <NavFooter text={text}/>
+                    </section>
                 )
             })}
             
