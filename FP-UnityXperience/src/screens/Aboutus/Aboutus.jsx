@@ -5,7 +5,7 @@ export const Aboutus = () => {
   return (
   <>
   <Header/>
-  <h1 className="text-center">UniteXperience</h1>
+  <h1 className="text-center">UnityXperience</h1>
   <section className="what-is-container">
   <AboutUsCard title="What Is? "
                text="UnityXperience isn't your typical design and development company. 

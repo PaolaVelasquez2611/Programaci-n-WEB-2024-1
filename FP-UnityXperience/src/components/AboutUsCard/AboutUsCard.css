@@ -2,21 +2,23 @@
    margin-bottom: -150px;
    margin-top: -150px;
 }
-.what-is-container{
-    display: flex; 
-    flex-direction: row-reverse;
-    justify-content: center; 
-    align-items: center;
+
+.image-about-us{
+    width: 500px;
+    border-radius: 10px;
+    margin-right: 150px;
+    margin-left: 20px;
+
 }
-.our-vision-container{
-    display: flex; 
-    flex-direction: row-reverse;
-    justify-content: center; 
+.container-about {
+    display: flex;
     align-items: center;
+    flex-direction: row;
+    margin-bottom: 100px;
 }
-.our-mision-container{
-    display: flex; 
-    flex-direction: row-reverse;
-    justify-content: center; 
-    align-items: center;
+
+.text-container-about{
+    width: 500px;
+    margin-right: 80px;
 }
+
