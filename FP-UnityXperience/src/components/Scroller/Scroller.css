@@ -1,5 +1,19 @@
-.projects-scroll{
-    max-width: 800px;
+.projects-scroll{ 
+    width: 100%;
+   max-width: 24.375rem;
+}
+
+@media (min-width: 450px) {
+    .projects-scroll{ 
+        width: 100%;
+       max-width: 30rem;
+    }
+}
+@media (min-width: 700px) {
+    .projects-scroll{ 
+        width: 100%;
+       max-width: 45rem;
+    }
 }
 
 .projects-scroll[data-animated="true"]{

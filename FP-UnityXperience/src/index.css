@@ -39,7 +39,7 @@ body {
 
 @media (max-width: 768px) {
   body {
-      background-image: url('./assets/backgroundMobile.jpg');
+      background-image: url('./assets/background.jpg');
   }
 }
 

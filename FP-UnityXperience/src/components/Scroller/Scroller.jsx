@@ -28,9 +28,9 @@ export const Scroller = () => {
   }, []);
 
   return (
-    <>
-      <div className="projects-scroll" data-direction="left">
-        <ul className="scroller-inner">
+    <section className="max-w-screen-xl mx-auto md:w-5/6 lg:w-4/6 pt-10 flex flex-col justify-center items-center">
+      <div className="projects-scroll w-full inline-flex flex-nowrap overflow-hidden" data-direction="left">
+        <ul className="scroller-inner flex justify-center items-center">
           {projects.map(({ id, thumbnail, title, review, tags }) => (
             <li key={id}>
               <ProjectCard
@@ -43,8 +43,8 @@ export const Scroller = () => {
           ))}
         </ul>
       </div>
-      <div className="projects-scroll" data-direction="right">
-        <ul className="scroller-inner">
+      <div className="projects-scroll inline-flex flex-nowrap overflow-hidden" data-direction="right">
+        <ul className="scroller-inner flex justify-center items-center ">
           {projects.map(({ id, thumbnail, title, review, tags }) => (
             <li key={id}>
               <ProjectCard
@@ -57,6 +57,6 @@ export const Scroller = () => {
           ))}
         </ul>
       </div>
-    </>
+    </section>
   );
 };
