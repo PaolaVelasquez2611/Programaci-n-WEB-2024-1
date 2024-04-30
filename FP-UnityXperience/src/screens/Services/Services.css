@@ -1,0 +1,17 @@
+.title-screen{
+    margin: 0 auto;
+    width: 50vw;
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.services-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
