@@ -4,7 +4,7 @@ import { ProjectCard } from "../ProjectCard/ProjectCard"
 export const ProjectCards = () => {
 
   return (
-    <section className="projects-container">
+    <section className="projects-container place-content-center">
         {projects.map(({ id, thumbnail, title, review, tags }) => (
               <ProjectCard
               key = {id}
