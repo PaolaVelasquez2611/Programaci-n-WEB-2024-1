@@ -22,3 +22,25 @@
     margin-right: 80px;
 }
 
+.title-1{
+    font-size: 50px;
+    color: rgb(255, 255, 255); 
+    margin-right: 5px;
+}
+.title-2{
+    font-size: 50px;
+    color:#13BFD9;
+}
+
+.titles{
+    display: flex;
+    justify-content:end;
+    margin-right: 200px;  
+}
+.titles-Values{
+    display: flex;
+    justify-content:center;
+    margin-top: 200px;
+  
+}
+

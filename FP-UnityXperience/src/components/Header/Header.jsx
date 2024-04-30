@@ -11,12 +11,12 @@ export function Header (){
             alt="Logo UnityXperience" />
         {headerData.map(({id,text})=>{
             return(
-            <>
-                <Nav text= {text} key={id}/>
+            <section  key={id} className="Section">
+                <Nav text= {text} />
                 <button className="hamClick">
                 <img className="hamburguer-menu" src="../../src/assets/SVG/hamburguer-menu.svg" alt=""/>
                 </button>
-            </>
+            </section>
             )
         })}
 
