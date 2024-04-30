@@ -4,7 +4,7 @@ export const Profile = () => {
   return (
     <>
     <Header/>
-    <h1>UniteXperience Profile</h1>
+    <h1 className="text-center">UniteXperience Profile</h1>
     <ProfileCard  imagen="../../src/assets/Profile/JuanRamirez.png" 
                   title="Juan Esteban Ramirez Perdomo"
                   text="I am a web development enthusiast with a profound interest
@@ -13,10 +13,9 @@ export const Profile = () => {
                         updated with the constant technological advancements in the fields of
                         web development and UI design."
     />
-    <h2>My Experience</h2>
+    <h2 className="text-center">My Experience</h2>
     <ExperienceLine />
-    <h2>My projects</h2>
-    
+    <h2 className="text-center">My projects</h2>
     <Footer/>
     </>
   )

@@ -1,0 +1,22 @@
+.card-seccion{
+   margin-bottom: -150px;
+   margin-top: -150px;
+}
+.what-is-container{
+    display: flex; 
+    flex-direction: row-reverse;
+    justify-content: center; 
+    align-items: center;
+}
+.our-vision-container{
+    display: flex; 
+    flex-direction: row-reverse;
+    justify-content: center; 
+    align-items: center;
+}
+.our-mision-container{
+    display: flex; 
+    flex-direction: row-reverse;
+    justify-content: center; 
+    align-items: center;
+}
