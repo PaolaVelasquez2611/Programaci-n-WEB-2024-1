@@ -1,12 +1,10 @@
 import './CardWrap.css'
 
-export const CardWrap = (props) => {
-    const {children, image} = props
+export const CardWrap = ({ children, image }) => {
     return (
-
-   <div className='card-wrap'>
-    <img src={image} />
-    {children}
+    <div className='card-wrap'>
+      <img src={image} />
+      {children}
     </div>
   )
 }

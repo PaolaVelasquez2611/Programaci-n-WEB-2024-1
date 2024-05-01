@@ -1,8 +1,6 @@
 import './DetailedProjectCard.css'
 
-export const DetailedProjectCard = (props) => {
-    const {img, title, tags, description, owner} = props
-
+export const DetailedProjectCard = ({ img, title, tags, description, owner }) => {
   return (
     <article className="project-information">
         <div className="blur-background"></div>

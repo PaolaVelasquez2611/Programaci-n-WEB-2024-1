@@ -1,8 +1,7 @@
 import './ServicesCard.css'
 import {useState, useEffect} from "react"
 
-export const ServicesCard = (props) => {
-    const {img, title, description, services} = props
+export const ServicesCard = ({ img, title, description, services }) => {
 
     const [isCellphoneScreen, setIsDesktopScreen] = useState(window.innerWidth < 770);
 

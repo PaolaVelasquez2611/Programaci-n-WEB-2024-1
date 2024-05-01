@@ -1,7 +1,6 @@
 import './Button.css'
 
-export const Button = (props) => {
-  const {text, onclick, className} = props
+export const Button = ({ text, onclick, className }) => {
 
   const handleOnClick = () => {
     onclick()

@@ -14,9 +14,9 @@ export const Projects = () => {
 
   
   const filteredProject = project.filter(project =>
-    (project.title && project.title.includes(searchTerm.trim())) ||
-    (project.review && project.review.toString() === searchTerm.trim()) ||
-    (project.tags && project.tags.includes(searchTerm.trim()))
+    (project.title && project.title.includes(searchTerm.trim())) 
+    ||(project.review && project.review.toString() === searchTerm.trim()) 
+    ||(project.tags && project.tags.includes(searchTerm.trim()))
     );
 
     console.log('searchTerm:', searchTerm);

@@ -3,7 +3,6 @@ import { carouselData ,carouselData2,carouselData3} from "../../data/carouselDat
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
-
 export const CarouselComponent = () => (
   <div>
     <Carousel  autoPlay>
