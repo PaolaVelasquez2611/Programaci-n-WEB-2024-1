@@ -33,6 +33,7 @@
   }
   .hamClick{
     display: none;
+    
   }
   @media (max-width: 768px) {
     .Container {
@@ -57,11 +58,13 @@
       display: block;
       background-color: transparent;
       border-color: transparent;
-      margin-right: 25px;
-      width: 30px;
-      height: auto;
-      
+      width: 30px; 
     }
-
+    .logo {
+    
+      width: 300px;
+      padding: 15px;
+      margin-right: 50px; 
+    }
   }
   

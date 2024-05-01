@@ -90,7 +90,8 @@ padding-left: 50px;
 
 
 .Nav-Footer ul li{
-  padding-top: 5px;
+  margin-top: -8px; /* Reducir el espacio superior */
+  margin-bottom: -8px; /* Reducir el espacio inferior *//* Reducir el margen inferior */
     list-style: none;
     color: white;
 }

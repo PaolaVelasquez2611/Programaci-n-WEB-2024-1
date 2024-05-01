@@ -6,7 +6,7 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 export const CarouselComponent = () => (
   <div>
-    <Carousel centerMode centerSlidePercentage="1" autoPlay>
+    <Carousel  autoPlay>
     <div >
     {carouselData.map(({ id, thumbnail, title, review, tags }) => (
             <li key={id}>
