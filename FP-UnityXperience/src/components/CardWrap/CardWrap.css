@@ -1,38 +1,80 @@
 .card-wrap {
     background-color: rgba(255, 255, 255, 0.2); 
     min-height: 350px;
+    padding: 0px;
     max-width: 350px;
     border-radius: 10px;
-    width: fit-content;
     height: fit-content;
     min-width: 230px;
-    padding-left: 5%;
-    padding-right: 5%;
-    margin: 0 auto;
     backdrop-filter: blur(10px);
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); 
-    display: flex; 
+    display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
+    
     
 }
 
-.card-wrap{
-    background-image: url();
+.image-container {
+    width: 100%;
+    height: 10rem;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; 
+    border-bottom-right-radius: 0px; 
 }
+
+.children-container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.card-wrap img {
+    
+    margin: 0 auto; 
+    padding: 0px; 
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px; 
+   
+}
+
 
 @media (min-width: 768px) { 
     .card-wrap {
         flex-direction: row-reverse; 
         border-radius: 5px;
         max-width: 700px; 
+        height: fit-content;
+    }
+
+    .image-container {
+        width: 100%;
+        height: 25rem;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px; 
+        border-bottom-right-radius: 0px; 
+    }
+    
+    .children-container {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 3%;
+        
+      
     }
 
     .card-wrap img {
-        width: 45%; 
-        height:340px;
+        margin: 0; 
+        padding: 0; 
+        width: 100%;
+        height: 100%; 
         border-top-left-radius: 0px;
         border-top-right-radius: 5px; 
         border-bottom-right-radius: 5px; 
