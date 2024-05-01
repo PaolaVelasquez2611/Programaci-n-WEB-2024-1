@@ -1,7 +1,6 @@
 import './ProfileCard.css'
 
-export function ProfileCard(props) {
-    const { text, imagen, title } = props;
+export function ProfileCard({ text, imagen, title }) {
     return (
         <section className='card-profile mx-auto'>
             <div className="profile-card">
@@ -26,10 +25,6 @@ export function ProfileCard(props) {
                     </button>
                 </section>
             </div>
-
-            
-             
-           
         </section>
     )
 }

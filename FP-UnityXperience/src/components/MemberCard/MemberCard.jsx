@@ -1,8 +1,6 @@
 import './MemberCard.css'
 
-export const MemberCard = (props) => {
-    const {img, name, role, social} = props
-
+export const MemberCard = ({ img, name, role, social }) => {
   return (
     <article className="member-card">
         <div className="member-img">

@@ -1,0 +1,6 @@
+.gradient-heading-2 {
+    background: linear-gradient(to bottom, rgba(255, 255, 255) 34%, #333333 );
+    -webkit-background-clip: text; 
+    background-clip: text;
+    color: transparent; 
+  }

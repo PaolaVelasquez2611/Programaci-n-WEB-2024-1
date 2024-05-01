@@ -1,19 +1,21 @@
-import { projects } from "../../data/projects"
 import { ProjectCard } from "../ProjectCard/ProjectCard"
 
-export const ProjectCards = () => {
-
+export function ProjectCards({ filteredData }) {
   return (
-    <section className="projects-container">
-        {projects.map(({ id, thumbnail, title, review, tags }) => (
-              <ProjectCard
-              key = {id}
-              img = {thumbnail}
-              title = {title}
-              description = {review}
-              tags={tags}
-              />
-          ))}
+    <section className="projects-container place-content-center">
+      {filteredData.length > 0 ? (
+        filteredData.map((project) => (
+          <ProjectCard
+            key={project.id}
+            img={project.thumbnail}
+            title={project.title}
+            description={project.review}
+            tags={project.tags}
+          />
+        ))
+      ) : (
+        <p>Whoops, no results match ._.</p>
+      )}
     </section>
-  )
+  );
 }

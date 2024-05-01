@@ -1,11 +1,25 @@
-import { Button } from "../../components/Button/Button"
-import { CardWrap } from "../../components/CardWrap/CardWrap"
-import { Input } from "../../components/Input/Input"
+import { Button, CardWrap, Input } from "../../components";
 import './Contact.css'
 
-export const Contact = () => {
-  return (
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
+export const Contact = () => {
+
+  const notify = () => {
+    toast.success('Your Message is on Its Way! Excited to Connect! 🚀 ', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "dark",
+      });
+  }
+
+  return (
     <div>
       <h3>UniteXperience</h3>
       <h1>UniteXperience Contact</h1>
@@ -16,15 +30,11 @@ export const Contact = () => {
           <Input text="Your Name or Company" placeholder="Enter name"></Input>
           <Input text="Your Email" placeholder="Enter email"></Input>
           <Input text="Something you want to Say?" className="tall-input" placeholder="Write it here"></Input>
-          <Button text={"Send"}></Button>
+          <Button onclick={notify} text={"Send"}></Button>
           </div>
         </CardWrap>
+        <ToastContainer />
       </section>
-
-
-
     </div>
-
-
   )
 }

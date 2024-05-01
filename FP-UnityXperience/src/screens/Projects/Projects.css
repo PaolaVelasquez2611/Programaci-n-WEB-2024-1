@@ -62,6 +62,10 @@
 }
 
 @media (min-width: 770px){
+    .title-screen{
+        margin-top: 50px;
+    }
+
     .projects-container{
         display: flex;
         flex-direction: row;

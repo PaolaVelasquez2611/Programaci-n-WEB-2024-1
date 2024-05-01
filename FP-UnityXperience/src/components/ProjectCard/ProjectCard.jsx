@@ -1,9 +1,7 @@
 import './ProjectCard.css'
 import { Button } from '../Button/Button'
 
-export const ProjectCard = (props) => {
-    const {img, title, description, tags} = props
-
+export const ProjectCard = ({ img, title, description, tags }) => {
   return (
     <article className='project-card'>
         <img src={img} className='project-thumbnail'/>

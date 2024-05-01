@@ -1,4 +1,4 @@
-import { ExperienceLine,Header,Footer,ProfileCard } from "../../components"
+import { ExperienceLine,Header,Footer,ProfileCard, CarouselComponent} from "../../components"
 
 export const Profile = () => {
   return (
@@ -16,6 +16,9 @@ export const Profile = () => {
     <h2 className="text-center">My Experience</h2>
     <ExperienceLine />
     <h2 className="text-center">My projects</h2>
+
+    <CarouselComponent/>
+    
     <Footer/>
     </>
   )

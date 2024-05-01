@@ -19,6 +19,12 @@ export const headerData = [
         text:"Contact",
         
     },
+    {
+        id: crypto.randomUUID(),
+        img:"../../src/assets/SVG/hamburguer-menu.svg",
+        
+    },
+
     
     
 ]

@@ -1,9 +1,12 @@
 import './Button.css'
 
-export const Button = (props) => {
-  const {text, onclick, className} = props
+export const Button = ({ text, onclick, className }) => {
+
+  const handleOnClick = () => {
+    onclick()
+  }
 
   return (
-    <button className={className}>{text}</button>
+    <button onClick={handleOnClick} className={className}>{text}</button>
   )
 }
