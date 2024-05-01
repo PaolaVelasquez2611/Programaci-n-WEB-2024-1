@@ -11,3 +11,5 @@ export * from './Skills/Skills'
 export * from './ProjectCards/ProjectCards'
 export * from './ProfileCard/ProfileCard'
 export * from './AboutUsCard/AboutUscard'
+export * from './Carrousel/Carousel'
+
