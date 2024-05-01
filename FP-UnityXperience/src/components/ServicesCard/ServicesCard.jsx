@@ -21,7 +21,7 @@ export const ServicesCard = (props) => {
     {isCellphoneScreen 
     ? (<article className="service-card">
           <img src={img} className="service-img"/>
-          <p className="service-title">{title}</p>
+          <span className='sticky top-0'><strong><p className="service-title">{title}</p></strong></span>
           <p className="service-description">{description}</p>
           <div className="services">
             <ul>
@@ -32,7 +32,7 @@ export const ServicesCard = (props) => {
           </div>
         </article>)
     :(<article className="service-card">
-        <p className="service-title">{title}</p>
+        <span className='sticky top-0'><strong><p className="service-title">{title}</p></strong></span>
         <section className="service-info">
           <div className="information">
             <p className="service-description">{description}</p>
