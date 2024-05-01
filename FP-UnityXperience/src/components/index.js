@@ -16,4 +16,5 @@ export * from './ProfileCard/ProfileCard'
 export * from './AboutUsCard/AboutUscard'
 export * from './Carrousel/Carousel'
 export * from './GradientHeading/GradientHeading'
-
+export * from './CardWrap/CardWrap'
+export * from './Input/Input'

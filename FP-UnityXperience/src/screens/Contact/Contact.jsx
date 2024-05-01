@@ -1,6 +1,4 @@
-import { Button } from "../../components/Button/Button"
-import { CardWrap } from "../../components/CardWrap/CardWrap"
-import { Input } from "../../components/Input/Input"
+import { Button, CardWrap, Input } from "../../components";
 import './Contact.css'
 
 import { ToastContainer, toast } from 'react-toastify';
@@ -17,7 +15,7 @@ export const Contact = () => {
       pauseOnHover: true,
       draggable: true,
       progress: undefined,
-      theme: "colored",
+      theme: "dark",
       });
   }
 
@@ -38,7 +36,5 @@ export const Contact = () => {
         <ToastContainer />
       </section>
     </div>
-
-
   )
 }

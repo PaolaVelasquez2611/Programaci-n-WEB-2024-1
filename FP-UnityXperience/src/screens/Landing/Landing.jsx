@@ -6,7 +6,7 @@ export const Landing = () => {
     <>
     <p>Hello! i'm Landing screen</p>
 {/*     <Header /> */} {/* Improve the responsive */}
-    <BrandCards />
+{/*     <BrandCards /> */}
     <GradientHeading text={"Skills"}/>
     <Skills />
     <GradientHeading text={"UnityXperience Projects"}/>
