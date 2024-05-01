@@ -13,7 +13,7 @@ export const Contact = () => {
     <Input text="Your Name or Company" placeholder="Enter name"></Input>
     <Input text="Your Email" placeholder="Enter email"></Input>
     <Input text="Something you want to Say?" className="tall-input" placeholder="Write it here"></Input>
-    <Button></Button>
+    <Button text={"Send"}></Button>
     </div>
    </div>
   )
