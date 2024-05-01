@@ -3,7 +3,11 @@ import './Button.css'
 export const Button = (props) => {
   const {text, onclick, className} = props
 
+  const handleOnClick = () => {
+    onclick()
+  }
+
   return (
-    <button className={className}>{text}</button>
+    <button onClick={handleOnClick} className={className}>{text}</button>
   )
 }
