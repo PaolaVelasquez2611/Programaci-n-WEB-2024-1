@@ -1,10 +1,11 @@
+import { Link, NavLink } from "react-router-dom";
 import { Button, CardWrap, Input } from "../../components"
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 export const AdminLogin = () => {
-
+// todo: fixed the toast notify, when the admin logs in the toast must to appear on screen (app)
   const notify = () => {
     toast.success(' You just logged in you admin account! 😁', {
       position: "top-center",
@@ -27,7 +28,9 @@ export const AdminLogin = () => {
       <p>Hello, enter your occount to go to the <span>adminsitrator panel</span></p>
       <Input text="Your Email" placeholder="Enter email"></Input>
       <Input text="Password" className="tall-input" placeholder="Password"></Input>
-      <Button onclick={notify} text={"Log in"}></Button>
+      <Link className="w-full" to={"/"}>
+        <Button onclick={notify} text={"Log in"} className="w-full"></Button>
+      </Link>
       <span className="place-content-center text-center">
         <p>Return to Home Page</p>
       </span>

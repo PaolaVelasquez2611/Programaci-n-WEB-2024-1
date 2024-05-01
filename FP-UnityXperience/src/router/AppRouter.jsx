@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import { Aboutus, AddProject, AdminLogin, Contact, Landing, Profile, Projects, Services } from "../screens"
+import { Aboutus, AddProject, AdminLogin, Contact, Error, Landing, Profile, Projects, Services } from "../screens"
 
 
 export const AppRouter = () => {
@@ -13,7 +13,7 @@ export const AppRouter = () => {
         <Route path="/profile" element={<Profile />}/>
         <Route path="/projects" element={<Projects />}/>
         <Route path="/services" element={<Services />}/>
-        <Route path="/*" element={<p>404</p>}/>
+        <Route path="/*" element={<Error/>}/>
     </Routes>
   )
 }
