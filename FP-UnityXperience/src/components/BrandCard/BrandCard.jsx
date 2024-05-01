@@ -1,9 +1,7 @@
 import './BrandCard.css'
 import { Button } from '../Button/Button'
 
-export const BrandCard = (props) => {
-    const {icon, title, description} = props
-
+export const BrandCard = ({ icon, title, description }) => {
   return (
     <article className="brand-card">
         <img src={icon}/>
