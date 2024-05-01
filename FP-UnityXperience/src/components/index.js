@@ -14,4 +14,5 @@ export * from './ServicesCards/ServicesCards'
 export * from './ProfileCard/ProfileCard'
 export * from './AboutUsCard/AboutUscard'
 export * from './Carrousel/Carousel'
+export * from './GradientHeading/GradientHeading'
 
