@@ -1,4 +1,4 @@
-import { Footer, Header, Skills, GradientHeading, BrandCard, BrandCards, IntroSection } from "../../components"
+import { Footer, Header, Skills, GradientHeading, MemberCard, BrandCard, BrandCards, IntroSection } from "../../components"
 import { Scroller } from "../../components/Scroller/Scroller"
 
 export const Landing = () => {
@@ -17,6 +17,9 @@ export const Landing = () => {
     <GradientHeading text={"UnityXperience Projects"}/>
     <Scroller />
     <GradientHeading text={"UnityXperience Team"}/>
+    <MemberCard img="../src/assets/Profile/JuanRamirez.png"
+    name="Juan Esteban Ramirez"
+    role="Developer"/>
     <Footer /> {/* Improve the responsive */}
     </main>
   )
