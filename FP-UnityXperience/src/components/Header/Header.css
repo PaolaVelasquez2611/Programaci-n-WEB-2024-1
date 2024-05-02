@@ -1,70 +1,71 @@
 .Container {
-    display: flex; 
-    align-items: center; 
-    background: rgba(255, 255, 255, 0.50);;
-    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
-    backdrop-filter: blur(6px);
-    border-radius:8px;
-    padding-right: 50px;
-    padding-left: 30px;
-    width: 100%;
-    height: 100px;
-    
+  display: flex; 
+  align-items: center; 
+  background: rgba(255, 255, 255, 0.50);
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(6px);
+  border-radius: 8px;
+  padding-right: 50px;
+  padding-left: 30px;
+  width: 100%;
+  height: 100px;
+  position: relative; 
+}
 
-  }
-  
-  .logo {
-    
-    width: 300px;
-    padding: 15px;
-    margin-right: 400px; 
-  }
-  
+.logo {
+  width: 300px;
+  padding: 15px;
+  margin-right: auto; 
+}
 
-  .Nav a {
-    color: white;
+.Nav a {
+  color: white;
   text-decoration: none;
+}
+
+.Nav ul li  {
+  margin-right: 30px;
+  list-style: none;
+  color: transparent;
+}
+
+.hamClick {
+  display: none;
+}
+
+
+@media (max-width: 768px) {
+  .Container {
+    width: 100vw;
+    height: 85px; 
+    padding: 10px; 
+  }
+
+  .Nav {
+    display: none; 
+    position: absolute; 
+    top: 100px; 
+    border-radius: 8px;
+    margin-left: -350px;
+    width: 100vw;
+    height: 50px;
+    color: black;
+  
   }
   
-  .Nav ul li  {
-    margin-right: 30px;
-    list-style: none;
-    color: white;
+  .hamClick {
+    display: block;
+    background-color: transparent;
+    border-color: transparent;
+    width: 30px;
+    margin-right: 10px; 
   }
-  .hamClick{
-    display: none;
-    
+  .showMenu .Nav {
+    display: none; 
   }
-  @media (max-width: 768px) {
-    .Container {
-      display: flex; 
-      align-items: center; 
-      background: rgba(255, 255, 255, 0.50);;
-      box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
-      backdrop-filter: blur(6px);
-      border-radius:8px;
-      width: 500px;
-      height: 85px;
-    }
-  
-    .Nav {
-      display: none;
-    }
-    .hamburguer-menu{
-        width: 30px;
-        height: auto;
-    }
-    .hamClick {
-      display: block;
-      background-color: transparent;
-      border-color: transparent;
-      width: 30px; 
-    }
-    .logo {
-    
-      width: 300px;
-      padding: 15px;
-      margin-right: 50px; 
-    }
+  .logo {
+    width: 300px;
+    padding: 5px;
+    margin-right: auto; 
   }
-  
+}

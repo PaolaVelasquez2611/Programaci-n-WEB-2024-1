@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+    
+    .container-mobile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px; /* Ajusta el relleno según sea necesario */
+}
+
+.nav-sections {
+  display: flex;
+  flex-direction: column; /* Coloca los elementos uno encima del otro */
+  align-items: center;
+}
+
+.Section {
+  margin-bottom: 10px; /* Ajusta el margen inferior entre cada sección */
+}
+    
+
+    
+    .logo {
+        width: 300px;
+        padding: 15px;
+        margin-right: 50px;
+    }
+}

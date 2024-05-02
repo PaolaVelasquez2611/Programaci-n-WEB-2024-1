@@ -12,4 +12,6 @@ export * from './ProjectCards/ProjectCards'
 export * from './ProfileCard/ProfileCard'
 export * from './AboutUsCard/AboutUscard'
 export * from './Carrousel/Carousel'
+export * from './MobileNavBar/MobileNavBar'
+export * from './Header/Nav/Nav'
 
