@@ -4,7 +4,6 @@ import { Header,Footer,AboutUsCard, BrandCard} from "../../components"
 export const Aboutus = () => {
   return (
   <main className="place-content-center">
-  <Header/>
   <h1 className="text-center mt-8 mb-20">UnityXperience</h1>
   <span className="titles">
     <h2><span className="title-1">What</span></h2>

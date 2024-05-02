@@ -1,9 +1,14 @@
-import { Route, Routes } from "react-router-dom"
+import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Aboutus, AddProject, AdminLogin, Contact, DetailProject, Error, Landing, Profile, Projects, Services } from "../screens"
+import { Header } from "../components"
 
 
 export const AppRouter = () => {
   return (
+
+    <>
+
+    <section>
     <Routes>
         <Route path="/" element={<Landing />}/>
         <Route path="/aboutus" element={<Aboutus />}/>
@@ -16,5 +21,7 @@ export const AppRouter = () => {
         <Route path="/services" element={<Services />}/>
         <Route path="/*" element={<Error/>}/>
     </Routes>
+    </section>
+    </>
   )
 }
