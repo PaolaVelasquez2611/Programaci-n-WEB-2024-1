@@ -13,15 +13,15 @@ export const DetailProject = () => {
     preview1 = "../src/assets/mockups/preview-1.png"
     preview2 = "../src/assets/mockups/preview-2.png"
     preview3 = "../src/assets/mockups/preview-3.png"/>
-    <span className="combined-text">
-        <p>See</p>
-        <p className="blue-text">More</p> 
+    <span className="text-combined">
+        <strong> <p>See</p> </strong>
+        <strong> <p className="text-blue">More</p> </strong> 
     </span>
-    <section>
-        <button>
+    <section className="links-project">
+        <button className="view-project">
             <img src="../src/assets/linkedin.png"/>
         </button>
-        <button>
+        <button className="view-project">
             <img src="../src/assets/behance.png"/>
         </button>
     </section>

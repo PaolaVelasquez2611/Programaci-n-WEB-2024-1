@@ -1,0 +1,40 @@
+.text-combined{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    justify-content: center;
+}
+
+.text-combined p{
+    font-size: 22px;
+}
+
+.text-blue{
+    color: var(--blue-cian);
+}
+
+.links-project{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.view-project{
+    border: transparent;
+    padding: 0;
+    background-color: transparent;
+}
+
+.view-project:hover {
+    background: transparent;
+}
+.view-project:focus,
+.view-project:focus-visible {
+    outline: transparent;
+}
+

@@ -9,7 +9,7 @@ export const ProjectDetails = ({thumbnail, title, description, preview1, preview
                 <img src={thumbnail}/>
             </div>
             <div>
-                <p className="section-text">{title}</p>
+                <strong> <p className="section-text">{title}</p> </strong>
                 <div className="info-tags">
                     <div className="two-tags">
                         <LabelTag 
@@ -31,7 +31,7 @@ export const ProjectDetails = ({thumbnail, title, description, preview1, preview
         <section className="description-project">
             <p>{description}</p>
         </section>
-        <p className="section-text">Preview</p>
+        <strong> <p className="section-text">Preview</p> </strong>
         <section className="previews-project">
             <img src={preview1} className="big-preview"/>
             <div className="mini-previews">
