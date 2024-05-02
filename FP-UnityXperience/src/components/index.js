@@ -13,4 +13,5 @@ export * from './ServicesCards/ServicesCards'
 export * from './ProfileCard/ProfileCard'
 export * from './AboutUsCard/AboutUscard'
 export * from './Carrousel/Carousel'
-
+export * from './ProjectDetails/ProjectDetails'
+export * from './LabelTag/LabelTag'
