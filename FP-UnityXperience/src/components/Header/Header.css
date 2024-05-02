@@ -37,8 +37,7 @@
 @media (max-width: 768px) {
   .Container {
     width: 100vw;
-    height: 85px; /* 
-    padding: 10px;  */
+    height: 65px;
   }
 
   .Nav {
