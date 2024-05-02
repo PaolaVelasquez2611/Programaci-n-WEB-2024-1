@@ -7,16 +7,16 @@ import 'react-toastify/dist/ReactToastify.css';
 export const Contact = () => {
 
   const notify = () => {
-    toast.success('Your Message is on Its Way! Excited to Connect! 🚀 ', {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-      });
+      toast.success('Your Message is on Its Way! Excited to Connect! 🚀 ', {
+        position: "top-center",
+        autoClose: 5000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        theme: "dark",
+        });
   }
 
   return (

@@ -7,6 +7,6 @@ export const Button = ({ text, onclick, className }) => {
   }
 
   return (
-    <button onClick={handleOnClick} className={className}>{text}</button>
+    <button onClick={handleOnClick} className={className} id='btn'>{text}</button>
   )
 }

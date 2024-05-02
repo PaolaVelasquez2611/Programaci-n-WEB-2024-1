@@ -1,4 +1,4 @@
-button {
+#btn {
     color: white;
     border-radius: 8px;
     min-width: 200px;
@@ -14,10 +14,10 @@ button {
     border-color: var(--blue-cian);
     margin: 6%;
   }
-  button:hover {
+  #btn:hover {
     background: linear-gradient(135deg, var(--blue-cian), var(--blue-purple));
   }
-  button:focus,
-  button:focus-visible {
+  #btn:focus,
+  #btn:focus-visible {
     outline: 4px auto -webkit-focus-ring-color;
   }

@@ -1,6 +1,7 @@
 import { Nav } from "./Nav/Nav";
 import './Header.css'
 import { headerData } from "../../data/headerData";
+import { Link } from "react-router-dom";
 
 export function Header (){
     return (
@@ -9,9 +10,11 @@ export function Header (){
                 className="logo" 
                 src="../../src/assets/Logo.png" 
                 alt="Logo UnityXperience" />
-            {headerData.map(({ id, text }) => (
+            {headerData.map(({ id, text, route }) => (
                 <section key={id} className="Section">
-                    <Nav text={text} />
+                    <Link to={route}>
+                        <Nav text={text} />
+                    </Link>
                 </section>
             ))}
             <section>
