@@ -1,5 +1,5 @@
 import { Link, NavLink } from "react-router-dom";
-import { Button, CardWrap, Input } from "../../components"
+import { Button, CardWrap, Header, Input } from "../../components"
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -20,7 +20,8 @@ export const AdminLogin = () => {
   }
 
   return (
-    <>
+    <main>
+      <Header />
     <h1>UniteXperience Administrator Panels</h1>
     <section>
     <CardWrap image="https://static.vecteezy.com/system/resources/previews/027/034/360/non_2x/abstract-square-blurred-background-elegant-gradient-mesh-red-dark-color-design-template-good-for-modern-website-wallpaper-cover-design-free-vector.jpg">
@@ -38,6 +39,6 @@ export const AdminLogin = () => {
     </CardWrap>
     <ToastContainer />
   </section>
-    </>
+    </main>
   )
 }

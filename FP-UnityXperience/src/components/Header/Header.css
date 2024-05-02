@@ -7,7 +7,7 @@
   padding-right: 50px;
   padding-left: 0px;
   width: 100vw;
-  height: 80px;
+  height: 70px;
   position: fixed;
   z-index: 4;
 }
@@ -37,7 +37,7 @@
 @media (max-width: 768px) {
   .Container {
     width: 100vw;
-    height: 65px;
+    height: 55  px;
   }
 
   .Nav {

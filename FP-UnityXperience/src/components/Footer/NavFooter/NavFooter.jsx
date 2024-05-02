@@ -6,9 +6,9 @@ export function NavFooter (props){
             <div className="Nav-Footer flex items-center justify-center">
                 <ul>
                     <li>
-                        <h2 className="title" ><a href="#"> {title}</a></h2>
+                        <h2 className="title" ><p> {title}</p></h2>
                         <p>{text}</p>
-                        <h2 className="title" ><a href="#">{title2}</a></h2>
+                        <h2 className="title" ><p>{title2}</p></h2>
                     </li>
                 </ul>
             </div>

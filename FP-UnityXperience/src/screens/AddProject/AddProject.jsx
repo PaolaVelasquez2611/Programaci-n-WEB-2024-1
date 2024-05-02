@@ -2,7 +2,7 @@ import './AddProject.css'
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Button, CardWrap, Input } from '../../components';
+import { Button, CardWrap, Header, Input } from '../../components';
 
 export const AddProject = () => {
 
@@ -20,7 +20,8 @@ export const AddProject = () => {
   }
 
   return (
-    <div>
+    <main>
+      <Header />
       <h3>UniteXperience</h3>
       <h1>Add New Project</h1>
 
@@ -37,6 +38,6 @@ export const AddProject = () => {
         </CardWrap>
         <ToastContainer />
       </section>
-    </div>
+    </main>
   )
 }

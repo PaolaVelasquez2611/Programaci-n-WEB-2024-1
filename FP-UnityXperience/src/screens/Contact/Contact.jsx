@@ -1,4 +1,4 @@
-import { Button, CardWrap, Input } from "../../components";
+import { Button, CardWrap, Header, Input } from "../../components";
 import './Contact.css'
 
 import { ToastContainer, toast } from 'react-toastify';
@@ -20,7 +20,8 @@ export const Contact = () => {
   }
 
   return (
-    <div>
+    <main>
+      <Header />
       <h3>UniteXperience</h3>
       <h1>UniteXperience Contact</h1>
 
@@ -35,6 +36,6 @@ export const Contact = () => {
         </CardWrap>
         <ToastContainer />
       </section>
-    </div>
+    </main>
   )
 }
