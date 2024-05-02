@@ -1,6 +1,6 @@
 import './MemberCard.css'
 
-export const MemberCard = ({ img, name, role, social }) => {
+export const MemberCard = ({ img, name, role }) => {
   return (
     <article className="member-card">
         <div className="member-img">
@@ -10,16 +10,16 @@ export const MemberCard = ({ img, name, role, social }) => {
         <p className="member-role">{role}</p>
         <div className="member-social">
             <button className="social-logo">
-                <img src="https://cdn-icons-png.flaticon.com/512/61/61109.png"/>
+                <img src="../src/assets/linkedin.png"/>
             </button>
             <button className="social-logo">
-                <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png"/>
+                <img src="../src/assets/github.png"/>
             </button>
             <button className="social-logo">
-                <img src="https://cdn-icons-png.flaticon.com/512/87/87390.png"/>
+                <img src="../src/assets/instagram.png"/>
             </button>
-            <button className="social-logo">
-                <img src="https://cdn-icons-png.flaticon.com/512/152/152816.png"/>
+            <button className="social-logo2">
+                <img src="../src/assets/behance.png"/>
             </button>
         </div>
     </article>

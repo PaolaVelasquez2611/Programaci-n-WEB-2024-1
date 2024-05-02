@@ -1,5 +1,5 @@
+import './Aboutus.css'
 import { Header,Footer,AboutUsCard, BrandCard} from "../../components"
-
 
 export const Aboutus = () => {
   return (

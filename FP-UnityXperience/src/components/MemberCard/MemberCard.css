@@ -42,7 +42,7 @@
 .member-social{
     display: flex;
     flex-direction: row;
-    margin-top: 30px;
+    margin-top: 25px;
     gap: 15px;
 }
 
@@ -67,4 +67,9 @@
 .member-social img{
     width: 25px;
     height: 25px;
+}
+
+.social-logo2 img{
+    width: 25px;
+    height: 100%;
 }
