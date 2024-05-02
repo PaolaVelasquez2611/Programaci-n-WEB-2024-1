@@ -4,7 +4,6 @@ import { Footer, Header, ProjectDetails} from "../../components"
 export const DetailProject = () => {
   return (
     <>
-    <Header/>
     <h1 className="title-screen">UniteXperience Project</h1>
     <ProjectDetails 
     thumbnail="../src/assets/mockups/thumbnail-project.png"
@@ -25,7 +24,6 @@ export const DetailProject = () => {
             <img src="../src/assets/behance.png"/>
         </button>
     </section>
-    <Footer/>
     </>
   )
 }

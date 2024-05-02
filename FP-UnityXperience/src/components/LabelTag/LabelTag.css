@@ -13,3 +13,14 @@
 .label-tag p{
     font-size: 14px;
 }
+
+@media (min-width: 770px){
+    .label-tag img{
+        width: 22px;
+        height: 22px;
+    }
+    
+    .label-tag p{
+        font-size: 18px;
+    }
+}

@@ -38,3 +38,18 @@
     outline: transparent;
 }
 
+@media (min-width: 770px){
+    .text-combined{
+        margin-top: 50px;
+        gap: 10px;
+    }
+
+    .text-combined p{
+        font-size: 40px;
+    }
+
+    .view-project img{
+        width: 58px;
+    }
+}
+
