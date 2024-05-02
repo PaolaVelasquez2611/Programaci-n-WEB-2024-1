@@ -4,7 +4,6 @@ import './Footer.css'
 
 export function Footer (){
     return(
-        
         <div className="Container-footer">
             <img className="logo-footer" src="../../src/assets/Logo-footer.png" alt="Logo UnityXperience" />
         <section>
@@ -49,11 +48,6 @@ export function Footer (){
         <section>
             <NavFooter title2="Administrator Panel"/>
         </section>
-
-        
-       
-
         </div>
-        
     )
 }
