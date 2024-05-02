@@ -19,7 +19,6 @@ export const Landing = () => {
     <MemberCard img="../src/assets/Profile/JuanRamirez.png"
     name="Juan Esteban Ramirez"
     role="Developer"/>
-    <Footer /> {/* Improve the responsive */}
     </main>
   )
 }

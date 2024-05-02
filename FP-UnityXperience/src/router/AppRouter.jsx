@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
 import { Aboutus, AddProject, AdminLogin, Contact, DetailProject, Error, Landing, Profile, Projects, Services } from "../screens"
-import { Header } from "../components"
+import { Footer, Header } from "../components"
 
 
 export const AppRouter = () => {
@@ -22,6 +22,7 @@ export const AppRouter = () => {
         <Route path="/*" element={<Error/>}/>
     </Routes>
     </section>
+    <Footer />
     </>
   )
 }

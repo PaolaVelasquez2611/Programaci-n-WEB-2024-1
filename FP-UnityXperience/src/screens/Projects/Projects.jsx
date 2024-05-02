@@ -36,8 +36,6 @@ export const Projects = () => {
       <h1 className="title-screen">UnityXperience Projects </h1>
       
       <ProjectCards filteredData={filteredProject}/>
-
-      <Footer/>
     </>
   )
 }

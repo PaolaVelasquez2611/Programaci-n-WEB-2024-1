@@ -1,6 +1,7 @@
 import './Aboutus.css'
 import { Header,Footer,AboutUsCard, BrandCard} from "../../components"
 
+// todo: Map it, improve coding practices!!
 export const Aboutus = () => {
   return (
   <>
@@ -73,8 +74,6 @@ export const Aboutus = () => {
    />
             
   </section>
-
-  <Footer/>
   </>
   )
 }

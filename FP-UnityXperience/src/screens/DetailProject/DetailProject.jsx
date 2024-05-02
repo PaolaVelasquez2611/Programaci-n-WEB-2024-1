@@ -24,7 +24,6 @@ export const DetailProject = () => {
             <img src="../src/assets/behance.png"/>
         </button>
     </section>
-    <Footer />
     </main>
   )
 }

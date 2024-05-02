@@ -13,7 +13,6 @@ export const Services = () => {
       </span>
       <Button className="learn-more" text="Learn more about us"/>
     </section>
-    <Footer/>
     </>
   )
 }

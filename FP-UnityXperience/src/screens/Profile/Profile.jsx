@@ -19,8 +19,6 @@ export const Profile = () => {
     <GradientHeading text="My Projects"/>
 
     <CarouselComponent/>
-    
-    <Footer/>
     </>
   )
 }
