@@ -2,12 +2,23 @@
     background-color: rgba(255, 255, 255, 0.2); 
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); 
     backdrop-filter: blur(10px); 
-    width: 18rem;
+/*     width: 18rem; */
     border-radius: 10px;
+    margin: 0 auto;
+    margin-top: 3%;
+}
+
+.logo-unity{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#btn-learn{
+    margin: 6% 0% 1% 0%;
 }
 
 @media (max-width: 768px) {
     .logo-unity{
-        
+        margin: 0 auto;
     }
 }
