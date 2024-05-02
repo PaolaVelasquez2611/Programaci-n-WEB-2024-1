@@ -2,9 +2,11 @@ import './ProfileCard.css'
 
 export function ProfileCard({ text, imagen, title }) {
     return (
-        <section className='card-profile mx-auto'>
+        <section className='card-profile'>
             <div className="profile-card">
-                <img className="img-profile" src={imagen} alt="Profile Image" />
+                <img className="img-profile" 
+                     src={imagen} 
+                     alt="Profile Image" />
             </div>
             <div className='card-info'>
                 <h2 className='name'>{title}</h2>
@@ -12,16 +14,20 @@ export function ProfileCard({ text, imagen, title }) {
 
                 <section className='buttons-social-card'>
                     <button className='social-btn-card'>
-                        <img src="../../src/assets/github.png" alt="" />
+                        <img src="../../src/assets/github.png"  
+                             alt="" />
                     </button>
                     <button className='social-btn-card'>
-                        <img src="../../src/assets/instagram.png" alt="" />
+                        <img src="../../src/assets/instagram.png" 
+                             alt="" />
                     </button>
                     <button className='social-btn-card'>
-                        <img src="../../src/assets/behance.png" alt="" />
+                        <img src="../../src/assets/behance.png" 
+                            alt="" />
                     </button>
                     <button className='social-btn-card'>
-                        <img src="../../src/assets/linkedin.png" alt="" />
+                        <img src="../../src/assets/linkedin.png" 
+                             alt="" />
                     </button>
                 </section>
             </div>

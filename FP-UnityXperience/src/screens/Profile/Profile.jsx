@@ -1,10 +1,10 @@
-import { ExperienceLine,Header,Footer,ProfileCard, CarouselComponent} from "../../components"
+import { ExperienceLine,Header,Footer,ProfileCard, CarouselComponent,GradientHeading} from "../../components"
 
 export const Profile = () => {
   return (
     <>
     <Header/>
-    <h1 className="text-center">UniteXperience Profile</h1>
+    <h1 className="text-center mt-20 mx-auto font-bold">UniteXperience Profile</h1>
     <ProfileCard  imagen="../../src/assets/Profile/JuanRamirez.png" 
                   title="Juan Esteban Ramirez Perdomo"
                   text="I am a web development enthusiast with a profound interest
@@ -13,9 +13,11 @@ export const Profile = () => {
                         updated with the constant technological advancements in the fields of
                         web development and UI design."
     />
-    <h2 className="text-center">My Experience</h2>
+
+    <GradientHeading text="My Experience"/>
+    
     <ExperienceLine />
-    <h2 className="text-center">My projects</h2>
+    <GradientHeading text="My Projects"/>
 
     <CarouselComponent/>
     

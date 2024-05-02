@@ -1,3 +1,7 @@
+
+.card-profile{
+    margin-left: 100px;
+}
 .card-seccion{
    margin-bottom: -150px;
    margin-top: -150px;
@@ -6,7 +10,7 @@
 .image-about-us{
     width: 500px;
     border-radius: 10px;
-    margin-right: 150px;
+    margin-right: 20px;
     margin-left: 20px;
 
 }

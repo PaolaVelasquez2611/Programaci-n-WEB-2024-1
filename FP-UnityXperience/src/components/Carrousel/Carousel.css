@@ -1,7 +1,11 @@
-.carousel-container{
+.carousel-container-big{
     display: flex;
-  justify-content: center;
+   justify-content: center;
+   flex-direction: row;
+   margin-left: 10px;
 }
 .carousel-container > div {
-    margin: 0 10px; 
+  margin-right: 100px;
+    
+
   }
