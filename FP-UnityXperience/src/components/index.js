@@ -18,3 +18,6 @@ export * from './Carrousel/Carousel'
 export * from './GradientHeading/GradientHeading'
 export * from './CardWrap/CardWrap'
 export * from './Input/Input'
+export * from './MobileNavBar/MobileNavBar'
+export * from './Header/Nav/Nav'
+

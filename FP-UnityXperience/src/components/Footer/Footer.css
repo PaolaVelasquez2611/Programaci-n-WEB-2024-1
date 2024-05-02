@@ -72,7 +72,7 @@ padding-left: 50px;
     height: 500px;
   }
   .Container-footer section {
-    margin-bottom: 15px; 
+    margin-bottom: 10px; 
   }
 
   .social-btn {
@@ -81,7 +81,7 @@ padding-left: 50px;
 
   .buttons-social{
     padding-top: 30px;
-    padding-left: 20px;
+    padding-left: 5px;
   }
 
   .logo-footer {
@@ -90,9 +90,8 @@ padding-left: 50px;
 
 
 .Nav-Footer ul li{
-  margin-top: -8px; /* Reducir el espacio superior */
-  margin-bottom: -8px; /* Reducir el espacio inferior *//* Reducir el margen inferior */
-    list-style: none;
+  margin-top: -8px;
+  margin-bottom: -8px; 
     color: white;
 }
 }
