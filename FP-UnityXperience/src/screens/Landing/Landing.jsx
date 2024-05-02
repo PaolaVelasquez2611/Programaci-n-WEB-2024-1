@@ -11,7 +11,7 @@ export const Landing = () => {
     <p className="text-center mt-8 text-lg">Always exploring the needs</p>
     <p className="text-center mb-20 text-lg">creating innovative ideas and unite the solutions</p>
     <IntroSection></IntroSection>
-{/*     <BrandCards /> */}
+{/*     <BrandCards />  mejorar */} 
     <GradientHeading text={"Skills"}/>
     <Skills />
     <GradientHeading text={"UnityXperience Projects"}/>
