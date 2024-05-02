@@ -5,9 +5,7 @@ import { Header } from "../components"
 
 export const AppRouter = () => {
   return (
-
     <>
-
     <section>
     <Routes>
         <Route path="/" element={<Landing />}/>
