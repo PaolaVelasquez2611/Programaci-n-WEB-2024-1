@@ -1,12 +1,10 @@
-export function Nav (props){
-
-    const {text} = props
+export function Nav ({ text }){
     return(
         <nav>
             <div className="Nav">
                 <ul>
                     <li>
-                        <a href="#">{text}</a>
+                        <p>{text}</p>
                     </li>
                 </ul>
             </div>
