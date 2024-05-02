@@ -5,6 +5,12 @@ export const Landing = () => {
   return (
     <main className="place-content-center">
     <Header /> {/* Improve the responsive */}
+    
+    <GradientHeading text={"UnityXperience"}/>
+    <h1 className="text-center font-bold">UI / UX / Web Development</h1>
+    <p className="text-center mt-8 text-lg">Always exploring the needs</p>
+    <p className="text-center mb-20 text-lg">creating innovative ideas and unite the solutions</p>
+    
     <BrandCards />
     <GradientHeading text={"Skills"}/>
     <Skills />
