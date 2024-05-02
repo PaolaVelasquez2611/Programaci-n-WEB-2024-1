@@ -1,4 +1,4 @@
-import { Footer, Header, Skills, GradientHeading, BrandCard, BrandCards } from "../../components"
+import { Footer, Header, Skills, GradientHeading, BrandCard, BrandCards, IntroSection } from "../../components"
 import { Scroller } from "../../components/Scroller/Scroller"
 
 export const Landing = () => {
@@ -10,8 +10,8 @@ export const Landing = () => {
     <h1 className="text-center font-bold">UI / UX / Web Development</h1>
     <p className="text-center mt-8 text-lg">Always exploring the needs</p>
     <p className="text-center mb-20 text-lg">creating innovative ideas and unite the solutions</p>
-    
-    <BrandCards />
+    <IntroSection></IntroSection>
+{/*     <BrandCards /> */}
     <GradientHeading text={"Skills"}/>
     <Skills />
     <GradientHeading text={"UnityXperience Projects"}/>

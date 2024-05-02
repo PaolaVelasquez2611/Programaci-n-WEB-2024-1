@@ -20,4 +20,5 @@ export * from './CardWrap/CardWrap'
 export * from './Input/Input'
 export * from './MobileNavBar/MobileNavBar'
 export * from './Header/Nav/Nav'
+export * from './IntroSection/IntroSection'
 
