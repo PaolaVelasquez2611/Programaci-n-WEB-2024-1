@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom"
-import { Aboutus, AddProject, AdminLogin, Contact, Error, Landing, Profile, Projects, Services } from "../screens"
+import { Aboutus, AddProject, AdminLogin, Contact, DetailProject, Error, Landing, Profile, Projects, Services } from "../screens"
 
 
 export const AppRouter = () => {
