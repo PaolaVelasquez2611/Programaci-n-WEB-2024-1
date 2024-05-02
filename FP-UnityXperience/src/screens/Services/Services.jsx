@@ -4,8 +4,7 @@ import { Footer, Header, ServicesCards, Button} from "../../components"
 export const Services = () => {
   return (
     <>
-    <Header/>
-    <h1 className="title-screen">UniteXperience Services</h1>
+    <h1 className="title-screen mt-24">UniteXperience Services</h1>
     <ServicesCards/>
     <section className="more-aboutus">
       <span className="combined-text">

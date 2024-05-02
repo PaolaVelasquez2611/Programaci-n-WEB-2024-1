@@ -4,7 +4,8 @@
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: 40px;
+    margin-top: 100px;
+    
 }
 
 .filter-projects input{
@@ -60,6 +61,7 @@
     gap: 40px;
     margin-top: 20px;
     margin-bottom: 40px;
+    margin-left: 10px;
 }
 
 @media (min-width: 770px){
@@ -74,5 +76,6 @@
         justify-content: center;
         gap: 35px;
         max-width: 835px;
+        margin-left: 330px;
     }
 }

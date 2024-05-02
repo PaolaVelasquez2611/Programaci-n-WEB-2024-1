@@ -7,7 +7,7 @@ export const AppRouter = () => {
   return (
 
     <>
-
+    <Header />
     <section>
     <Routes>
         <Route path="/" element={<Landing />}/>

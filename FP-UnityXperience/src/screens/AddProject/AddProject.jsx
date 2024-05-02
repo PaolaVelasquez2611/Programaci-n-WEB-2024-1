@@ -21,7 +21,6 @@ export const AddProject = () => {
 
   return (
     <main>
-      <Header />
       <h3>UniteXperience</h3>
       <h1>Add New Project</h1>
 

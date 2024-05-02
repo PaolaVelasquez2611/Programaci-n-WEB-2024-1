@@ -5,7 +5,6 @@ import { Link } from 'react-router-dom'
 
 export function Footer (){
     return(
-        
         <div className="Container-footer">
             <img className="logo-footer" src="../../src/assets/Logo-footer.png" alt="Logo UnityXperience" />
         <section>
@@ -55,6 +54,5 @@ export function Footer (){
             </Link>
         </section>
         </div>
-        
     )
 }

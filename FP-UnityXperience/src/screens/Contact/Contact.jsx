@@ -21,7 +21,6 @@ export const Contact = () => {
 
   return (
     <main>
-      <Header />
       <h3>UniteXperience</h3>
       <h1>UniteXperience Contact</h1>
 

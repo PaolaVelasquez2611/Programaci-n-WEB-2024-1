@@ -3,8 +3,8 @@ import { Header,Footer,AboutUsCard, BrandCard} from "../../components"
 
 export const Aboutus = () => {
   return (
-  <main className="place-content-center">
-  <h1 className="text-center mt-8 mb-20">UnityXperience</h1>
+  <>
+  <h1 className="text-center mt-20 mb-20 font-bold">UnityXperience</h1>
   <span className="titles">
     <h2><span className="title-1">What</span></h2>
     <h2><span className="title-2">Is?</span></h2>
@@ -75,6 +75,6 @@ export const Aboutus = () => {
   </section>
 
   <Footer/>
-  </main>
+  </>
   )
 }

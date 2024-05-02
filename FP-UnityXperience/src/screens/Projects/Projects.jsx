@@ -23,8 +23,6 @@ export const Projects = () => {
 
   return (
     <>
-      <Header/>
-
       <section className="filter-projects">
         <input type="text" 
         placeholder="Search a project" 

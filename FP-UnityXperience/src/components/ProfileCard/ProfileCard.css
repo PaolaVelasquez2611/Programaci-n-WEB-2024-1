@@ -1,6 +1,6 @@
 .card-profile {
     margin-top: 80px;
-    width: 800px;
+    width: 50vw;
     height: 200px;
     display: grid; 
     grid-template-columns: auto 1fr;

@@ -1,14 +1,15 @@
 .Container-footer {
-    padding-left: 50px;
     display: flex;
-    justify-content: space-between; 
+    justify-content: center; 
     background-color: #14101F; 
     box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); 
     backdrop-filter: blur(10px);
     border-radius:8px;
-    padding-right: 50px;
-    width: 100%;
+    padding-right: 0px;
+    width: 99vw;
     height: 260px;
+    margin-left: 0px;
+    margin-right: 0px;
     
   }
   
@@ -16,10 +17,6 @@
     flex: 1; 
   }
   
-.Container-footer section {
-    margin-right: 10px; 
-    
-  }
 
   .title{
    font-weight: bold;
@@ -46,7 +43,7 @@
 }
 .buttons-social{
   padding-top: 30px;
-padding-left: 50px;
+  padding-left: 50px;
 }
 
 .social-btn{
