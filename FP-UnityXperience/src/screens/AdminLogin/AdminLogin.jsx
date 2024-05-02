@@ -3,7 +3,7 @@ import { Button, CardWrap, Input } from "../../components"
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-
+import './AdminLogin.css'
 export const AdminLogin = () => {
 // todo: fixed the toast notify, when the admin logs in the toast must to appear on screen (app)
   const notify = () => {
@@ -25,14 +25,14 @@ export const AdminLogin = () => {
     <section>
     <CardWrap image="https://static.vecteezy.com/system/resources/previews/027/034/360/non_2x/abstract-square-blurred-background-elegant-gradient-mesh-red-dark-color-design-template-good-for-modern-website-wallpaper-cover-design-free-vector.jpg">
       <div className="children-container">
-      <p>Hello, enter your occount to go to the <span>adminsitrator panel</span></p>
+      <h2>Hello, enter your occount to go to the <span>adminsitrator panel</span></h2>
       <Input text="Your Email" placeholder="Enter email"></Input>
       <Input text="Password" className="tall-input" placeholder="Password"></Input>
       <Link className="w-full" to={"/"}>
         <Button onclick={notify} text={"Log in"} className="w-full"></Button>
       </Link>
       <span className="place-content-center text-center">
-        <p>Return to Home Page</p>
+        <p className="return-to">Return to Home Page</p>
       </span>
       </div>
     </CardWrap>
