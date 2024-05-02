@@ -7,7 +7,7 @@ export function NavFooter (props){
                 <ul>
                     <li>
                         <h2 className="title" ><a href="#"> {title}</a></h2>
-                        <a href="#">{text}</a>
+                        <p>{text}</p>
                         <h2 className="title" ><a href="#">{title2}</a></h2>
                     </li>
                 </ul>

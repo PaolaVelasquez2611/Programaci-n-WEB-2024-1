@@ -1,6 +1,7 @@
 import { NavFooter } from './NavFooter/NavFooter'
 import { footerData, footerData2} from '../../data/footerData'
 import './Footer.css'
+import { Link } from 'react-router-dom'
 
 export function Footer (){
     return(
@@ -8,11 +9,13 @@ export function Footer (){
         <div className="Container-footer">
             <img className="logo-footer" src="../../src/assets/Logo-footer.png" alt="Logo UnityXperience" />
         <section>
-            {footerData.map(({id,title,text})=>{
+            {footerData.map(({id,title,text, route})=>{
                 return(
                     <section key={id}>
-                    <NavFooter  title={title}/>
+                        <NavFooter  title={title}/>
+                    <Link to={route}>
                     <NavFooter  text={text}/>
+                    </Link>
                     </section>
                 )
             })}
@@ -47,12 +50,10 @@ export function Footer (){
         </section>
         </section>
         <section>
-            <NavFooter title2="Administrator Panel"/>
+            <Link to={"/adminlogin"}>
+                <NavFooter title2="Administrator Panel"/>
+            </Link>
         </section>
-
-        
-       
-
         </div>
         
     )

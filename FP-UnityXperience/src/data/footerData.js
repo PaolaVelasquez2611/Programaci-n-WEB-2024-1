@@ -6,27 +6,32 @@ export const footerData = [
     {
         id: crypto.randomUUID(),
         text:"Home",
+        route: "/",
         
     },
     {
         id: crypto.randomUUID(),
         text:"Projects",
+        route: "/projects",
         
     },
     
     {
         id: crypto.randomUUID(),
         text:"Services",
+        route: "/services",
         
     },
     {
         id: crypto.randomUUID(),
         text:"About Us",
+        route: "/aboutus",
         
     },
     {
         id: crypto.randomUUID(),
         text:"contact",
+        route: "/contact",
         
     }
 ]
