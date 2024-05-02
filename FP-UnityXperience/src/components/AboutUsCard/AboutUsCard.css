@@ -1,6 +1,6 @@
 
 .card-profile{
-    margin-left: 100px;
+    margin-left: 20px;
 }
 .card-seccion{
    margin-bottom: -150px;
@@ -66,10 +66,11 @@
          align-items: center;
          flex-direction: column;
          margin-bottom: 100px;
+         width: 100vw;
      }
      
      .text-container-about{
-         width: 500px;
+         width: 100vw;
          margin-right: 80px;
      }
      
@@ -94,5 +95,6 @@
          margin-top: 200px;
        
      }
+     
 
 }

@@ -6,7 +6,7 @@ import './Carousel.css'
 
 export const CarouselComponent = () => (
   <div className="carousel-container-big">
-    <Carousel  autoPlay centerMode autoFocus width="480px">
+    <Carousel  autoPlay centerMode autoFocus width="100vw">
     <div className="carousel-container">
     {carouselData.map(({ id, thumbnail, title, review, tags }) => (
             <li key={id}>
