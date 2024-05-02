@@ -1,0 +1,10 @@
+.card-seccion{
+    gap: 30px;
+}
+
+@media (min-width: 769px){
+    .card-seccion{
+        gap: 0;
+        justify-content: space-between;
+    }
+}
