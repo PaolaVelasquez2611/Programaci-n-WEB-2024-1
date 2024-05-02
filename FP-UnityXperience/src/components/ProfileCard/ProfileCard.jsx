@@ -2,7 +2,7 @@ import './ProfileCard.css'
 
 export function ProfileCard({ text, imagen, title }) {
     return (
-        <section className='card-profile'>
+        <section className='card-profile '>
             <div className="profile-card">
                 <img className="img-profile" 
                      src={imagen} 

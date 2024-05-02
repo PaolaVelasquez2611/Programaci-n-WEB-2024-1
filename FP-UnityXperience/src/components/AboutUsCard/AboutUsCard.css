@@ -10,8 +10,8 @@
 .image-about-us{
     width: 500px;
     border-radius: 10px;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin-right: 0px;
+    margin-left: 100px;
 
 }
 .container-about {
@@ -39,7 +39,8 @@
 .titles{
     display: flex;
     justify-content:end;
-    margin-right: 200px;  
+    margin-right: 450px;
+      
 }
 .titles-Values{
     display: flex;
@@ -96,9 +97,6 @@
        
      }
 
-     .card-profile{
-            margin-left: 60px;
-    }
-     
+    
 
 }
