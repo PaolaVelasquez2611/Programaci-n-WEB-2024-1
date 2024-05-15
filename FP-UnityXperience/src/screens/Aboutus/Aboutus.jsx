@@ -1,16 +1,32 @@
 import './Aboutus.css'
-import { Header,Footer,AboutUsCard, BrandCard} from "../../components"
+import {AboutUsCard, BrandCard} from "../../components"
 
 // todo: Map it, improve coding practices!!
 export const Aboutus = () => {
   return (
   <>
   <h1 className="text-center mt-20 mb-20 font-bold">UnityXperience</h1>
+
+  // todo: Map it, improve coding practices, we're trying!!
+{/*     {
+      aboutUsData.map(( { title, titleColored, text, id, className, image} )=> (
+      <span className="titles">
+        <h2><span className="title-1">{title}</span></h2>
+        <h2><span className="title-2">{titleColored}</span></h2>
+      </span>
+      <figure className={className}>
+       <AboutUsCard text={text}
+                    image={image}/>
+      </figure>
+      ))
+    } */}
+
+
   <span className="titles">
     <h2><span className="title-1">What</span></h2>
     <h2><span className="title-2">Is?</span></h2>
   </span>
-  <section className="what-is-container">
+  <figure className="what-is-container">
   <AboutUsCard  text="UnityXperience isn't your typical design and development company. We’re a 
                       team of passionate freelancers who combine their expertise to create 
                       custom solutionsfor each client. They prioritize understanding your vision
@@ -21,12 +37,12 @@ export const Aboutus = () => {
                        dedication to make it happen."
                 image="../../src/assets/logos/logoUnity.png"
    />
-   </section>
+   </figure>
    <span className="titles">
     <h2><span className="title-1">Our</span></h2>
     <h2><span className="title-2">Vision</span></h2>
   </span>
-   <section className="our-vision-container">
+   <figure className="our-vision-container">
    <AboutUsCard text="At Unityxperience, we aspire to be recognized as a benchmark in the 
                       industry, being the preferred choice for clients seeking innovative and 
                       high-quality solutions, as well as for freelancers looking to collaborate 
@@ -38,12 +54,12 @@ export const Aboutus = () => {
                        in customer service."
                 image="../../src/assets/aboutUsImage.jpg"
   />
-  </section>
+  </figure>
   <span className="titles">
     <h2><span className="title-1">Our</span></h2>
     <h2><span className="title-2">Mision</span></h2>
   </span>
-  <section className="our-mision-container">
+  <figure className="our-mision-container">
    <AboutUsCard text="At Unityxperience, our mission is to lead the software development and 
                       digital experience design industry, being recognized for our innovation, 
                       quality, and commitment to excellence. We strive to be a meeting point
@@ -53,7 +69,7 @@ export const Aboutus = () => {
                       customized solutions that align perfectly with them, prioritizing 
                       quality, precision, and attention to detail in every project."
                 image="../../src/assets/aboutUsImage2.jpg"/>
-  </section>
+  </figure>
 
   <span className="titles-Values">
     <h2><span className="title-1">Our</span></h2>
