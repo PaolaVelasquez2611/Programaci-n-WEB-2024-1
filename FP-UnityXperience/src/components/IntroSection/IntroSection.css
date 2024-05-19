@@ -14,11 +14,19 @@
 }
 
 #btn-learn{
-    margin: 6% 0% 1% 0%;
+    margin: 6%;
+}
+
+.btn-learn{
+    margin: 5% 0% 2% 0%;
 }
 
 @media (max-width: 768px) {
     .logo-unity{
         margin: 0 auto;
+    }
+
+    .btn-learn{
+        margin: 6%;
     }
 }

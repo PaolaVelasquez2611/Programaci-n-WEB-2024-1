@@ -15,7 +15,7 @@ export const Profile = () => {
 
     <GradientHeading text="My Experience"/>
     
-    <ExperienceLine />
+    <ExperienceLine />  {/* todo: fixed the responsive */}
     <GradientHeading text="My Projects"/>
 
     <CarouselComponent/>

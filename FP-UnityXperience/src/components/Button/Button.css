@@ -12,7 +12,8 @@
     cursor: pointer;
     transition: border-color 0.25s;
     border-color: var(--blue-cian);
-    margin: 6%;
+    /* margin: 6%; */ /* esto hace que tenga un margin dificil de manejar en algunos nested components */
+
   }
   #btn:hover {
     background: linear-gradient(135deg, var(--blue-cian), var(--blue-purple));
