@@ -1,5 +1,3 @@
-import 'react-multi-carousel/lib/styles.css';
-
 import React, { useState } from "react";
 import { TeamSlider } from "../TeamSlider/TeamSlider";
 
