@@ -1,4 +1,4 @@
-import { Footer, Header, Skills, GradientHeading, MemberCard, BrandCard, BrandCards, IntroSection, PartherCard } from "../../components"
+import { Footer, Header, Skills, GradientHeading, MemberCard, BrandCard, BrandCards, IntroSection, TeamSection, TeamSlider } from "../../components"
 import { Scroller } from "../../components/Scroller/Scroller"
 
 export const Landing = () => {
@@ -19,7 +19,7 @@ export const Landing = () => {
 {/*     <MemberCard img="../src/assets/Profile/JuanRamirez.png"
     name="Juan Esteban Ramirez"
     role="Developer"/> */}
-    <PartherCard />
+    <TeamSection />
     </main>
   )
 }

@@ -3,7 +3,7 @@ import './Button.css'
 export const Button = ({ text, onclick, className }) => {
 
   const handleOnClick = () => {
-    onclick()
+    console.log("funciono")
   }
 
   return (

@@ -1,0 +1,10 @@
+.carrousel-parther{
+    grid-auto-columns: calc((100% / 3)- 12px);
+    scroll-snap-type: x mandatory;
+    border-radius: 8px;
+    scrollbar-width: none;
+}
+
+.carrousel-parther::-webkit-scrollbar{
+    display: none;
+}
