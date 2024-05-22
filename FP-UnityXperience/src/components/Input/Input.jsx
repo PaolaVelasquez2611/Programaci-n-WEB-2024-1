@@ -1,7 +1,6 @@
 import './Input.css'
 
 export const Input = ({text,placeholder}) => {
-  console.log(text, placeholder)
   return (
     <div className='input-div'>
     <p>{text}</p>

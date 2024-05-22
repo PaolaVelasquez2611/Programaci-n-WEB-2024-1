@@ -5,7 +5,6 @@ import { Footer, Header } from "../components"
 
 export const AppRouter = () => {
   return (
-
     <>
     <Header />
     <section>
