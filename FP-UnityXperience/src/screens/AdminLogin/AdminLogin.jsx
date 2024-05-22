@@ -1,4 +1,4 @@
-import { Link, NavLink } from "react-router-dom";
+import { Link, NavLink, useNavigate } from "react-router-dom";
 import { Button, CardWrap, Header, Input } from "../../components"
 import { app } from "../../services/firebase-config";
 import { useState } from "react";
@@ -12,6 +12,7 @@ export const AdminLogin = () => {
 
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
+  const navigate = useNavigate();
 
   const logIn = (email, password) => {
     return app.auth().signInWithEmailAndPassword(email, password);
@@ -24,6 +25,7 @@ export const AdminLogin = () => {
       const userFirebase = await logIn(email, password);
       console.log("log in with:", userFirebase.user);
       notify();
+      navigate('/');
     } catch (error) {
       console.error("Error:", error);
       toast.error('Error: ' + error.message, {
