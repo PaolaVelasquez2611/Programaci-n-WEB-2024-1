@@ -23,8 +23,8 @@ export const Aboutus = () => {
 
 
   <span className="aboutus-h1">
-    <h2><span className="aboutus-h1-1">What</span></h2>
-    <h2><span className="aboutus-h1-2">Is?</span></h2>
+    <h2><span className="aboutus-h1-1">Who Are </span></h2>
+    <h2><span className="aboutus-h1-2">We?</span></h2>
   </span>
   <figure className="what-is-container">
   <AboutUsCard  text="UnityXperience isn't your typical design and development company. We’re a 
