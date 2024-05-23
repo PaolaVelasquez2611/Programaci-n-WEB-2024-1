@@ -1,7 +1,7 @@
 import './Projects.css'
 import { useState, useEffect } from 'react'
 import { projects } from '../../data/projects'
-import { Footer, Header, ProjectCards } from "../../components"
+import { Footer, Header, ProjectCards, SearchBar } from "../../components"
 
 export const Projects = () => {
 
@@ -24,10 +24,7 @@ export const Projects = () => {
   return (
     <>
       <section className="filter-projects">
-        <input type="text" 
-        placeholder="Search a project" 
-        value={searchTerm}
-        onChange={(search) => setSearchTerm(search.target.value)}/>
+        <SearchBar type="text" placeholder="Search a project" value={searchTerm} onChange={(search) => setSearchTerm(search.target.value)}/>
         <button>
           <img src="../src/assets/filter.png"/>
         </button>
