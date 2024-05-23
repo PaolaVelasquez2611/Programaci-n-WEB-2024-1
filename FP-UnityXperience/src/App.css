@@ -2,9 +2,30 @@
   max-width: 1500px;
   margin: 0 auto;
   --blue-cian: #13BFD9;
-  --blue-purple:#757EE5;
-  --mint:#5DCAC4;
-  --white40:#ffffff40;
-  ---gray:#999999;
+  --blue-purple: #757EE5;
+  --mint: #5DCAC4;
+  --white40: #ffffff40;
+  ---gray: #999999;
 }
 
+
+body {
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+@media (max-width: 770px){
+
+ 
+  body{
+    width: 100vh;
+  }
+  header {
+    width: 100vh;
+  }
+  footer {
+    width: 100vh;
+  }
+  
+  
+}
