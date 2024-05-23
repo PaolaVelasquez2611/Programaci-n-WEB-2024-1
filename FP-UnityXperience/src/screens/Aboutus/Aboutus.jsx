@@ -7,7 +7,7 @@ export const Aboutus = () => {
   <>
   <h1 className="text-center mt-20 mb-20 font-bold">UnityXperience</h1>
 
-  // todo: Map it, improve coding practices, we're trying!!
+  
 {/*     {
       aboutUsData.map(( { title, titleColored, text, id, className, image} )=> (
       <span className="titles">
@@ -22,9 +22,9 @@ export const Aboutus = () => {
     } */}
 
 
-  <span className="titles">
-    <h2><span className="title-1">What</span></h2>
-    <h2><span className="title-2">Is?</span></h2>
+  <span className="aboutus-h1">
+    <h2><span className="aboutus-h1-1">What</span></h2>
+    <h2><span className="aboutus-h1-2">Is?</span></h2>
   </span>
   <figure className="what-is-container">
   <AboutUsCard  text="UnityXperience isn't your typical design and development company. We’re a 

@@ -9,6 +9,10 @@
    color: white;
 }
 
+.nav-list p:hover{
+    color: rgb(79, 102, 255);
+ }
+
 .Nav-Footer a {
     color: white;
     text-decoration: none;
