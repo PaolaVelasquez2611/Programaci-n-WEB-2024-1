@@ -1,10 +1,83 @@
-.carrousel-parther{
-    grid-auto-columns: calc((100% / 3)- 12px);
-    scroll-snap-type: x mandatory;
-    border-radius: 8px;
-    scrollbar-width: none;
-}
+/* TeamSlider.css */
 
-.carrousel-parther::-webkit-scrollbar{
+  .carousel {
+    width: 70%;
+    height: 25rem;
+    perspective: 500px;
+    transform-style: preserve-3d;
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    
+    
+  }
+  
+  .carrousel-partner {
+    display: grid;
+    grid-auto-columns: calc((100% / 3) - 12px);
+    scroll-snap-type: x mandatory;
+    overflow-x: auto;
+    scrollbar-width: none;
+    border-radius: 8px;
+  }
+  
+  .carrousel-partner::-webkit-scrollbar {
     display: none;
-}
+  }
+  
+  .card-container {
+    position: absolute;
+    margin-left: 36%;
+    transform: 
+      rotateY(calc(var(--offset) * 50deg)) 
+      scaleY(calc(1 + var(--abs-offset) * -0.4))
+      translateZ(calc(var(--abs-offset) * -30rem))
+      translateX(calc(var(--direction) * -5rem));
+    filter: blur(calc(var(--abs-offset) * 2rem));
+    transition: all 0.3s ease-out;
+  }
+
+  
+  .nav {
+    margin: 0 auto;
+    color: white;
+    font-size: 5rem;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 50%;
+    z-index: 2;
+    cursor: pointer;
+    user-select: none;
+    background: unset;
+    border: unset;
+  }
+  
+  .nav.left {
+    transform: translateX(-100%) translateY(-50%);
+  }
+  
+  .nav.right {
+    right: 0;
+    transform: translateX(100%) translateY(-50%);
+  }
+  
+  @media (max-width: 768px) {
+    .card-container {
+     
+        margin-left: 2%;
+       
+      }
+
+      .carousel {
+        width: 60%;}
+
+        .nav {
+            width: 40px;
+        }
+       
+        
+        
+      }
+  

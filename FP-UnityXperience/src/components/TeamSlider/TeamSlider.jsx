@@ -1,53 +1,37 @@
-import { PartnerCard } from "../PartnerCard/PartnerCard"
-import './TeamSlider.css'
+import React, { useState } from 'react';
+import { PartnerCard } from "../PartnerCard/PartnerCard";
+import { TiChevronLeftOutline, TiChevronRightOutline } from 'react-icons/ti';
+import './TeamSlider.css';
 
-/* import { Swiper, SwiperSlide } from "swiper/react"
-import 'swiper/css';
-import 'swiper/css/pagination';
-import 'swiper/css/free-mode';
-
-import { FreeMode, Pagination } from "swiper/modules"
-
-import { RxArrowTopRight } from "react-icons/rx" */
+const MAX_VISIBILITY = 3;
 
 export const TeamSlider = () => {
-  return (
-/*     <div className="flex items-center justify-center flex-col h-screen bg-[$6c34af] z-10 ">
-        <Swiper
-        breakpoints={{
-          340: {
-            slidesPerView: 2,
-            spaceBetween: 15
-          },
-          700:{
-            slidesPerView: 3,
-            spaceBetween: 15
-          }
-        }}
-        freeMode={true}
-        pagination={{
-          clickable: true
-        }}
-        modules={[FreeMode, Pagination]}
-        className="max-w-[60%] lg:max-w-[50%]"> */
-        <div className="">
-          <ul className="grid grid-flow-col overflow-x-auto scroll-smooth carrousel-parther ">
-            <li>
-            <PartnerCard />
-            </li>
-{/*             <li>
-            <PartherCard />
-            </li>
-            <li>
-            <PartherCard />
-            </li>
-            <li>
-            <PartherCard />
-            </li> */}
-          </ul>
-        </div>
-/*          </Swiper> 
+  const [active, setActive] = useState(2);
+  const count = 4; // Number of team members
 
-    </div> */
-  )
-}
+  return (
+    <div className="carousel-container">
+      <div className="carousel">
+        {active > 0 && <button className='nav left' onClick={() => setActive(i => i - 1)}><TiChevronLeftOutline /></button>}
+        <ul className="carrousel-partner">
+          {[...Array(count)].map((_, i) => (
+      
+            <li className='card-container' style={{
+              '--active': i === active ? 1 : 0,
+              '--offset': (active - i) / 3,
+              '--direction': Math.sign(active - i),
+              '--abs-offset': Math.abs(active - i) / 3,
+              'pointer-events': active === i ? 'auto' : 'none',
+              'opacity': Math.abs(active - i) >= MAX_VISIBILITY ? '0' : '1',
+              'display': Math.abs(active - i) > MAX_VISIBILITY ? 'none' : 'block',
+            }} key={i}>
+              <PartnerCard />
+            </li>
+          
+          ))}
+        </ul>
+        {active < count - 1 && <button className='nav right' onClick={() => setActive(i => i + 1)}><TiChevronRightOutline /></button>}
+      </div>
+    </div>
+  );
+};
