@@ -21,8 +21,8 @@ export const Contact = () => {
 
   return (
     <main>
-      <h3>UniteXperience</h3>
-      <h1>UniteXperience Contact</h1>
+      <h3 className="heading-contact-3">UniteXperience</h3>
+      <h1 className="heading-contact-1">UniteXperience Contact</h1>
 
       <section>
         <CardWrap image="https://static.vecteezy.com/system/resources/thumbnails/020/933/072/small_2x/abstract-blur-gradient-background-vector.jpg">
