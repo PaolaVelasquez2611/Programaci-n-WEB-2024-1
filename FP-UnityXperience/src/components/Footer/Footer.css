@@ -1,64 +1,48 @@
 .Container-footer {
-    display: flex;
-    justify-content: center; 
-    background-color: #14101F; 
-    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); 
-    backdrop-filter: blur(10px);
-    border-radius:0px;
-    padding-right: 0px;
-    width: 100vw;
-    height: 260px;
-    margin-left: 0px;
-    margin-right: 0px;
-    margin-top: 10%;
-    
-  }
-  
-.Container-footer section {
-    flex: 1; 
-  }
-  
-
-  .title{
-   font-weight: bold;
-   font-size: 20;
-  }
-
-.logo-footer{
   display: flex;
-  height: 100px;
-  align-items: center;
-  margin-top: 70px;
-  margin-right: 60px;
-  padding-left: 50px;
-
-}
-.Nav-Footer a {
-    color: white;
-    text-decoration: none;
-}
-.Nav-Footer ul li{
-  padding-top: 8px;
-    list-style: none;
-    color: white;
-}
-.buttons-social{
-  padding-top: 30px;
-  padding-left: 50px;
+  gap: 10%;
+  padding-top:3% ;
+  padding-left: 30%;
+  background-color: #14101F;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  border-radius: 0px;
+  padding-right: 0px;
+  width: 100vw;
+  height: 260px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
 
-.social-btn{
-    background-color: transparent;
-    border-color: transparent;
-    margin-right: 8px;
+.logo-footer {
+  position: absolute;
+  top: 20%;
+  left: 5%;
 
 }
 
-.social-btn img{
-    background-color: transparent;
-    border-color: transparent;
-  
+
+
+.buttons-social {
+  width: 100%;
+  position: absolute;
+  top: 70%;
+  left: 82%;
 }
+
+.social-btn {
+  background-color: transparent;
+  border-color: transparent;
+  margin-right: 8px;
+
+}
+
+.social-btn img {
+  background-color: transparent;
+  border-color: transparent;
+
+}
+
 @media (max-width: 768px) {
   .Container-footer {
     display: flex;
@@ -69,29 +53,47 @@
     width: 100vw;
     height: 500px;
   }
+
   .Container-footer section {
-    margin-bottom: 10px; 
+    margin-bottom: 10px;
   }
 
   .social-btn {
     margin-left: 0;
   }
 
-  .buttons-social{
-    padding-top: 30px;
-    padding-left: 5px;
+  .buttons-social {
+    width: 100%;
+    position: absolute !important;
+    top: 15%;
+    left: 55%; 
   }
+ 
 
   .logo-footer {
     display: none;
   }
 
 
-.Nav-Footer ul li{
-  margin-top: -8px;
-  margin-bottom: -8px; 
+  .Nav-Footer ul li {
+    margin-top: -8px;
+    margin-bottom: -8px;
     color: white;
-}
-}
+  }
 
-
+  .Container-footer {
+    display: flex;
+    align-items: flex-start;
+    gap: 5%;
+    padding-top:10% ;
+    padding-left: 5%;
+    background-color: #14101F;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(10px);
+    border-radius: 0px;
+    width: 100vw;
+    height: fit-content;
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}

@@ -1,0 +1,59 @@
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+ 
+}
+
+.nav-list p{
+   color: white;
+}
+
+.Nav-Footer a {
+    color: white;
+    text-decoration: none;
+  }
+  
+.Nav-Footer ul li {
+    list-style: none;
+    color: white;
+  
+  }
+
+  .title {
+    font-weight: bold;
+    font-size: 20;
+    
+  }
+
+  @media (min-width: 768px) {
+    .nav-list{
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+     
+    }
+    
+    .nav-list p{
+       color: white;
+    }
+    
+    .Nav-Footer a {
+        color: white;
+        text-decoration: none;
+      }
+      
+    .Nav-Footer ul li {
+        list-style: none;
+        color: white;
+      
+      }
+    
+      .title {
+        font-weight: bold;
+        font-size: 20;
+        
+        
+      }
+    
+  }

@@ -21,18 +21,16 @@ export const Projects = () => {
     ||(project.tags[2] && project.tags[2].includes(searchTerm.trim()))
     );
 
-  return (
-    <>
-      <section className="filter-projects">
-        <SearchBar type="text" placeholder="Search a project" value={searchTerm} onChange={(search) => setSearchTerm(search.target.value)}/>
-        <button>
-          <img src="../src/assets/filter.png"/>
-        </button>
-      </section>
+    return (
+      <>
+        <section className="filter-projects">
+          <SearchBar type="text" placeholder="Search a project" value={searchTerm} onChange={(search) => setSearchTerm(search.target.value)}/>
+        </section>
+  
+        <h1 className="title-screen">UnityXperience Projects </h1>
+        
+        <ProjectCards filteredData={filteredProject}/>
+      </>
+    )
+  }
 
-      <h1 className="title-screen">UnityXperience Projects </h1>
-      
-      <ProjectCards filteredData={filteredProject}/>
-    </>
-  )
-}

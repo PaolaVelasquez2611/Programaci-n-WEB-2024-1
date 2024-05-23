@@ -1,81 +1,95 @@
-.project-card{
+/* ProjectCard.css */
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .flip-card-front,
+  .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+    border-radius: 10px;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .flip-card-front img {
+    width: 100%;
+    height: 100%;
+    object-fit:fill; /* Ensure the image covers the entire space without deforming */
+    border-radius: 10px;
+  }
+  
+  .flip-card-back {
     display: flex;
     flex-direction: column;
-    position: relative;
-    background: rgba(255, 255, 255, 0.10);;
-    box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
-    width: 60vw;
-    max-width: 320px;
-    height: 310px;
-    border-radius: 10px;
-}
-
-.project-thumbnail{
-    height: 100px;
-    border-top-left-radius: 11px;
-    border-top-right-radius: 11px;
-}
-
-.project-title{
-    font-size: 15px;
-    font-weight: bold;
-    margin-top: 15px;
-    margin-bottom: 0;
-    margin-left: 15px;
-}
-
-.project-description{
-    font-size: 12px;
-    height: 60px;
-    margin-top: 5px;
-    margin-bottom: 0;
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.tags{
-    display: flex;
-    flex-direction: row;
-    gap: 15px;
-    margin-top: 25px;
-    margin-left: 15px;
-    margin-left: 15px;
-}
-
-.tags p{
-    font-size: 12px;
-    font-weight: lighter;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
-.more-information{
-    display: flex;
-    align-items: center;
     justify-content: center;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    margin-left: 15px;
-    width: 84px;
-    height: 24px;
-    font-size: 12px;
-/*     margin: 6%; */
-}
+    align-items: center;
+    padding: 2%;
+    background-color: rgb(51, 58, 65);
+    color: white;
+    border-radius: 10px;
+    transform: rotateY(180deg);
+  }
+  
+  .project-details-card{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .project-title{
+    font-size: 2rem;
+    font-weight: 500;
+  }
 
-@media (min-width: 530px){
-    .project-title{
-        font-size: 18px;
-    }
 
-    .project-description{
-        font-size: 14px;
-    }
+  .project-description {
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 0.75rem;
+    margin-bottom: 1%;
+  }
 
-    .tags{
-        margin-top: 15px;
-    }
 
-    .tags p{
-        font-size: 14px;
-    }
-}
+  
+  .tags {
+    color: #bbb;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.5rem;
+    gap: 5px;
+  }
+  
+  .more-information {
+    margin-top: 0px;
+  }
+  
