@@ -1,0 +1,11 @@
+
+.group-brandcards{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    gap: 5%;
+    padding-bottom:5%;
+    margin-top:2%;
+    
+}

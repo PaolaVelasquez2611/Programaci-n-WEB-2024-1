@@ -1,5 +1,5 @@
 import './Aboutus.css'
-import {AboutUsCard, BrandCard} from "../../components"
+import {AboutUsCard, BrandCard, BrandCards} from "../../components"
 
 // todo: Map it, improve coding practices!!
 export const Aboutus = () => {
@@ -71,25 +71,7 @@ export const Aboutus = () => {
                 image="../../src/assets/aboutUsImage2.jpg"/>
   </figure>
 
-  <span className="titles-Values">
-    <h2><span className="title-1">Our</span></h2>
-    <h2><span className="title-2">Values</span></h2>
-  </span>
-  <section className="card-seccion flex justify-center items-center h-screen">
-  <BrandCard icon="../src/assets/icons/lightBulbIcon.png" title="Innovation" description="We continuously seek new ways to tackle 
-                                                     challenges and devise creative solutions 
-                                                     that drive progress."
-  />
-  <BrandCard icon="../src/assets/icons/medalIcon.png" title="Quality" description="We are committed to delivering exceptional work 
-                                                  on every project, focusing on precision, 
-                                                  attention to detail, and excellence."
-  />
-  <BrandCard icon="../src/assets/icons/userIcon.png" title="Collaboration" description="We believe in the power of teamwork and
-                                                        foster an environment where all members 
-                                                        can contribute and learn."
-   />
-            
-  </section>
+  <BrandCards></BrandCards>
   </>
   )
 }
