@@ -1,9 +1,9 @@
-import { ExperienceLine,Header,Footer,ProfileCard,GradientHeading, CarouselComponent} from "../../components"
+import { ExperienceLine,ProfileCard,GradientHeading, CarouselComponent} from "../../components"
 
 export const Profile = () => {
   return (
     <>
-    <h1 className="text-center mt-20 mx-auto font-bold">UniteXperience Profile</h1>
+    <h1 className="text-center mt-20 mb-20 mx-auto font-bold">UniteXperience Profile</h1>
     <ProfileCard  imagen="../../src/assets/Profile/JuanRamirez.png" 
                   title="Juan Esteban Ramirez Perdomo"
                   text="I am a web development enthusiast with a profound interest
