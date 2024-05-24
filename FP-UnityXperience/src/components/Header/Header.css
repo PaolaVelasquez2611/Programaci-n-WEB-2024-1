@@ -21,45 +21,95 @@
   margin-right: auto; 
 }
 
+.Nav {
+  display: flex;
+  align-items: center; 
+}
+
 .Nav p {
   color: white;
   text-decoration: none;
 }
 
-.Nav ul li  {
-  margin-right: 30px;
+.Nav ul {
+  display: flex;
   list-style: none;
-  color: transparent;
+  padding: 0;
+  margin: 0;
+}
+
+.Nav ul li {
+  margin-right: 30px;
 }
 
 .hamClick {
   display: none;
 }
 
-
 @media (max-width: 768px) {
   .Container {
+    display: flex; 
+    align-items: center;
+    flex-direction: row; 
+    background-color: rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); 
+    backdrop-filter: blur(10px);
+    padding-right: 50px;
+    padding-left: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
     width: 100vw;
-    height: 55  px;
+    height: 70px;
+    position: fixed;
+    z-index: 4;
   }
-
+  
+  .logo {
+    width: 300px;
+    padding: 15px;
+    margin-right: auto; 
+  }
+  
   .Nav {
-    display: none; 
+    display: none;
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.2); 
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); 
+    backdrop-filter: blur(10px);
+    padding: 20px;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start; 
+  }
+  
+  .Nav.showMenu {
+    display: flex;
+  }
+  
+  .Nav a {
+    color: white;
+    text-decoration: none;
+    margin-bottom: 10px;
   }
   
   .hamClick {
     display: block;
     background-color: transparent;
-    border-color: transparent;
-    width: 30px;
-    margin-right: 10px; 
+    border: none;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
   }
-  .showMenu .Nav {
-    display: none; 
+  .hamburguer-menu{
+    display: flex;
+    align-items: end;
+    flex-direction: row;
+    justify-content: end;
+    margin-left: 80%;
+    width: 10%;
   }
-  .logo {
-    width: 300px;
-    padding: 5px;
-    margin-right: auto; 
-  }
+  
 }
