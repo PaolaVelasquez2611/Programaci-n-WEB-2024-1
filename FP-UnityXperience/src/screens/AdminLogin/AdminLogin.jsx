@@ -22,8 +22,16 @@ export const AdminLogin = () => {
     e.preventDefault();
 
     try {
-      const userFirebase = await logIn(email, password);
-      console.log("log in with:", userFirebase.user);
+      const userCredential = await logIn(email, password);
+      const user = userCredential.user
+      console.log("log in with:", user);
+
+      localStorage.setItem('user', JSON.stringify({
+        uid: user.uid,
+        email: user.email,
+        token: await user.getIdToken()
+      }));
+
       notify();
       navigate('/');
     } catch (error) {
