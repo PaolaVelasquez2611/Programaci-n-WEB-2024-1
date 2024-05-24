@@ -1,10 +1,10 @@
 import './Input.css'
 
-export const Input = ({text,placeholder}) => {
+export const Input = ({text,placeholder, type}) => {
   return (
     <div className='input-div'>
     <p>{text}</p>
-    <input className="input" placeholder={placeholder}></input>
+    <input type={type} className="input" placeholder={placeholder}></input>
     </div>
   )
 }

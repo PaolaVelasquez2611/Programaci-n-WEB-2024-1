@@ -30,7 +30,7 @@ export const AddProject = () => {
           <Input text="Work Title" placeholder="Enter work title"></Input>
           <Input text="Link" placeholder="Copy the embeded link here"></Input>
           <Input text="Tags" className="tall-input" placeholder="Add tags"></Input>
-          <Input text="Upload Thumbnail" className="tall-input" placeholder="Add tags"></Input>
+          <Input type="file" text="Upload Thumbnail" className="tall-input" placeholder="Add tags"></Input>
           <Input text="Work Desciption" className="tall-input" placeholder="Write here your Description"></Input>
           <Button onclick={notify} text={"Send"}></Button>
           </div>
