@@ -1,39 +1,40 @@
 import { useState } from "react";
 import './Header.css';
-import { MobileNavBar, Nav } from "../../components";
+import { Nav } from "../../components";
 import { headerData } from "../../data/headerData";
 import { Link } from "react-router-dom";
+
+import Logo from "../../assets/logos/Logo.png";
+import HamburguerMenu from "../../assets/SVG/hamburguer-menu.svg";
 
 export function Header() {
     const [showMenu, setShowMenu] = useState(false);
 
-    const handleClick = () => {
-        setShowMenu(!showMenu);
-    };
-
     return (
-        <div className="Container">
-            <img
-                className="logo"
-                src="../../src/assets/Logo.png"
-                alt="Logo UnityXperience"
-            />
-            <div className={`Nav ${showMenu ? "showMenu" : ""}`}>
-                {headerData.map(({ id, text, route }) => (
-                    <section key={id} className="Section">
-                        <Link to={route} onClick={() => setShowMenu(false)}>
-                            <Nav text={text} />
-                        </Link>
-                    </section>
-                ))}
+        <header>
+            <div className="Container">
+                <Link to="/">
+                    <img
+                        className="logo"
+                        src={Logo}
+                        alt="Logo UnityXperience"
+                    />
+                </Link>
+                <button
+                    className={`menu-btn ${showMenu ? 'menu-btn-active' : ''}`}
+                    onClick={() => setShowMenu(!showMenu)}
+                    aria-label={showMenu ? "Cerrar menú" : "Abrir menú"}
+                >
+                    <img
+                        className="hamburguer-menu"
+                        src={HamburguerMenu}
+                        alt="Menu"
+                    />
+                </button>
+                <section>
+                    <Nav text={headerData} showMenu={showMenu} />
+                </section>
             </div>
-            <button className="hamClick" onClick={handleClick}>
-                <img
-                    className="hamburguer-menu"
-                    src="../../src/assets/SVG/hamburguer-menu.svg"
-                    alt=""
-                />
-            </button>
-        </div>
+        </header>
     );
 }
