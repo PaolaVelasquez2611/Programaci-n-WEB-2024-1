@@ -1,7 +1,7 @@
 import './AddProject.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Button, CardWrap, Input } from '../../components';
+import { Button, CardWrap, Input, TagInput } from '../../components';
 import { useState } from 'react';
 import { storage, db } from '../../services/firebase-config';
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
@@ -18,6 +18,7 @@ export const AddProject = () => {
 
   const [thumbnailUpload, setThumbnailUpload] = useState(null);
   const [imagesUpload, setImagesUpload] = useState([]);
+  const [tags, setTags] = useState([]);
 
   const uploadProject = async () => {
     if (!thumbnailUpload) return;
@@ -83,6 +84,11 @@ export const AddProject = () => {
               className="tall-input" 
               placeholder="Add tags" 
               onChange={(e) => setProjectData({ ...projectData, tags: e.target.value.split(',') })} />
+
+            <TagInput 
+              tags={projectData.tags} 
+              setTags={(tags) => setProjectData({ ...projectData, tags })} />
+
             <Input 
               text={"Upload your thumbnail"}
               type="file" 
