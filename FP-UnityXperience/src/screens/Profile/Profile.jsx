@@ -1,4 +1,4 @@
-import { ExperienceLine,ProfileCard,GradientHeading, CarouselComponent} from "../../components"
+import { ExperienceLine,ProfileCard,GradientHeading, CardSlider} from "../../components"
 
 export const Profile = () => {
   return (
@@ -18,7 +18,7 @@ export const Profile = () => {
     <ExperienceLine />  {/* todo: fixed the responsive */}
     <GradientHeading text="My Projects"/>
 
-     <CarouselComponent/>
+     <CardSlider/>
     </>
   )
 }

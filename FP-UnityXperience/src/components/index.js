@@ -4,7 +4,6 @@ export * from "./BrandCards/BrandCards";
 export * from "./Button/Button";
 export * from "./Footer/Footer";
 export * from "./CardWrap/CardWrap";
-export * from "./Carrousel/Carousel";
 export * from "./ExperienceLine/ExperienceLine";
 export * from "./GradientHeading/GradientHeading";
 export * from "./Header/Header";
@@ -27,3 +26,4 @@ export * from "./ProfileCard/ProfileCard";
 export * from "./ProjectCards/ProjectCards";
 export * from "./ProjectDetails/ProjectDetails";
 export * from "./EditButton/EditButton"
+export * from "./CardSlider/CardSlider"
