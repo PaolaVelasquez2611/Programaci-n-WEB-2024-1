@@ -70,29 +70,27 @@ export const AddProject = () => {
       <section>
         <CardWrap className="wrap" image="https://t3.ftcdn.net/jpg/05/65/95/00/360_F_565950027_aojKCTkmD6IM5t4VHu9xwSgfoaArZxUc.jpg">
           <div className="children">
-            {/* todo: create a form component that wraps all input */}
             <Input 
               text="Work Title" 
               placeholder="Enter work title" 
               onChange={(e) => setProjectData({ ...projectData, title: e.target.value })} />
+              <Input 
+                text="Work Description" 
+                className="tall-input" 
+                placeholder="Write your description here" 
+                onChange={(e) => setProjectData({ ...projectData, description: e.target.value })} />
             <Input 
               text="Link" 
               placeholder="Copy the embeded link here" 
               onChange={(e) => setProjectData({ ...projectData, work_link: e.target.value })} />
-            <Input 
-              text="Tags" 
-              className="tall-input" 
-              placeholder="Add tags" 
-              onChange={(e) => setProjectData({ ...projectData, tags: e.target.value.split(',') })} />
-
             <TagInput 
               tags={projectData.tags} 
               setTags={(tags) => setProjectData({ ...projectData, tags })} />
-
             <Input 
               text={"Upload your thumbnail"}
               type="file" 
               className='tall-input'
+              id="file-input"
               onChange={(e) => setThumbnailUpload(e.target.files[0])} />
             <Input 
               text={"Upload the images of your project"}
@@ -100,11 +98,6 @@ export const AddProject = () => {
               className='tall-input' 
               multiple={true}
               onChange={(e) => setImagesUpload(e.target.files)} />
-            <Input 
-              text="Work Description" 
-              className="tall-input" 
-              placeholder="Write your description here" 
-              onChange={(e) => setProjectData({ ...projectData, description: e.target.value })} />
             <Button 
               onClick={uploadProject} 
               text="Send" />
