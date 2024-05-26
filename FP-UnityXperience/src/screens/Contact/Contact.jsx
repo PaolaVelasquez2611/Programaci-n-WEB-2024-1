@@ -1,59 +1,12 @@
-import { useRef } from "react";
 import { Button, CardWrap, Input } from "../../components";
 import './Contact.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import emailjs from '@emailjs/browser';
+import { useContactUs } from "../../hooks/useContactUs";
 
 export const Contact = () => {
-  const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-  
-    emailjs
-      .sendForm(
-        'service_y4bhwrf',
-        'template_aw6ih9g',
-        form.current, {
-        publicKey: 'JxSZhWzdiJwLnZaRa',
-      })
-      .then(
-        () => {
-          notify();
-          console.log("SUCCESS")
-        },
-        (error) => {
-          notifyError();
-          console.error('FAILED...', error.text);
-        }
-      );
-  };
-
-  const notify = () => {
-    toast.success('Your Message is on Its Way! Excited to Connect! 🚀', {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
-  };
-  const notifyError = () => {
-    toast.success('There was an error sending your message 😔', {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
-  };
+  const { sendEmail, form } = useContactUs();
 
   return (
     <main>
