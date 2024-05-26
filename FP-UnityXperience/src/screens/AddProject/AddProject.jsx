@@ -14,11 +14,13 @@ export const AddProject = () => {
     tags: [],
     work_link: '',
     thumbnail: '',
+    authors: []
   });
 
   const [thumbnailUpload, setThumbnailUpload] = useState(null);
   const [imagesUpload, setImagesUpload] = useState([]);
   const [tags, setTags] = useState([]);
+  const [authors, setAuthors] = useState([]);
 
   const uploadProject = async () => {
     if (!thumbnailUpload) return;
@@ -84,8 +86,13 @@ export const AddProject = () => {
               placeholder="Copy the embeded link here" 
               onChange={(e) => setProjectData({ ...projectData, work_link: e.target.value })} />
             <TagInput 
+              labelText={"Enter tags"}
               tags={projectData.tags} 
               setTags={(tags) => setProjectData({ ...projectData, tags })} />
+            <TagInput
+              labelText={"Authors"} 
+              tags={projectData.authors} 
+              setTags={(authors) => setProjectData({ ...projectData, authors })} />
             <Input 
               text={"Upload your thumbnail"}
               type="file" 

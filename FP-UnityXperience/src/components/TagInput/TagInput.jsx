@@ -1,7 +1,7 @@
 import { useState } from "react";
 import './TagInput.css'
 
-export const TagInput = ({ tags, setTags }) => {
+export const TagInput = ({ tags, setTags, labelText }) => {
     const [tag, setTag] = useState('');
 
     const handleKeyDown = (e) => {
@@ -24,7 +24,7 @@ export const TagInput = ({ tags, setTags }) => {
 
     return (
         <div className="tag-input-box">
-            <label htmlFor="tag-input">Enter tags</label>
+            <label htmlFor="tag-input">{labelText}</label>
             {/* <p>Press enter to add a new keyword</p> */}
             <div className="tags-container">
                 {tags.map((tag, index) => (
