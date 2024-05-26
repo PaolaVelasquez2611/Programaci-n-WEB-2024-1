@@ -22,6 +22,7 @@ export * from "./ServicesCard/ServicesCard";
 export * from "./Skills/Skills";
 export * from "./SocialButton/SocialButton";
 export * from "./SocialButtons/SocialButtons";
+export * from "./TagInput/TagInput";
 export * from "./TeamSection/TeamSection";
 export * from "./TeamSlider/TeamSlider";
 export * from "./ProfileCard/ProfileCard";

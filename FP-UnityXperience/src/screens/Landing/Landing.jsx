@@ -21,5 +21,6 @@ export const Landing = () => {
     role="Developer"/> */}
     <TeamSection />
     </main>
+    /* we must to fix TeamSection slider */
   )
 }

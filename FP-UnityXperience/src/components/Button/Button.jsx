@@ -1,12 +1,7 @@
 import './Button.css'
 
-export const Button = ({ text, onclick, className }) => {
-
-  const handleOnClick = () => {
-    console.log("funciono")
-  }
-
+export const Button = ({ text, onClick, className }) => {
   return (
-    <button onClick={handleOnClick} className={className} id='btn'>{text}</button>
+    <button onClick={onClick} className={className} id='btn'>{text}</button>
   )
 }
