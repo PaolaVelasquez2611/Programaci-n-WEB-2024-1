@@ -19,7 +19,7 @@ export function Nav ({ text, showMenu }) {
 
     return (
         <nav style={{ display: (showMenu || isDesktop) ? 'block' : 'none' }}> 
-            <ul className='nav'>
+            <ul className='nav-header'>
                 {text.map(({ id, text, route }) => (
                     <li key={id}>
                         <Link to={route}>
