@@ -9,6 +9,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 export const AddProject = () => {
   const [projectData, setProjectData] = useState({
+    id: crypto.randomUUID(),
     title: '',
     description: '',
     tags: [],

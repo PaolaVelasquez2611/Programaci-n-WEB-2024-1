@@ -9,7 +9,7 @@ export function ProjectCards({ filteredData }) {
             key={project.id}
             img={project.thumbnail}
             title={project.title}
-            description={project.review}
+            description={project.description}
             tags={project.tags}
           />
         ))
