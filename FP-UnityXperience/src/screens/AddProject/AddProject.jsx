@@ -6,6 +6,7 @@ import { useState } from 'react';
 import { storage, db } from '../../services/firebase-config';
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import { v4 as uuidv4 } from 'uuid';
+import { Loader } from '../../components/Loader/Loader';
 
 export const AddProject = () => {
   const [projectData, setProjectData] = useState({
@@ -22,9 +23,12 @@ export const AddProject = () => {
   const [imagesUpload, setImagesUpload] = useState([]);
   const [tags, setTags] = useState([]);
   const [authors, setAuthors] = useState([]);
+  const [loading, setLoading] = useState(false)
 
   const uploadProject = async () => {
     if (!thumbnailUpload) return;
+
+    setLoading(true);
 
     const thumbnailRef = ref(storage, `images/${thumbnailUpload.name + uuidv4()}`);
     await uploadBytes(thumbnailRef, thumbnailUpload);
@@ -50,6 +54,8 @@ export const AddProject = () => {
       notify();
     } catch (error) {
       console.error('Error adding project: ', error);
+    }finally{
+      setLoading(false);
     }
   };
 
@@ -109,6 +115,7 @@ export const AddProject = () => {
             <Button 
               onClick={uploadProject} 
               text="Send" />
+              {loading && <Loader/>}
           </div>
         </CardWrap>
         <ToastContainer />
