@@ -1,7 +1,7 @@
 import './Projects.css'
 import { useState, useEffect } from 'react'
 import { projects } from '../../data/projects'
-import { Footer, Header, ProjectCards, SearchBar } from "../../components"
+import { EditButton,ProjectCards, SearchBar } from "../../components"
 
 export const Projects = () => {
 
@@ -30,6 +30,9 @@ export const Projects = () => {
         <h1 className="title-screen">UnityXperience Projects </h1>
         
         <ProjectCards filteredData={filteredProject}/>
+
+        <EditButton/>
+
       </>
     )
   }

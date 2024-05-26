@@ -13,7 +13,6 @@ export * from "./Input/Input";
 export * from "./IntroSection/IntroSection";
 export * from "./LabelTag/LabelTag";
 export * from "./MemberCard/MemberCard";
-export * from "./MobileNavBar/MobileNavBar";
 export * from "./PartnerCard/PartnerCard";
 export * from "./ProjectCard/ProjectCard";
 export * from "./SearchBar/SearchBar";
@@ -27,3 +26,4 @@ export * from "./TeamSlider/TeamSlider";
 export * from "./ProfileCard/ProfileCard";
 export * from "./ProjectCards/ProjectCards";
 export * from "./ProjectDetails/ProjectDetails";
+export * from "./EditButton/EditButton"
