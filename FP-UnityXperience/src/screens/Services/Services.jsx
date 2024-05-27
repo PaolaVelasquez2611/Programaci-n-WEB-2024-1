@@ -1,9 +1,11 @@
 import './Services.css'
 import { Footer, Header, ServicesCards, Button} from "../../components"
+import { Background } from '../../components/Background/Background'
 
 export const Services = () => {
   return (
     <>
+    <Background></Background>
     <h1 className="title-screen mt-24">UniteXperience Services</h1>
     <ServicesCards/>
     <section className="more-aboutus">

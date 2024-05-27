@@ -7,6 +7,7 @@ import { storage, db } from '../../services/firebase-config';
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import { v4 as uuidv4 } from 'uuid';
 import { CardWrap2 } from '../../components/CardWrap2/CardWrap2';
+import { Background } from '../../components/Background/Background';
 
 export const AddProject = () => {
   const [projectData, setProjectData] = useState({
@@ -69,6 +70,7 @@ export const AddProject = () => {
 
   return (
     <main>
+      <Background></Background>
       <div className='title-div'>
       <h3 className="heading-addproject-3">UniteXperience</h3>
       <h1 className="heading-addproject-1">Add New Project</h1>

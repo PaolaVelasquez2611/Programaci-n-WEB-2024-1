@@ -1,10 +1,12 @@
 import './Aboutus.css'
 import {AboutUsCard, BrandCard, BrandCards} from "../../components"
+import { Background } from '../../components/Background/Background'
 
 // todo: Map it, improve coding practices!!
 export const Aboutus = () => {
   return (
   <>
+  <Background></Background>
   <div className='title-aboutus'>
   <h1>UnityXperience</h1>
   <h1 className='heading-aboutus'>About Us</h1>

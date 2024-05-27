@@ -3,6 +3,7 @@ import './Contact.css'
 
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { Background } from "../../components/Background/Background";
 
 export const Contact = () => {
 
@@ -21,6 +22,7 @@ export const Contact = () => {
 
   return (
     <main>
+      <Background></Background>
       <h3 className="heading-contact-3">UniteXperience</h3>
       <h1 className="heading-contact-1">UniteXperience Contact</h1>
 

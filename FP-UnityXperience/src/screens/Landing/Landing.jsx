@@ -1,9 +1,11 @@
 import { Footer, Header, Skills, GradientHeading, MemberCard, BrandCard, BrandCards, IntroSection, TeamSection, TeamSlider } from "../../components"
+import { Background } from "../../components/Background/Background"
 import { Scroller } from "../../components/Scroller/Scroller"
 
 export const Landing = () => {
   return (
     <main className="place-content-center">
+    <Background></Background>
     
     <GradientHeading text={"UnityXperience"}/>
     <h1 className="text-center font-bold">UI / UX / Web Development</h1>

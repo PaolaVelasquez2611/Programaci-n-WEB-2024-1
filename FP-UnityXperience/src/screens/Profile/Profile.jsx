@@ -1,8 +1,10 @@
 import { ExperienceLine,Header,Footer,ProfileCard,GradientHeading, CarouselComponent} from "../../components"
+import { Background } from "../../components/Background/Background"
 
 export const Profile = () => {
   return (
     <>
+    <Background></Background>
     <h1 className="text-center mt-20 mx-auto font-bold">UniteXperience Profile</h1>
     <ProfileCard  imagen="../../src/assets/Profile/JuanRamirez.png" 
                   title="Juan Esteban Ramirez Perdomo"

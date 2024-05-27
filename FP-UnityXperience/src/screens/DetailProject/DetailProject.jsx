@@ -1,9 +1,11 @@
 import './DetailProject.css'
 import { Footer, Header, ProjectDetails} from "../../components"
+import { Background } from '../../components/Background/Background'
 
 export const DetailProject = () => {
   return (
     <main>
+      <Background></Background>
     <h1 className="title-screen">UniteXperience Project</h1>
     <ProjectDetails 
     thumbnail="../src/assets/mockups/thumbnail-project.png"

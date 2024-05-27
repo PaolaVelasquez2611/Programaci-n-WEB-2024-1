@@ -6,6 +6,7 @@ import { useState } from "react";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './AdminLogin.css'
+import { Background } from "../../components/Background/Background";
 
 export const AdminLogin = () => {
 // todo: fixed the toast notify, when the admin logs in the toast must to appear on screen (app)
@@ -64,6 +65,7 @@ export const AdminLogin = () => {
 
   return (
     <main>
+      <Background></Background>
     <h1>UniteXperience Administrator Panels</h1>
     <section>
     <CardWrap image="https://static.vecteezy.com/system/resources/previews/027/034/360/non_2x/abstract-square-blurred-background-elegant-gradient-mesh-red-dark-color-design-template-good-for-modern-website-wallpaper-cover-design-free-vector.jpg">

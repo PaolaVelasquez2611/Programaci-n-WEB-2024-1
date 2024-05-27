@@ -1,0 +1,61 @@
+.background-container div {
+    position: fixed;
+    border-radius: 50%;
+    filter: blur(100px); /* Increased blur size */
+    opacity: 0; /* Initially invisible */
+    
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+
+.div1 {
+    width: 25vh;
+    height: 25vh;
+    top: 10%;
+    left: 10%;
+    animation: appear 1s ease-out forwards; 
+    background: linear-gradient(to bottom right,cyan, cyan); /* Purple to cyan gradient */
+   
+}
+
+.div2 {
+    width: 15vh;
+    height: 15vh;
+    top: 70%;
+    left: 90%;
+    animation: appear 1s ease-out forwards; 
+    animation-delay: 2s;
+    background: linear-gradient(to bottom right,cyan, cyan); /* Purple to cyan gradient */
+}
+
+
+.div4 {
+    width: 9vh;
+    height: 9vh;
+    top: 20%;
+    left: 80%;
+    animation: appear 1s ease-out forwards; 
+    animation-delay: 3s;
+    background: linear-gradient(to bottom right,cyan, cyan); /* Purple to cyan gradient */
+}
+
+.div5 {
+    width: 6vh;
+    height: 6vh;
+    top: 80%;
+    left: 5%;
+    animation: appear 1s ease-out forwards; 
+    animation-delay: 5s;
+    background: linear-gradient(to bottom right,cyan, cyan); /* Purple to cyan gradient */
+}

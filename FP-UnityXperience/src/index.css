@@ -8,7 +8,7 @@
 
   color-scheme: dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #1a1a1a;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -32,15 +32,11 @@ body {
   display: flex;
   place-items: center;
   min-height: 100vh;
-  background-image: url('./assets/background.jpg');
-  background-size: cover;
-  background-position: center;
+ 
 }
 
 @media (max-width: 768px) {
-  body {
-      background-image: url('./assets/background.jpg');
-  }
+
 }
 
 h1 {

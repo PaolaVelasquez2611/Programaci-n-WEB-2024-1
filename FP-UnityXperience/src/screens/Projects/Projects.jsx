@@ -5,6 +5,7 @@ import { ProjectCards, SearchBar } from "../../components"
 import { initializeApp } from "firebase/app";
 import { collection, doc, getDocs, getFirestore, setDoc, query, onSnapshot} from "firebase/firestore";
 import { app } from '../../services/firebase-config';
+import { Background } from '../../components/Background/Background';
 
 const db = getFirestore(app);
 
@@ -48,6 +49,7 @@ export const Projects = () => {
 
     return (
       <>
+      <Background></Background>
         <section className="filter-projects">
           <SearchBar type="text" placeholder="Search a project" value={searchTerm} onChange={(search) => setSearchTerm(search.target.value)}/>
         </section>
