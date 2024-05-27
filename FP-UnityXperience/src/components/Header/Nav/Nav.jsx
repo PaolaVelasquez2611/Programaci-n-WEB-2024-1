@@ -27,6 +27,9 @@ export function Nav ({ text, showMenu }) {
                         </Link>
                     </li>
                 ))}
+                <li>
+                    <p className='text-sesion'>Cerrar Sesión</p>
+                </li>
             </ul>
         </nav>
     )
