@@ -1,9 +1,8 @@
 import { useEffect } from "react";
-import { projects } from "../../data/projects";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
 import "./Scroller.css";
 
-export const Scroller = () => {
+export const Scroller = ({ projects }) => {
   useEffect(() => {
     const scrollers = document.querySelectorAll(".projects-scroll");
 
@@ -31,28 +30,18 @@ export const Scroller = () => {
     <section className="max-w-screen-xl mx-auto md:w-5/6 lg:w-4/6 pt-10 flex flex-col justify-center items-center">
       <div className="projects-scroll w-full inline-flex flex-nowrap overflow-hidden" data-direction="left">
         <ul className="scroller-inner flex justify-center items-center">
-          {projects.map(({ id, thumbnail, title, review, tags }) => (
-            <li key={id}>
-              <ProjectCard
-                img={thumbnail}
-                title={title}
-                description={review}
-                tags={tags}
-              />
+          {projects.map((project) => (
+            <li key={project.id}>
+              <ProjectCard project={project} />
             </li>
           ))}
         </ul>
       </div>
       <div className="projects-scroll inline-flex flex-nowrap overflow-hidden" data-direction="right">
-        <ul className="scroller-inner flex justify-center items-center ">
-          {projects.map(({ id, thumbnail, title, review, tags }) => (
-            <li key={id}>
-              <ProjectCard
-                img={thumbnail}
-                title={title}
-                description={review}
-                tags={tags}
-              />
+        <ul className="scroller-inner flex justify-center items-center">
+          {projects.map((project) => (
+            <li key={project.id}>
+              <ProjectCard project={project} />
             </li>
           ))}
         </ul>

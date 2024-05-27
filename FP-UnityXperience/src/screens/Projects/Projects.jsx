@@ -1,62 +1,76 @@
-import './Projects.css'
-import { useState, useEffect } from 'react'
-import { projects } from '../../data/projects' /* the data should be deleted cause now it's on firebase */
-import { ProjectCards, SearchBar } from "../../components"
-import { initializeApp } from "firebase/app";
-import { collection, doc, getDocs, getFirestore, setDoc, query, onSnapshot} from "firebase/firestore";
+import './Projects.css';
+import { useState, useEffect } from 'react';
+import { ProjectCards, SearchBar } from "../../components";
+import { collection, query, onSnapshot, getFirestore } from "firebase/firestore";
 import { app } from '../../services/firebase-config';
 import { Background } from '../../components/Background/Background';
 
 const db = getFirestore(app);
 
-const projectsRef = collection(db, "projects")
-console.log(projectsRef)
-
-const querySnapshot = await getDocs(collection(db, "projects"));
-querySnapshot.forEach((doc)=>{
-  console.log(doc.id)
-})
-
 export const Projects = () => {
-
   const [searchTerm, setSearchTerm] = useState('');
-  const [project, setProjects] = useState([]);
+  const [selectedFilter, setSelectedFilter] = useState('All');
+  const [projects, setProjects] = useState([]);
 
-  const getProjects  = async () =>{
+  const getProjectsFromFirestore = () => {
     const q = query(collection(db, "projects"));
-    const updatedProjects = []
     onSnapshot(q, (querySnapshot) => {
-        querySnapshot.forEach((doc) => {
-            updatedProjects.push(doc.data());
-        });
-        console.log(updatedProjects)
-        setProjects(updatedProjects)
+      const updatedProjects = [];
+      querySnapshot.forEach((doc) => {
+        updatedProjects.push(doc.data());
+      });
+      setProjects(updatedProjects);
+
+      localStorage.setItem('projects', JSON.stringify(updatedProjects));
     });
-  }
+  };
+
+  const getProjects = () => {
+
+    const localProjects = JSON.parse(localStorage.getItem('projects'));
+    if (localProjects && localProjects.length > 0) {
+      setProjects(localProjects);
+    }
+
+    getProjectsFromFirestore();
+  };
 
   useEffect(() => {
     getProjects();
-  }, [])
-  
-  const filteredProjects = project.filter(project =>
-    (project.title && project.title.toLowerCase().includes(searchTerm.toLowerCase().trim())) 
-    ||(project.description && project.description.toLowerCase().toString() === searchTerm.toLowerCase().trim()) 
-    ||(project.tags[0] && project.tags[0].includes(searchTerm.trim())) 
-    ||(project.tags[1] && project.tags[1].includes(searchTerm.trim())) 
-    ||(project.tags[2] && project.tags[2].includes(searchTerm.trim()))
-    );
+  }, []);
 
-    return (
-      <>
+  const handleFilterChange = (filter) => {
+    setSelectedFilter(filter);
+  };
+
+  const filteredProjects = projects.filter(project => {
+    const matchSearchTerm = 
+      (project.title && project.title.toLowerCase().includes(searchTerm.toLowerCase().trim())) ||
+      (project.description && project.description.toLowerCase().includes(searchTerm.toLowerCase().trim())) ||
+      (project.tags && project.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase().trim())));
+
+      const matchFilter = selectedFilter === 'All' || 
+      (project.tags && project.tags.some(tag => tag.toLowerCase() === selectedFilter.toLowerCase()));
+
+    return matchSearchTerm && matchFilter;
+  });
+
+  return (
+    <>
       <Background></Background>
-        <section className="filter-projects">
-          <SearchBar type="text" placeholder="Search a project" value={searchTerm} onChange={(search) => setSearchTerm(search.target.value)}/>
-        </section>
-  
-        <h1 className="title-screen">UnityXperience Projects </h1>
-        
-        <ProjectCards filteredData={filteredProjects}/>
-      </>
-    )
-  }
+      <section className="filter-projects">
+        <SearchBar 
+          type="text" 
+          placeholder="Search a project" 
+          value={searchTerm} 
+          onChange={(search) => setSearchTerm(search.target.value)}
+          onFilterChange={handleFilterChange}
+        />
+      </section>
 
+      <h1 className="title-screen">UnityXperience Projects</h1>
+      
+      <ProjectCards filteredData={filteredProjects} />
+    </>
+  );
+};

@@ -1,23 +1,26 @@
 import './ProjectCard.css';
 import { Button } from '../Button/Button';
+import { Link } from 'react-router-dom';
 
-export const ProjectCard = ({ img, title, description, tags }) => {
+export const ProjectCard = ({ project }) => {
   return (
     <div className='flip-card'>
       <div className="flip-card-inner">
         <div className="flip-card-front">
-          <img src={img} className='project-thumbnail' alt="Project Thumbnail"/>
+          <img src={project.thumbnail} className='project-thumbnail' alt="Project Thumbnail"/>
         </div>
         <div className="flip-card-back">
           <div className="project-details-card">
-            <p className='project-title'>{title}</p>
-            <p className='project-description'>{description}</p>
+            <p className='project-title'>{project.title}</p>
+            <p className='project-description'>{project.description}</p>
             <div className='tags'>
-              {tags.map((tag) => (
-                <p key={crypto.randomUUID()}>{tag}</p>
+              {project.tags.map((tag) => (
+                <p key={tag}>{tag}</p>
               ))}
             </div>
-            <Button className="more-information" text="See more"/>
+            <Link to={`/projects/${project.title}`}>
+              <Button className="more-information" text="See more" />
+            </Link>
           </div>
         </div>
       </div>
