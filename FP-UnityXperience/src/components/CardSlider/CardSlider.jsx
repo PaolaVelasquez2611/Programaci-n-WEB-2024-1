@@ -1,18 +1,20 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import { carouselData } from "../../data/carouselData";
 import { ProjectCard } from "../index";
 import "./CardSlider.css";
 
 export const CardSlider = () => {
   const carouselRef = useRef(null);
-  const scrollInterval = 3000; // Intervalo de tiempo en milisegundos
+  const [isScrolling, setIsScrolling] = useState(false);
+  const scrollInterval = 5000; 
   let intervalId;
 
   useEffect(() => {
     const scrollHandler = () => {
-      // Comprobar si llegamos al final del contenido
+      setIsScrolling(true);
+   
       if (carouselRef.current.scrollLeft + carouselRef.current.offsetWidth >= carouselRef.current.scrollWidth) {
-        // Si estamos al final, volver al principio
+      
         carouselRef.current.scrollTo({
           left: 0,
           behavior: "smooth",
@@ -20,9 +22,14 @@ export const CardSlider = () => {
       }
     };
 
-    carouselRef.current.addEventListener("scroll", scrollHandler);
+    const scrollEndHandler = () => {
+      setIsScrolling(false);
+    };
 
-    // Iniciar el desplazamiento automático al montar el componente
+    carouselRef.current.addEventListener("scroll", scrollHandler);
+    carouselRef.current.addEventListener("scrollend", scrollEndHandler);
+
+   
     intervalId = setInterval(() => {
       const containerWidth = carouselRef.current.offsetWidth;
       const newPosition = carouselRef.current.scrollLeft + containerWidth;
@@ -32,18 +39,18 @@ export const CardSlider = () => {
       });
     }, scrollInterval);
 
-    // Detener el desplazamiento automático al desmontar el componente
     return () => {
       clearInterval(intervalId);
       carouselRef.current.removeEventListener("scroll", scrollHandler);
+      carouselRef.current.removeEventListener("scrollend", scrollEndHandler);
     };
   }, []);
 
   return (
-    <div className="carousel-container">
+    <div className={`carousel-container-projects ${isScrolling ? "scrolling" : ""}`}>
       <div className="carousel-wrapper" ref={carouselRef}>
         <ul className="carousel-list">
-          {/* Duplicar los elementos para crear el bucle infinito */}
+          
           {carouselData.map(({ id, thumbnail, title, review, tags }) => (
             <li key={id}>
               <ProjectCard
@@ -54,7 +61,7 @@ export const CardSlider = () => {
               />
             </li>
           ))}
-          {/* Duplicar los elementos para crear el bucle infinito */}
+         
           {carouselData.map(({ id, thumbnail, title, review, tags }) => (
             <li key={id + "clone"}>
               <ProjectCard
