@@ -7,15 +7,15 @@ export const CardSlider = () => {
   const carouselRef = useRef(null);
   const [isScrolling, setIsScrolling] = useState(false);
   const scrollInterval = 5000; 
-  let intervalId;
+  const intervalIdRef = useRef(null);
 
   useEffect(() => {
+    const currentCarousel = carouselRef.current;
+
     const scrollHandler = () => {
       setIsScrolling(true);
-   
-      if (carouselRef.current.scrollLeft + carouselRef.current.offsetWidth >= carouselRef.current.scrollWidth) {
-      
-        carouselRef.current.scrollTo({
+      if (currentCarousel.scrollLeft + currentCarousel.offsetWidth >= currentCarousel.scrollWidth) {
+        currentCarousel.scrollTo({
           left: 0,
           behavior: "smooth",
         });
@@ -26,23 +26,26 @@ export const CardSlider = () => {
       setIsScrolling(false);
     };
 
-    carouselRef.current.addEventListener("scroll", scrollHandler);
-    carouselRef.current.addEventListener("scrollend", scrollEndHandler);
-
-   
-    intervalId = setInterval(() => {
-      const containerWidth = carouselRef.current.offsetWidth;
-      const newPosition = carouselRef.current.scrollLeft + containerWidth;
-      carouselRef.current.scrollTo({
-        left: newPosition,
-        behavior: "smooth",
-      });
-    }, scrollInterval);
+    if (currentCarousel) {
+      currentCarousel.addEventListener("scroll", scrollHandler);
+      currentCarousel.addEventListener("scrollend", scrollEndHandler);
+      
+      intervalIdRef.current = setInterval(() => {
+        const containerWidth = currentCarousel.offsetWidth;
+        const newPosition = currentCarousel.scrollLeft + containerWidth;
+        currentCarousel.scrollTo({
+          left: newPosition,
+          behavior: "smooth",
+        });
+      }, scrollInterval);
+    }
 
     return () => {
-      clearInterval(intervalId);
-      carouselRef.current.removeEventListener("scroll", scrollHandler);
-      carouselRef.current.removeEventListener("scrollend", scrollEndHandler);
+      clearInterval(intervalIdRef.current);
+      if (currentCarousel) {
+        currentCarousel.removeEventListener("scroll", scrollHandler);
+        currentCarousel.removeEventListener("scrollend", scrollEndHandler);
+      }
     };
   }, []);
 
@@ -50,7 +53,6 @@ export const CardSlider = () => {
     <div className={`carousel-container-projects ${isScrolling ? "scrolling" : ""}`}>
       <div className="carousel-wrapper" ref={carouselRef}>
         <ul className="carousel-list">
-          
           {carouselData.map(({ id, thumbnail, title, review, tags }) => (
             <li key={id}>
               <ProjectCard
@@ -61,7 +63,6 @@ export const CardSlider = () => {
               />
             </li>
           ))}
-         
           {carouselData.map(({ id, thumbnail, title, review, tags }) => (
             <li key={id + "clone"}>
               <ProjectCard

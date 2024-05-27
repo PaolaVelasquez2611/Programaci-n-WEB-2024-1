@@ -75,6 +75,8 @@ ul.nav-header{
   margin-bottom: 10%;
 }
 
+
+
 @media (min-width: 768px) {
   .nav-header {
     width: auto;
@@ -117,4 +119,5 @@ ul.nav-header{
     height: auto;
     padding: 15px;
   }
+
 }
