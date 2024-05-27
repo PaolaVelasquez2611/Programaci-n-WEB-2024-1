@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { Footer, Header, Skills, GradientHeading, MemberCard, BrandCard, BrandCards, IntroSection, TeamSection, TeamSlider } from "../../components";
+import { Footer, Header, Skills, GradientHeading, BrandCard, BrandCards, IntroSection, TeamSection } from "../../components";
 import { Background } from "../../components/Background/Background"
 import { Scroller } from "../../components/Scroller/Scroller";
 import { collection, query, onSnapshot, getFirestore } from "firebase/firestore";
@@ -41,15 +41,12 @@ export const Landing = () => {
       <p className="text-center mt-8 text-lg">Always exploring the needs</p>
       <p className="text-center mb-20 text-lg">creating innovative ideas and unite the solutions</p>
       <IntroSection />
-      {/* <BrandCards /> mejorar */}
+      <BrandCards /> 
       <GradientHeading text={"Skills"} />
       <Skills />
       <GradientHeading text={"UnityXperience Projects"} />
       <Scroller projects={projects} />
       <GradientHeading text={"UnityXperience Team"} />
-      {/* <MemberCard img="../src/assets/Profile/JuanRamirez.png"
-      name="Juan Esteban Ramirez"
-      role="Developer"/> */}
       <TeamSection />
     </main>
   );

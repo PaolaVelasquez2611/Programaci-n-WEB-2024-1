@@ -30,8 +30,8 @@ export const Scroller = ({ projects }) => {
     <section className="max-w-screen-xl mx-auto md:w-5/6 lg:w-4/6 pt-10 flex flex-col justify-center items-center">
       <div className="projects-scroll w-full inline-flex flex-nowrap overflow-hidden" data-direction="left">
         <ul className="scroller-inner flex justify-center items-center">
-          {projects.map((project) => (
-            <li key={project.id}>
+          {projects.map((project, index) => (
+            <li key={index}>
               <ProjectCard project={project} />
             </li>
           ))}
@@ -39,8 +39,8 @@ export const Scroller = ({ projects }) => {
       </div>
       <div className="projects-scroll inline-flex flex-nowrap overflow-hidden" data-direction="right">
         <ul className="scroller-inner flex justify-center items-center">
-          {projects.map((project) => (
-            <li key={project.id}>
+          {projects.map((project, index) => (
+            <li key={index}>
               <ProjectCard project={project} />
             </li>
           ))}

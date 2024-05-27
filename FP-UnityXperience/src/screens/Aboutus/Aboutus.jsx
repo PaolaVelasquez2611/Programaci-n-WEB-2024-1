@@ -67,7 +67,9 @@ export const Aboutus = () => {
                 image="../../src/assets/aboutUsImage2.jpg"/>
   </figure>
 
-  <BrandCards></BrandCards>
+  <BrandCards 
+  text1={'Our'}
+  text2={'Values'}/>
   </>
   )
 }
