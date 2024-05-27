@@ -8,23 +8,12 @@
 }
 
 .image-about-us {
-    width: 35%;
+    width: 35vw;
     border-radius: 10px;
     margin-right: 0px;
     margin-left: 100px;
-    animation: slideInLeft 1s ease-in-out forwards;
 }
 
-@keyframes slideInLeft {
-    0% {
-        opacity: 0;
-        transform: translateX(-100%);
-    }
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 
 .container-about {
     display: flex;
@@ -36,40 +25,28 @@
 .text-container-about {
     width: 36%;
     margin-right: 80px;
+    animation: activate calc(var(--duration) * 2) var(--ease) forwards;
 }
 
+.title-container-about {
+    font-size: 50px;
+    color: rgb(255, 255, 255);
+    
+
+}
 .title-1 {
     font-size: 50px;
     color: rgb(255, 255, 255);
     margin-right: 5px;
 }
 
-@keyframes aboutusActivate {
-    0% {
-        opacity: 0;
-        transform: translateY(-50px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
-}
 
-.aboutus-h1-1 {
-    font-size: 80px;
-    color: rgb(255, 255, 255);
-    margin-right: 5px;
-    animation: aboutusActivate 2s ease-in-out forwards;
-}
 
-.aboutus-h1-2 {
-    font-size: 80px;
-    color: #13BFD9;
-    animation: aboutusActivate 2s ease-in-out forwards;
-}
+
 
 /* Animation for the <p> elements */
 .text-container-about p {
+    width: 100%;
     animation: activate calc(var(--duration) * 2) var(--ease) forwards;
 }
 
@@ -100,36 +77,60 @@
 }
 
 
-.titles {
+
+
+
+
+.info-container{
     display: flex;
-    justify-content: end;
-    margin-right: 450px;
-    margin-bottom: 0px;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 65%;
+    padding: 10%;
 }
 
-.aboutus-h1 {
-    display: flex;
-    justify-content: end;
-    margin-bottom: 0px;
-    position: absolute;
-    top: 32%;
-    left:54%;
 
-}
-
-.titles-Values {
+.titles-Values{
     display: flex;
     justify-content: center;
-    
+    margin-bottom: 4%;
+    margin-top: 4%;
+    z-index: 2;
 }
 
+
 @media (max-width: 768px) {
+
+    .info-container {
+        width: 100%;
+        padding-bottom: 0%;
+        animation: activate calc(var(--duration) * 2) var(--ease) forwards;
+    }
+    
+    .title-container-about {
+        font-size: 2.5rem;
+        color: rgb(255, 255, 255);
+        
+    
+    }
+
     .card-seccion {
         display: flex;
         flex-direction: column;
         margin-top: 200px;
         margin-bottom: 200px;
     }
+
+    
+    .titles-Values{
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 4%;
+        margin-top: 4%;
+        z-index: 2;
+        margin-left: 5%;
+    }
+    
 
     .image-about-us {
         display: none;
@@ -145,13 +146,15 @@
 
     .text-container-about {
         width: 100vw;
-        margin-right: 80px;
+        padding: 10%;
+        font-size: 0.2rem;
+
     }
 
     .title-1 {
         font-size: 50px;
         color: rgb(255, 255, 255);
-        margin-right: 5px;
+        
     }
 
     .title-2 {
@@ -159,14 +162,5 @@
         color: #13BFD9;
     }
 
-    .titles {
-        display: flex;
-        justify-content: center;
-    }
 
-    .titles-Values {
-        display: flex;
-        justify-content: center;
-        margin-top: 200px;
-    }
 }

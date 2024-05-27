@@ -1,3 +1,27 @@
+
+.title-div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 10%;
+    margin-bottom: 3%;
+
+}
+
+.heading-addproject-1 {
+    background: linear-gradient(to right, rgb(107, 233, 209), rgb(67, 149, 173),rgb(135, 116, 250));
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+}
+
+.heading-addproject-3{
+    font-size: 20px;
+}
+
 .children {
     width: 100%;
     margin-top: 0;
@@ -7,8 +31,6 @@
     justify-content: center;
     align-items: center;
 }
-
-
 
 @media (min-width: 768px) {
 

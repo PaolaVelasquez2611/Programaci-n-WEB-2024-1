@@ -1,6 +1,12 @@
 .tag-input-box{
    width: 100%;
-   max-width: 400px; /* 500px */
+   max-width: 500px; /* 500px */
+   margin-bottom: 3%;
+}
+
+.label-title{
+    font-size: 14px;
+    margin-top: 0%;
 }
 
 .tag-input-box p { 

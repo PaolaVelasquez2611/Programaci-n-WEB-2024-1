@@ -1,11 +1,42 @@
 
-.group-brandcards{
+.group-brandcards {
     display: flex;
-    width: 100%;
+    width: 100vw;
+    padding-left: 10%;
+    padding-right: 10%;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
     gap: 5%;
-    padding-bottom:5%;
-    margin-top:2%;
-    
+    padding-bottom: 5%;
+    margin-top: 2%;
+    overflow-x: auto; /* Enable horizontal scrolling */
+}
+
+.group-brandcards::-webkit-scrollbar {
+    height: 8px; /* Adjust the height of the scrollbar */
+}
+
+.group-brandcards::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+.group-brandcards::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Darker color when hovering over the thumb */
+}
+
+@media (min-width: 768px) {
+    .group-brandcards{
+        display: flex;
+        overflow: visible;
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+        gap: 5%;
+        padding-bottom:5%;
+        margin-top:2%;
+        
+    }
+
+
 }

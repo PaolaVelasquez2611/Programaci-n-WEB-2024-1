@@ -5,7 +5,10 @@ import {AboutUsCard, BrandCard, BrandCards} from "../../components"
 export const Aboutus = () => {
   return (
   <>
-  <h1 className="text-center mt-20 mb-20 font-bold">UnityXperience</h1>
+  <div className='title-aboutus'>
+  <h1>UnityXperience</h1>
+  <h1 className='heading-aboutus'>About Us</h1>
+  </div>
 
   
 {/*     {
@@ -22,12 +25,9 @@ export const Aboutus = () => {
     } */}
 
 
-  <span className="aboutus-h1">
-    <h2><span className="aboutus-h1-1">Who Are </span></h2>
-    <h2><span className="aboutus-h1-2">We?</span></h2>
-  </span>
+
   <figure className="what-is-container">
-  <AboutUsCard  text="UnityXperience isn't your typical design and development company. We’re a 
+  <AboutUsCard  title = "Who are we?" text="UnityXperience isn't your typical design and development company. We’re a 
                       team of passionate freelancers who combine their expertise to create 
                       custom solutionsfor each client. They prioritize understanding your vision
                        and goals before crafting something that perfectly aligns with them. 
@@ -38,12 +38,9 @@ export const Aboutus = () => {
                 image="../../src/assets/logos/logoUnity.png"
    />
    </figure>
-   <span className="titles">
-    <h2><span className="title-1">Our</span></h2>
-    <h2><span className="title-2">Vision</span></h2>
-  </span>
    <figure className="our-vision-container">
-   <AboutUsCard text="At Unityxperience, we aspire to be recognized as a benchmark in the 
+   <AboutUsCard title = "Our Vision" 
+   text="At Unityxperience, we aspire to be recognized as a benchmark in the 
                       industry, being the preferred choice for clients seeking innovative and 
                       high-quality solutions, as well as for freelancers looking to collaborate 
                       on stimulating and rewarding projects. We envision ourselves as a cohesive
@@ -55,12 +52,9 @@ export const Aboutus = () => {
                 image="../../src/assets/aboutUsImage.jpg"
   />
   </figure>
-  <span className="titles">
-    <h2><span className="title-1">Our</span></h2>
-    <h2><span className="title-2">Mision</span></h2>
-  </span>
   <figure className="our-mision-container">
-   <AboutUsCard text="At Unityxperience, our mission is to lead the software development and 
+   <AboutUsCard title = "Our Mission" 
+   text="At Unityxperience, our mission is to lead the software development and 
                       digital experience design industry, being recognized for our innovation, 
                       quality, and commitment to excellence. We strive to be a meeting point
                       where talented freelancers come together to collaborate on projects that 

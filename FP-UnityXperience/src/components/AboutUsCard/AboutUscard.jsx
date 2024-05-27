@@ -40,9 +40,9 @@ export function AboutUsCard({ title, text, image }) {
     return (
         <div className="container-about ">
             <img className="image-about-us " src={image} alt="About Us " />
-            <div className="text-container-about mx-auto">
-                <h2 ref={titleRef}>{title}</h2>
-                <p ref={pRef}>{text}</p>
+            <div className="info-container">
+                <h2 className='title-container-about' ref={titleRef}>{title}</h2>
+                <p className='text-aboutus' ref={pRef}>{text}</p>
             </div>
         </div>
     );

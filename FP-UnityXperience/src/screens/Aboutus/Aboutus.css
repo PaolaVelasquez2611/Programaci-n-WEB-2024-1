@@ -2,9 +2,34 @@
     gap: 30px;
 }
 
+
+.title-aboutus {
+    width: 100vw;
+    font-size: 0.7rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 12%;
+}
+
 @media (min-width: 769px){
     .card-seccion{
         gap: 0;
         justify-content: space-between;
     }
+
+    .title-aboutus {
+        display: flex;
+        font-size: 1.6rem;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10%;
+    }
+
+    .heading-aboutus{
+        color: aqua;
+    }
 }
+
