@@ -1,16 +1,41 @@
 import { useEffect, useState } from "react";
 import { ProjectCard } from "../ProjectCard/ProjectCard";
+import { collection, query, onSnapshot, getFirestore } from "firebase/firestore";
+import { app } from '../../services/firebase-config';
 import "./Scroller.css";
+
+const db = getFirestore(app);
 
 export const Scroller = () => {
   const [projects, setProjects] = useState([]);
+  
+  const getProjectsFromFirestore = () => {
+    const q = query(collection(db, "projects"));
+    onSnapshot(q, (querySnapshot) => {
+      const updatedProjects = [];
+      querySnapshot.forEach((doc) => {
+        updatedProjects.push(doc.data());
+      });
 
-  useEffect(() => {
+      localStorage.setItem('projects', JSON.stringify(updatedProjects));
+    });
+  };
+
+  const getProjects = () => {
+
     const localProjects = JSON.parse(localStorage.getItem('projects'));
     if (localProjects && localProjects.length > 0) {
       setProjects(localProjects);
     }
 
+    getProjectsFromFirestore();
+  };
+
+  useEffect(() => {
+    getProjects();
+  }, []);
+
+  useEffect(() => {
     const scrollers = document.querySelectorAll(".projects-scroll");
 
     if (!window.matchMedia("prefers-reduced-motion: reduce").matches) {
