@@ -22,5 +22,6 @@ export const PartnerCard = () => {
             <SocialButtons />
         </div>
     </div>
+    
   )
 }

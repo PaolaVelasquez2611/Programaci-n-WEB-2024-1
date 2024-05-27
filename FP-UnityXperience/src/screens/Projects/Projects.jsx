@@ -1,6 +1,6 @@
 import './Projects.css';
 import { useState, useEffect } from 'react';
-import { ProjectCards, SearchBar } from "../../components";
+import { ProjectCards, SearchBar, EditButton } from "../../components";
 import { collection, query, onSnapshot, getFirestore } from "firebase/firestore";
 import { app } from '../../services/firebase-config';
 import { Background } from '../../components/Background/Background';
@@ -71,6 +71,9 @@ export const Projects = () => {
       <h1 className="title-screen">UnityXperience Projects</h1>
       
       <ProjectCards filteredData={filteredProjects} />
+
+      <EditButton/>
+
     </>
   );
 };

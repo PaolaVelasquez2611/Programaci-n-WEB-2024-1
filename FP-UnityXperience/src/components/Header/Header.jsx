@@ -1,39 +1,40 @@
-import { MobileNavBar,Nav} from "../../components"
 import { useState } from "react";
-import './Header.css'
+import './Header.css';
+import { Nav } from "../../components";
 import { headerData } from "../../data/headerData";
 import { Link } from "react-router-dom";
 
-export function Header (){
-    const [showMenu, setShowMenu] = useState(false)
+import Logo from "../../assets/logos/Logo.png";
+import HamburguerMenu from "../../assets/SVG/hamburguer-menu.svg";
 
-    const handleClick = (event) => {
-        setShowMenu(!showMenu)
-    }
+export function Header() {
+    const [showMenu, setShowMenu] = useState(false);
+
     return (
-        <div className={`Container ${showMenu ? "showMenu" : ""}`}>
-      <img
-        className="logo"
-        src="../../src/assets/Logo.png"
-        alt="Logo UnityXperience"
-      />
-      {headerData.map(({ id, text, route }) => (
-        <section key={id} className="Section">
-          <Link to={route}>
-            <Nav text={text} />
-          </Link>
-        </section>
-      ))}
-      <section>
-        <button className="hamClick" onClick={handleClick}>
-          <img
-            className="hamburguer-menu"
-            src="../../src/assets/SVG/hamburguer-menu.svg"
-            alt=""
-          />
-        </button>
-      </section>
-      <section>{!showMenu ? null : <MobileNavBar />}</section>
-    </div>
+        <header>
+            <div className="Container">
+                <Link to="/">
+                    <img
+                        className="logo"
+                        src={Logo}
+                        alt="Logo UnityXperience"
+                    />
+                </Link>
+                <button
+                    className={`menu-btn ${showMenu ? 'menu-btn-active' : ''}`}
+                    onClick={() => setShowMenu(!showMenu)}
+                    aria-label={showMenu ? "Cerrar menú" : "Abrir menú"}
+                >
+                    <img
+                        className="hamburguer-menu"
+                        src={HamburguerMenu}
+                        alt="Menu"
+                    />
+                </button>
+                <section>
+                    <Nav text={headerData} showMenu={showMenu} />
+                </section>
+            </div>
+        </header>
     );
 }

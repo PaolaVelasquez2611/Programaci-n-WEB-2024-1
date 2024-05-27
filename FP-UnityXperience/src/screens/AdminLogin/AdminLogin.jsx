@@ -70,7 +70,9 @@ export const AdminLogin = () => {
     <section>
     <CardWrap image="https://static.vecteezy.com/system/resources/previews/027/034/360/non_2x/abstract-square-blurred-background-elegant-gradient-mesh-red-dark-color-design-template-good-for-modern-website-wallpaper-cover-design-free-vector.jpg">
       <div className="children-container">
-      <h2>Hello, enter your occount to go to the <span>adminsitrator panel</span></h2>
+      <h2>Hello, enter your occount to go to the 
+        <span>adminsitrator panel</span>
+      </h2>
       <Input
         text="Your Email"
         placeholder="Enter email"

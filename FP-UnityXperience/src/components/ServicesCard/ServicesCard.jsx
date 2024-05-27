@@ -31,7 +31,7 @@ export const ServicesCard = ({ img, title, description, services }) => {
           </div>
         </article>)
     :(<article className="service-card">
-        <span className='sticky top-0'><strong><p className="service-title">{title}</p></strong></span>
+        <span className='top-0'><strong><p className="service-title">{title}</p></strong></span>
         <section className="service-info">
           <div className="information">
             <p className="service-description">{description}</p>

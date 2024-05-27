@@ -1,65 +1,123 @@
 .Container {
-  display: flex; 
-  align-items: center;
-  flex-direction: row; 
-  background-color: rgba(255, 255, 255, 0.2); 
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37); 
-  backdrop-filter: blur(10px);
-  padding-right: 50px;
-  padding-left: 0px;
-  margin-left: 0px;
-  margin-right: 0px;
   width: 100vw;
   height: 70px;
-  position: fixed;
-  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  padding: 0 50px;
+  width: 100vw;
+  position: sticky;
+  z-index: 10;
 }
 
-.logo {
-  width: 300px;
+ .logo {
+  width: 250px;
+  height: auto;
   padding: 15px;
-  margin-right: auto; 
+ }
+
+.menu-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
 }
 
-.Nav p {
-  color: white;
-  text-decoration: none;
+.menu-btn-active {
+  background-color: #13BFD9; 
+  border-radius: 50%;
 }
 
-.Nav ul li  {
-  margin-right: 30px;
-  list-style: none;
-  color: transparent;
+.hamburguer-menu {
+  width: 30px; 
+  height: auto; 
 }
 
-.hamClick {
-  display: none;
+.nav-header {
+  width: 100%;
+  align-items: center; 
+  list-style: none; 
+  position: absolute;  
+  left: 50%;  
+  transform: translateX(-50%); 
+  background-color: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  padding: 10px 0;
+  z-index: 3;
+}
+
+ul.nav-header{
+  width: 100%;
+  height: 5000px;
+  top: 100%; 
+  background-color: rgba(36, 36, 36, 1);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(10px);
+  margin-bottom: 50%;
+ 
+}
+
+.nav-header.show {
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-header li {
+  margin: 20px ;
+  text-align: center;
+}
+
+.nav-header p {
+  font-size: 20px;
+  margin-bottom: 10%;
 }
 
 
-@media (max-width: 768px) {
-  .Container {
-    width: 100vw;
-    height: 55  px;
+
+@media (min-width: 768px) {
+  .nav-header {
+    width: auto;
+    display: flex;
+    width: auto;
+    padding: 0;
+    justify-content:end; 
+    align-items: end; 
   }
 
-  .Nav {
-    display: none; 
-  }
-  
-  .hamClick {
-    display: block;
+  ul.nav-header{
+    width: 70%;
+    display: flex;
+    height: auto;
+    top: 0; 
+    margin: auto;
     background-color: transparent;
-    border-color: transparent;
-    width: 30px;
-    margin-right: 10px; 
+    backdrop-filter:none ;
+    box-shadow:none;
+    margin-bottom: 50%;
+    justify-content: end; 
+    align-items: end; 
+    
   }
-  .showMenu .Nav {
-    display: none; 
+  .nav-header li{
+    margin-right: 20px;
+    list-style: none; 
   }
+
+  .nav-header p {
+    font-size: 1rem;
+  }
+
+  .menu-btn {
+    display: none;
+  }
+
   .logo {
     width: 300px;
-    padding: 5px;
-    margin-right: auto; 
+    height: auto;
+    padding: 15px;
   }
+
 }

@@ -1,10 +1,10 @@
 export * from "./AboutUsCard/AboutUscard";
+export * from "./Background/Background";
 export * from "./BrandCard/BrandCard";
 export * from "./BrandCards/BrandCards";
 export * from "./Button/Button";
 export * from "./Footer/Footer";
 export * from "./CardWrap/CardWrap";
-export * from "./Carrousel/Carousel";
 export * from "./ExperienceLine/ExperienceLine";
 export * from "./GradientHeading/GradientHeading";
 export * from "./Header/Header";
@@ -13,7 +13,6 @@ export * from "./Input/Input";
 export * from "./IntroSection/IntroSection";
 export * from "./LabelTag/LabelTag";
 export * from "./MemberCard/MemberCard";
-export * from "./MobileNavBar/MobileNavBar";
 export * from "./PartnerCard/PartnerCard";
 export * from "./ProjectCard/ProjectCard";
 export * from "./SearchBar/SearchBar";
@@ -28,3 +27,5 @@ export * from "./TeamSlider/TeamSlider";
 export * from "./ProfileCard/ProfileCard";
 export * from "./ProjectCards/ProjectCards";
 export * from "./ProjectDetails/ProjectDetails";
+export * from "./EditButton/EditButton"
+export * from "./CardSlider/CardSlider"
