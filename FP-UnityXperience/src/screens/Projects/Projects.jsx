@@ -17,7 +17,6 @@ querySnapshot.forEach((doc)=>{
   console.log(doc.id)
 })
 
-
 export const Projects = () => {
 
   const [searchTerm, setSearchTerm] = useState('');
