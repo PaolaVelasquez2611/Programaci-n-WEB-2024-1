@@ -6,11 +6,7 @@ export function ProjectCards({ filteredData }) {
       {filteredData.length > 0 ? (
         filteredData.map((project) => (
           <ProjectCard
-            key={project.id}
-            img={project.thumbnail}
-            title={project.title}
-            description={project.review}
-            tags={project.tags}
+            project={project}
           />
         ))
       ) : (

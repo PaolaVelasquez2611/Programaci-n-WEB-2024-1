@@ -18,7 +18,6 @@ export const Projects = () => {
       querySnapshot.forEach((doc) => {
         updatedProjects.push(doc.data());
       });
-      console.log(updatedProjects);
       setProjects(updatedProjects);
 
       localStorage.setItem('projects', JSON.stringify(updatedProjects));

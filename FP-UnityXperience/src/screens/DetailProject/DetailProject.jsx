@@ -1,29 +1,36 @@
 import './DetailProject.css'
 import { Footer, Header, ProjectDetails} from "../../components"
+import { useParams } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 
 export const DetailProject = () => {
+
+  const { projectTitle } = useParams();
+  const [project, setProject] = useState(null);
+
+  useEffect(() => {
+    const localProjects = JSON.parse(localStorage.getItem('projects'));
+    const selectedProject = localProjects.find(proj => proj.title === projectTitle);
+    setProject(selectedProject);
+  }, [projectTitle]);
+
+  if (!project) return <p>Loading...</p>;
+
   return (
+    <>
     <main>
     <h1 className="title-screen">UniteXperience Project</h1>
     <ProjectDetails 
-    thumbnail="../src/assets/mockups/thumbnail-project.png"
-    title = "Trip Tunes"
-    description="Trip Tunes is a service that creates collages of your travel, party, or favorite moments photos, so you can share the images, creations, and a playlist that accompanies those moments with your friends and family or on social media without wasting time creating it yourself."
-    preview1 = "../src/assets/mockups/preview-1.png"
-    preview2 = "../src/assets/mockups/preview-2.png"
-    preview3 = "../src/assets/mockups/preview-3.png"/>
-    <span className="text-combined">
-        <strong> <p>See</p> </strong>
-        <strong> <p className="text-blue">More</p> </strong> 
-    </span>
-    <section className="links-project">
-        <button className="view-project">
-            <img src="../src/assets/linkedin.png"/>
-        </button>
-        <button className="view-project">
-            <img src="../src/assets/behance.png"/>
-        </button>
-    </section>
+    thumbnail={project.thumbnail}
+    title={project.title}
+    description={project.description}
+    link={project.work_link}
+    tag={project.tags}
+    authors={project.authors}
+    preview1 = {project.images[0]}
+    preview2 = {project.images[1]}
+    preview3 = {project.images[2]}/>
     </main>
+    </>
   )
 }
