@@ -3,7 +3,7 @@ import { carouselData } from "../../data/carouselData";
 import { ProjectCard } from "../index";
 import "./CardSlider.css";
 
-/* todo: replace cardslider.map   */
+/* todo: replace cardslider.map aaaa */
 
 export const CardSlider = () => {
   const carouselRef = useRef(null);
