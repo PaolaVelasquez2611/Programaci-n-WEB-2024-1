@@ -4,9 +4,10 @@ export function ProjectCards({ filteredData }) {
   return (
     <section className="projects-container place-content-center">
       {filteredData.length > 0 ? (
-        filteredData.map((project) => (
+        filteredData.map((project, index) => (
           <ProjectCard
             project={project}
+            key={index}
           />
         ))
       ) : (
