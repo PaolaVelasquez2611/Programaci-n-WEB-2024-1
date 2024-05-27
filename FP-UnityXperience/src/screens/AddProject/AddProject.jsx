@@ -1,12 +1,14 @@
 import './AddProject.css';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import { Button, CardWrap, Input, TagInput } from '../../components';
+import { Button, Input, TagInput } from '../../components';
 import { useState } from 'react';
 import { storage, db } from '../../services/firebase-config';
 import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
 import { v4 as uuidv4 } from 'uuid';
 import { Loader } from '../../components/Loader/Loader';
+import { CardWrap2 } from '../../components/CardWrap2/CardWrap2';
+import { Background } from '../../components/Background/Background';
 
 export const AddProject = () => {
   const [projectData, setProjectData] = useState({
