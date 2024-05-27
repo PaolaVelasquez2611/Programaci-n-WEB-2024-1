@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom'
 
 export function Nav ({ text, showMenu }) {
     const [isDesktop, setIsDesktop] = useState(window.innerWidth > 770)
-    const [isLoggedIn, setIsLoggedIn] = useState(false);
+    const [isLogged, setIsLogged] = useState(false);
     const navigate = useNavigate();
 
     useEffect(() => {
@@ -16,7 +16,7 @@ export function Nav ({ text, showMenu }) {
 
         const user = JSON.parse(localStorage.getItem('user'));
         if (user) {
-          setIsLoggedIn(true);
+          setIsLogged(!!user);
         }
 
         return () => {
@@ -26,7 +26,7 @@ export function Nav ({ text, showMenu }) {
 
     const handleLogout = () => {
         localStorage.removeItem('user');
-        setIsLoggedIn(false);
+        setIsLogged(false);
         navigate('/');
       };
 
@@ -40,7 +40,7 @@ export function Nav ({ text, showMenu }) {
                         </Link>
                     </li>
                 ))}
-                {isLoggedIn && (
+                {isLogged && (
                     <li>
                         <p className='text-sesion' onClick={handleLogout}>Cerrar Sesión</p>
                     </li>
