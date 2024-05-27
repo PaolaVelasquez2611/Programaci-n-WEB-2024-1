@@ -13,7 +13,6 @@ export const Contact = () => {
     <main>
       <Background></Background>
       <h1 className="heading-contact-1">UniteXperience Contact</h1>
-
       <section>
         <CardWrap image="https://static.vecteezy.com/system/resources/thumbnails/020/933/072/small_2x/abstract-blur-gradient-background-vector.jpg">
           <form ref={form} onSubmit={sendEmail}>

@@ -23,15 +23,15 @@ export const DetailProject = () => {
       <Background></Background>
     <h1 className="title-screen">UniteXperience Project</h1>
     <ProjectDetails 
-    thumbnail={project.thumbnail}
-    title={project.title}
-    description={project.description}
-    link={project.work_link}
-    tag={project.tags}
-    authors={project.authors}
-    preview1 = {project.images[0]}
-    preview2 = {project.images[1]}
-    preview3 = {project.images[2]}/>
+      thumbnail={project.thumbnail}
+      title={project.title}
+      description={project.description}
+      link={project.work_link}
+      tag={project.tags}
+      authors={project.authors}
+      preview1 = {project.images[0]}
+      preview2 = {project.images[1]}
+      preview3 = {project.images[2]}/>
     </main>
     </>
   )
