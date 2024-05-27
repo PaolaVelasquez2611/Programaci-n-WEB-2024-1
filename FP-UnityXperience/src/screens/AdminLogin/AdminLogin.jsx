@@ -25,7 +25,6 @@ export const AdminLogin = () => {
     try {
       const userCredential = await logIn(email, password);
       const user = userCredential.user
-      console.log("log in with:", user);
 
       localStorage.setItem('user', JSON.stringify({
         uid: user.uid,
