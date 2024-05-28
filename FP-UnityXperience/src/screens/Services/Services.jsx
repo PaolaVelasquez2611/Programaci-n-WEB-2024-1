@@ -13,7 +13,7 @@ export const Services = () => {
         <p className="blue-text">Interested?</p> 
         <p>Contact us and bring your idea to make it a reality</p>
       </span>
-      <Button className="learn-more" text="Learn more about us"/>
+      <Button className="learn-more" path="/aboutus"text="Learn more about us"/>
     </section>
     </>
   )
