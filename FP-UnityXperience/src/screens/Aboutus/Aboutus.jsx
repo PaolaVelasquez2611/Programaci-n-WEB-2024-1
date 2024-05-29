@@ -68,8 +68,8 @@ export const Aboutus = () => {
   </figure>
 
   <BrandCards 
-  text1={'Our'}
-  text2={'Values'}/>
+    text1={'Our'}
+    text2={'Values'}/>
   </>
   )
 }
