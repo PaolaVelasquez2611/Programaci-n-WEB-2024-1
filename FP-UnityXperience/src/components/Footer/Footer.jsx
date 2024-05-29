@@ -20,11 +20,13 @@ export function Footer (){
             })}
         </section>
         <section>
-        {footerData2.map(({id,title,text})=>{
+        {footerData2.map(({id,title,text,path})=>{
                 return(
                     <section key={id} >
                     <NavFooter title={title}/>
+                    <Link to={path}>
                     <NavFooter text={text}/>
+                    </Link>
                     </section>
                 )
             })}

@@ -17,7 +17,8 @@ export const PartnerCard = () => {
             <h3> JS | React | Firebase | Chistes</h3>
             <Button
             className="btn-parther-card"
-            text={"See more"}/>
+            text={"See more"}
+            path="/profile"/>
             <hr className="socials"/>
             <SocialButtons />
         </div>

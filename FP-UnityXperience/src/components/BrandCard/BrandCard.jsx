@@ -7,7 +7,7 @@ export const BrandCard = ({ icon, title, description }) => {
         <img src={icon}/>
         <p className="brand-title">{title}</p>
         <p className="brand-description">{description}</p>
-        <Button className="more-info-brand" text="See more"/>
-    </article>
+        <Button className="more-info-brand" path="/aboutus" text="See more"/>
+    </article> 
   )
 }
