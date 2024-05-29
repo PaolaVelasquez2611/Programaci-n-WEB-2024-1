@@ -5,7 +5,7 @@ export const useAddProject = () => {
     const context = useContext(AddProjectContext);
 
     if (!context) {
-        throw new Error ('This context is not working')
+        throw new Error ('This AddProjectContext is not working')
     }
     return{
         ...context
