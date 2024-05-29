@@ -1,5 +1,5 @@
 import { useContext } from 'react';
-import { Navigate, Outlet } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 import { AuthContext } from '../AuthProvider/AuthProvider';
 import { AddProject } from '../../screens';
 
