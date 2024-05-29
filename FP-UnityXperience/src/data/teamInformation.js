@@ -1,7 +1,7 @@
 export const teamInformation = [
     {
         name: "Santiago Perez Ramirez",
-        pic: "COLOCAR IMAGEN DE FOTO DE PERFIL",
+        pic: "../../src/assets/profile/SantiagoPerez.png",
         author_id: "VyVl7IURtOU6JNXYToUKBS7RVQs1",
         rol: "Front-end developer",
         tools: ["JS", "React", "Firebase"],
@@ -45,7 +45,7 @@ export const teamInformation = [
     },
     {
         name: "Andrés Felipe Neira Méndez",
-        pic: "COLOCAR IMAGEN DE FOTO DE PERFIL",
+        pic: "../../src/assets/profile/AndresNeira.jpg",
         author_id: "zrtqenmWUhdR22rzVXZmkJLhGiX2",
         rol: "Comedian",
         tools: ["JS", "Figma", "React", "Node"],
@@ -67,7 +67,7 @@ export const teamInformation = [
     },
     {
         name: "Paola Andrea Velasquez Durán",
-        pic: "COLOCAR IMAGEN DE FOTO DE PERFIL",
+        pic: "../../src/assets/profile/PaolaAndrea.jpg",
         author_id: "A6fGehCKpWhuiS2RVjKWrWn2qlh2",
         rol: "UI/UX Designer", 
         tools: ["Procreate", "Figma"], /* maybe would change */
