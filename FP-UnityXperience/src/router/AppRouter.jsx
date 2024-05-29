@@ -12,7 +12,6 @@ export const AppRouter = () => {
     <Routes>
         <Route path="/" element={<Landing />}/>
         <Route path="/aboutus" element={<Aboutus />}/>
-
         <Route path="/addproject" element={<PrivateRouter />}></Route>
         <Route path="/adminlogin" element={<AdminLogin />}/>
         <Route path="/contact" element={<Contact />}/>
