@@ -66,7 +66,7 @@ export const teamInformation = [
         name: "Paola Andrea Velasquez Durán",
         pic: "COLOCAR IMAGEN DE FOTO DE PERFIL",
         rol: "UI/UX Designer", 
-        tools: ["PRocreate", "Figma"], /* maybe would change */
+        tools: ["Procreate", "Figma"], /* maybe would change */
         social_media: {
             linkedin: "https://www.linkedin.com/feed/",
             github: "https://github.com/PaolaVelasquez2611",
@@ -76,7 +76,7 @@ export const teamInformation = [
         description: "Pao descripton",
         experience: [
             {
-                job: "pao jo",
+                job: "pao job",
                 company: "pao company",
                 time: "time - timetime",
                 job_description: "pao job description"
