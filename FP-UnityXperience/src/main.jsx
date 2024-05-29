@@ -10,15 +10,15 @@ import { GetProjectsContextProvider } from './contexts/GetProjects/GetProjectCon
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     
-    <AuthProvider>
     <BrowserRouter>
-        <GetProjectsContextProvider>
-            <AddProjectContextProvider>
-                <ContactUsContextProvider>
+        <AuthProvider>
+            <GetProjectsContextProvider>
+                <AddProjectContextProvider>
+                    <ContactUsContextProvider>
                         <App />
-                </ContactUsContextProvider>
-            </AddProjectContextProvider>
-        </GetProjectsContextProvider>
+                    </ContactUsContextProvider>
+                </AddProjectContextProvider>
+            </GetProjectsContextProvider>
+        </AuthProvider>
     </BrowserRouter>
-</AuthProvider>
 )
