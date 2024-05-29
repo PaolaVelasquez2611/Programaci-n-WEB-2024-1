@@ -3,6 +3,7 @@ export const teamInformation = [
         name: "Santiago Perez Ramirez",
         pic: "../../src/assets/profile/SantiagoPerez.png",
         author_id: "VyVl7IURtOU6JNXYToUKBS7RVQs1",
+        author_name: "Santiago",
         rol: "Front-end developer",
         tools: ["JS", "React", "Firebase"],
         social_media: {
@@ -25,6 +26,7 @@ export const teamInformation = [
         name: "Juan Esteban Ramirez Perdomo",
         pic: "../../src/assets/profile/JuanRamirez.png",
         author_id: "9uNya4WGOUdj6Oya8SFWHdVlMvr1",
+        author_name: "Juan Esteban",
         rol: "Comedian",
         tools: ["JS", "React", "Figma"],
         social_media: {
@@ -47,6 +49,7 @@ export const teamInformation = [
         name: "Andrés Felipe Neira Méndez",
         pic: "../../src/assets/profile/AndresNeira.jpg",
         author_id: "zrtqenmWUhdR22rzVXZmkJLhGiX2",
+        author_name: "Andres",
         rol: "Comedian",
         tools: ["JS", "Figma", "React", "Node"],
         social_media: {
@@ -69,6 +72,7 @@ export const teamInformation = [
         name: "Paola Andrea Velasquez Durán",
         pic: "../../src/assets/profile/PaolaAndrea.jpg",
         author_id: "A6fGehCKpWhuiS2RVjKWrWn2qlh2",
+        author_name: "Paola",
         rol: "UI/UX Designer", 
         tools: ["Procreate", "Figma"], /* maybe would change */
         social_media: {
