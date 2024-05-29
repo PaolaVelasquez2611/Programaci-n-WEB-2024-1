@@ -1,6 +1,19 @@
 import { ExperienceLine,ProfileCard,GradientHeading, CardSlider, Background} from "../../components"
+import { useEffect, useState } from "react";
+import { collection, query, onSnapshot, getFirestore } from "firebase/firestore";
+import { app } from '../../services/firebase-config';
+
+const db = getFirestore(app);
 
 export const Profile = () => {
+
+  const [projects, setProjects] = useState([]);
+
+  useEffect(() => {
+    const localProjects = JSON.parse(localStorage.getItem('projects'));
+    setProjects(localProjects);
+  }, []);
+
   return (
     <>
     <Background></Background>
@@ -19,7 +32,7 @@ export const Profile = () => {
     <ExperienceLine />  {/* todo: fixed the responsive */}
     <GradientHeading text="My Projects"/>
 
-     <CardSlider/>
+    <CardSlider projects={projects}/>
     </>
   )
 }

@@ -1,9 +1,11 @@
 import './Nav.css'
 import { useState, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useNavigate } from 'react-router-dom'
 
 export function Nav ({ text, showMenu }) {
     const [isDesktop, setIsDesktop] = useState(window.innerWidth > 770)
+    const [isLogged, setIsLogged] = useState(false);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const handleResize = () => {
@@ -12,10 +14,21 @@ export function Nav ({ text, showMenu }) {
 
         window.addEventListener('resize', handleResize)
 
+        const user = JSON.parse(localStorage.getItem('user'));
+        if (user) {
+          setIsLogged(!!user);
+        }
+
         return () => {
             window.removeEventListener('resize', handleResize)
         }
     }, [])
+
+    const handleLogout = () => {
+        localStorage.removeItem('user');
+        setIsLogged(false);
+        navigate('/');
+      };
 
     return (
         <nav style={{ display: (showMenu || isDesktop) ? 'block' : 'none' }}> 
@@ -27,9 +40,11 @@ export function Nav ({ text, showMenu }) {
                         </Link>
                     </li>
                 ))}
-                <li>
-                    <p className='text-sesion'>Cerrar Sesión</p>
-                </li>
+                {isLogged && (
+                    <li>
+                        <p className='text-sesion' onClick={handleLogout}>Cerrar Sesión</p>
+                    </li>
+                )}
             </ul>
         </nav>
     )

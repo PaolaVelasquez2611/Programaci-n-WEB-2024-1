@@ -1,6 +1,5 @@
 import './ProjectCard.css';
 import { Button } from '../Button/Button';
-import { Link } from 'react-router-dom';
 
 export const ProjectCard = ({ project }) => {
   return (
@@ -18,9 +17,7 @@ export const ProjectCard = ({ project }) => {
                 <p key={tag}>{tag}</p>
               ))}
             </div>
-            <Link to={`/projects/${project.title}`}>
-              <Button className="more-information" text="See more" />
-            </Link>
+              <Button className="more-information" path={`/projects/${project.title}`}text="See more" />
           </div>
         </div>
       </div>

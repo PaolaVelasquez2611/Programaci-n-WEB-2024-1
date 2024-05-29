@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
+import { AuthProvider } from './components/index.js'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
 import { AddProjectContextProvider } from './contexts/AddProject/AddProjectContextProvider.jsx'
@@ -9,13 +10,15 @@ import { GetProjectsContextProvider } from './contexts/GetProjects/GetProjectCon
 
 ReactDOM.createRoot(document.getElementById('root')).render(
     
+    <AuthProvider>
     <BrowserRouter>
         <GetProjectsContextProvider>
             <AddProjectContextProvider>
                 <ContactUsContextProvider>
-                    <App />
+                        <App />
                 </ContactUsContextProvider>
             </AddProjectContextProvider>
         </GetProjectsContextProvider>
     </BrowserRouter>
+</AuthProvider>
 )

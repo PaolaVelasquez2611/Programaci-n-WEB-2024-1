@@ -1,7 +1,14 @@
 import './Button.css'
+import { Link } from 'react-router-dom'
 
-export const Button = ({ text, onClick, className }) => {
+export const Button = ({ text, onClick, className, path}) => {
   return (
-    <button onClick={onClick} className={className} id='btn'>{text}</button>
+    <Link to = {path}>
+      <button 
+        onClick={onClick} 
+        className={className} 
+        id='btn'>{text}
+      </button>
+    </Link>
   )
 }

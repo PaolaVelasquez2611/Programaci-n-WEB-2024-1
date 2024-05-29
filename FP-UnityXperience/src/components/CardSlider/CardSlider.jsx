@@ -1,11 +1,8 @@
 import { useEffect, useRef, useState } from "react";
-import { carouselData } from "../../data/carouselData";
 import { ProjectCard } from "../index";
 import "./CardSlider.css";
 
-/* todo: replace cardslider.map aaaa */
-
-export const CardSlider = () => {
+export const CardSlider = ({ projects }) => {
   const carouselRef = useRef(null);
   const [isScrolling, setIsScrolling] = useState(false);
   const scrollInterval = 5000; 
@@ -55,24 +52,14 @@ export const CardSlider = () => {
     <div className={`carousel-container-projects ${isScrolling ? "scrolling" : ""}`}>
       <div className="carousel-wrapper" ref={carouselRef}>
         <ul className="carousel-list">
-          {carouselData.map(({ id, thumbnail, title, review, tags }) => (
-            <li key={id}>
-              <ProjectCard
-                img={thumbnail}
-                title={title}
-                description={review}
-                tags={tags}
-              />
+          {projects.map((project, index) => (
+            <li key={index}>
+              <ProjectCard project={project} />
             </li>
           ))}
-          {carouselData.map(({ id, thumbnail, title, review, tags }) => (
-            <li key={id + "clone"}>
-              <ProjectCard
-                img={thumbnail}
-                title={title}
-                description={review}
-                tags={tags}
-              />
+          {projects.map((project, index) => (
+            <li key={index}>
+              <ProjectCard project={project} />
             </li>
           ))}
         </ul>
