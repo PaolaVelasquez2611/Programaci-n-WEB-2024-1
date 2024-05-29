@@ -1,85 +1,34 @@
 import './AddProject.css';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Button, Input, TagInput } from '../../components';
-import { useState } from 'react';
-import { storage, db } from '../../services/firebase-config';
-import { getDownloadURL, ref, uploadBytes } from 'firebase/storage';
-import { v4 as uuidv4 } from 'uuid';
 import { Loader } from '../../components/Loader/Loader';
 import { CardWrap2 } from '../../components/CardWrap2/CardWrap2';
 import { Background } from '../../components/Background/Background';
+import { useAddProject } from '../../hooks/useAddProject';
 
 export const AddProject = () => {
-  const [projectData, setProjectData] = useState({
-    id: crypto.randomUUID(),
-    title: '',
-    description: '',
-    tags: [],
-    work_link: '',
-    thumbnail: '',
-    authors: []
-  });
-
-  const [thumbnailUpload, setThumbnailUpload] = useState(null);
-  const [imagesUpload, setImagesUpload] = useState([]);
-  const [tags, setTags] = useState([]);
-  const [authors, setAuthors] = useState([]);
-  const [loading, setLoading] = useState(false)
-
-  const uploadProject = async () => {
-    if (!thumbnailUpload) return;
-
-    setLoading(true);
-
-    const thumbnailRef = ref(storage, `images/${thumbnailUpload.name + uuidv4()}`);
-    await uploadBytes(thumbnailRef, thumbnailUpload);
-    const thumbnailUrl = await getDownloadURL(thumbnailRef);
-
-    const imagesUrls = [];
-    for (let i = 0; i < Math.min(imagesUpload.length, 3); i++) {
-      const image = imagesUpload[i];
-      const imageRef = ref(storage, `images/${image.name + uuidv4()}`);
-      await uploadBytes(imageRef, image);
-      const imageUrl = await getDownloadURL(imageRef);
-      imagesUrls.push(imageUrl);
-    }
-
-    const updatedProjectData = {
-      ...projectData,
-      thumbnail: thumbnailUrl,
-      images: imagesUrls
-    };
-
-    try {
-      await db.collection('projects').add(updatedProjectData);
-      notify();
-    } catch (error) {
-      console.error('Error adding project: ', error);
-    }finally{
-      setLoading(false);
-    }
-  };
-
-  const notify = () => {
-    toast.success('Project created successfully! 🚀', {
-      position: "top-center",
-      autoClose: 5000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-      theme: "dark",
-    });
-  };
+  const {
+    projectData,
+    thumbnailUpload,
+    imagesUpload,
+    loading,
+    uploadProject,
+    handleTitleChange,
+    handleDescriptionChange,
+    handleWorkLinkChange,
+    handleTagsChange,
+    handleAuthorsChange,
+    handleThumbnailUpload,
+    handleImagesUpload
+  } = useAddProject(); 
 
   return (
     <main>
       <Background></Background>
       <div className='title-div'>
-      <h3 className="heading-addproject-3">UniteXperience</h3>
-      <h1 className="heading-addproject-1">Add New Project</h1>
+        <h3 className="heading-addproject-3">UniteXperience</h3>
+        <h1 className="heading-addproject-1">Add New Project</h1>
       </div>
       <section>
         <CardWrap2 className="wrap" image="https://t3.ftcdn.net/jpg/05/65/95/00/360_F_565950027_aojKCTkmD6IM5t4VHu9xwSgfoaArZxUc.jpg">
@@ -87,40 +36,43 @@ export const AddProject = () => {
             <Input 
               text="Work Title" 
               placeholder="Enter work title" 
-              onChange={(e) => setProjectData({ ...projectData, title: e.target.value })} />
-              <Input 
-                text="Work Description" 
-                className="tall-input" 
-                placeholder="Write your description here" 
-                onChange={(e) => setProjectData({ ...projectData, description: e.target.value })} />
+              value={projectData.title}
+              onChange={(e) => handleTitleChange(e.target.value)} />
+            <Input 
+              text="Work Description" 
+              className="tall-input" 
+              placeholder="Write your description here" 
+              value={projectData.description}
+              onChange={(e) => handleDescriptionChange(e.target.value)} />
             <Input 
               text="Link" 
-              placeholder="Copy the embeded link here" 
-              onChange={(e) => setProjectData({ ...projectData, work_link: e.target.value })} />
+              placeholder="Copy the embedded link here" 
+              value={projectData.work_link}
+              onChange={(e) => handleWorkLinkChange(e.target.value)} />
             <TagInput 
               labelText={"Enter tags"}
               tags={projectData.tags} 
-              setTags={(tags) => setProjectData({ ...projectData, tags })} />
+              setTags={handleTagsChange} />
             <TagInput
               labelText={"Authors"} 
               tags={projectData.authors} 
-              setTags={(authors) => setProjectData({ ...projectData, authors })} />
+              setTags={handleAuthorsChange} />
             <Input 
               text={"Upload your thumbnail"}
               type="file" 
               className='tall-input'
               id="file-input"
-              onChange={(e) => setThumbnailUpload(e.target.files[0])} />
+              onChange={(e) => handleThumbnailUpload(e.target.files[0])} />
             <Input 
               text={"Upload the images of your project"}
               type="file" 
               className='tall-input' 
               multiple={true}
-              onChange={(e) => setImagesUpload(e.target.files)} />
+              onChange={(e) => handleImagesUpload(e.target.files)} />
             <Button 
               onClick={uploadProject} 
               text="Send" />
-              {loading && <Loader/>}
+            {loading && <Loader/>}
           </div>
         </CardWrap2>
         <ToastContainer />
