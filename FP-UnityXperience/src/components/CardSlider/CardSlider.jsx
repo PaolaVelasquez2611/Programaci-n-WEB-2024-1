@@ -52,13 +52,13 @@ export const CardSlider = ({ projects }) => {
     <div className={`carousel-container-projects ${isScrolling ? "scrolling" : ""}`}>
       <div className="carousel-wrapper" ref={carouselRef}>
         <ul className="carousel-list">
-          {projects.map((project) => (
-            <li>
+          {projects.map((project, index) => (
+            <li key={index}>
               <ProjectCard project={project} />
             </li>
           ))}
-          {projects.map((project) => (
-            <li>
+          {projects.map((project, index) => (
+            <li key={index}>
               <ProjectCard project={project} />
             </li>
           ))}
