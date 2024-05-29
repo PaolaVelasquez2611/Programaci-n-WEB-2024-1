@@ -44,7 +44,7 @@ export const footerData2 = [
     },
     {
         id: crypto.randomUUID(),
-        text:"318-496-4527",
+        text:"312-666-5744",
         
     },
     {
