@@ -52,10 +52,10 @@ export const teamInformation = [
         description: "Hey there! I'm Andres Neira, a front-end web UI developer dedicated to continuous learning and growth. My goal isn't just to be another front-end developer, but to strive towards becoming an outstanding individual, a visionary designer, and a creative thinker. I'm committed to providing my clients with top-notch solutions to their problems, ensuring they are scalable, accessible, visually appealing, and, most importantly, impactful. Let's collaborate and create something remarkable together! ",
         experience: [
             {
-                job: "Brand Designer (Freelance)",
+                job: "Brand Designer (Freelance)", /* pending */
                 company: "Freelance",
-                time: "June 2022 - June 2023",
-                job_description: "Freelance designer, developer and full time comedian"
+                time: "Feb 2024 - Actual",
+                job_description: "In charge of creating graphic pieces and editing previous ones to optimize them based on the brand's style guide."
             }
         ]
     },
