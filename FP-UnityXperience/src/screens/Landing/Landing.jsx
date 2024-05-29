@@ -1,37 +1,11 @@
 import { useEffect, useState } from "react";
 import { Footer, Header, Skills, GradientHeading, BrandCard, BrandCards, IntroSection, TeamSection } from "../../components";
-import { Background } from "../../components/Background/Background"
+import { Background } from "../../components/Background/Background";
 import { Scroller } from "../../components/Scroller/Scroller";
-import { collection, query, onSnapshot, getFirestore } from "firebase/firestore";
-import { app } from '../../services/firebase-config';
-
-const db = getFirestore(app);
+import { useGetProjects } from '../../hooks/useGetProjects';
 
 export const Landing = () => {
-  const [projects, setProjects] = useState([]);
-
-  const getProjectsFromFirestore = () => {
-    const q = query(collection(db, "projects"));
-    onSnapshot(q, (querySnapshot) => {
-      const updatedProjects = [];
-      querySnapshot.forEach((doc) => {
-        const projectData = doc.data();
-        updatedProjects.push(projectData);
-      });
-
-      localStorage.setItem('projects', JSON.stringify(updatedProjects));
-      setProjects(updatedProjects);
-    });
-  };
-
-  useEffect(() => {
-    const localProjects = JSON.parse(localStorage.getItem('projects'));
-    if (localProjects && localProjects.length > 0) {
-      setProjects(localProjects);
-    } else {
-      getProjectsFromFirestore();
-    }
-  }, []);
+  const { projects } = useGetProjects();
 
   return (
     <main className="place-content-center">
@@ -50,4 +24,4 @@ export const Landing = () => {
       <TeamSection />
     </main>
   );
-}
+};

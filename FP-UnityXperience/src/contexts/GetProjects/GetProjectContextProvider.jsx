@@ -59,7 +59,8 @@ export const GetProjectsContextProvider = ({ children }) => {
             setSearchTerm, 
             selectedFilter, 
             setSelectedFilter, 
-            filteredProjects 
+            projects,
+            filteredProjects
         }}>
             { children }
         </GetProjectsContext.Provider>
