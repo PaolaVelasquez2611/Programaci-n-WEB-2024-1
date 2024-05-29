@@ -1,28 +1,23 @@
-import { Button } from "../Button/Button"
-import { SocialButtons } from "../SocialButtons/SocialButtons"
-import './PartnerCard.css'
+import { Button } from "../Button/Button";
+import { SocialButtons } from "../SocialButtons/SocialButtons";
+import './PartnerCard.css';
 
-export const PartnerCard = () => {
-
+export const PartnerCard = ({ person }) => {
   return (
     <div className="partner-card-container">
-        <img 
-        src="../src/assets/Profile/JuanRamirez.png" 
-        className="partner-image"/> 
-        <div className="content-card">
-            <h2 className="name">
-                Juan Ramirez
-            </h2>
-            <p className="partner-info"> Front-end Developer </p>
-            <h3> JS | React | Firebase | Chistes</h3>
-            <Button
-            className="btn-parther-card"
-            text={"See more"}
-            path="/profile"/>
-            <hr className="socials"/>
-            <SocialButtons />
-        </div>
+      <img src={person.pic} alt={`${person.name} profile`} className="partner-image" />
+      <div className="content-card">
+        <h2 className="name">{person.name}</h2>
+        <p className="partner-info">{person.rol}</p>
+        <h3>{person.tools.join(' | ')}</h3>
+        <Button
+          className="btn-partner-card"
+          text="See more"
+          path={`/profile/${person.author_id}`}
+        />
+        <hr className="socials" />
+        <SocialButtons />
+      </div>
     </div>
-    
-  )
-}
+  );
+};

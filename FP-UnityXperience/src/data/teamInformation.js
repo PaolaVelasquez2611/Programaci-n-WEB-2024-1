@@ -23,7 +23,7 @@ export const teamInformation = [
     },
     {
         name: "Juan Esteban Ramirez Perdomo",
-        pic: "COLOCAR IMAGEN DE FOTO DE PERFIL",
+        pic: "../../src/assets/profile/JuanRamirez.png",
         author_id: "9uNya4WGOUdj6Oya8SFWHdVlMvr1",
         rol: "Comedian",
         tools: ["JS", "React", "Figma"],
