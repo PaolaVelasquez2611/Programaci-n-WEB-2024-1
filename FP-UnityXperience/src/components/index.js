@@ -29,5 +29,4 @@ export * from "./ProjectCards/ProjectCards";
 export * from "./ProjectDetails/ProjectDetails";
 export * from "./EditButton/EditButton"
 export * from "./CardSlider/CardSlider"
-export * from "./AuthProvider/AuthProvider"
 export * from "./PrivateRouter/PrivateRouter"

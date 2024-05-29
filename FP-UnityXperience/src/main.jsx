@@ -1,9 +1,9 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
-import { AuthProvider } from './components/index.js'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
+import { AuthContextProvider } from './contexts/AuthProvider/AuthContextProvider.jsx'
 import { AddProjectContextProvider } from './contexts/AddProject/AddProjectContextProvider.jsx'
 import { ContactUsContextProvider } from './contexts/ContactUs/ContactUsContextProvider.jsx'
 import { GetProjectsContextProvider } from './contexts/GetProjects/GetProjectContextProvider.jsx'
@@ -11,7 +11,7 @@ import { GetProjectsContextProvider } from './contexts/GetProjects/GetProjectCon
 ReactDOM.createRoot(document.getElementById('root')).render(
     
     <BrowserRouter>
-        <AuthProvider>
+        <AuthContextProvider>
             <GetProjectsContextProvider>
                 <AddProjectContextProvider>
                     <ContactUsContextProvider>
@@ -19,6 +19,6 @@ ReactDOM.createRoot(document.getElementById('root')).render(
                     </ContactUsContextProvider>
                 </AddProjectContextProvider>
             </GetProjectsContextProvider>
-        </AuthProvider>
+        </AuthContextProvider>
     </BrowserRouter>
 )

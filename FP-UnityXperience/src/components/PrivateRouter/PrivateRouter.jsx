@@ -1,10 +1,9 @@
-import { useContext } from 'react';
 import { Navigate } from 'react-router-dom';
-import { AuthContext } from '../AuthProvider/AuthProvider';
 import { AddProject } from '../../screens';
+import { useAuth } from '../../hooks/useAuth';
 
 export const PrivateRouter = () => {
-    const { user } = useContext(AuthContext);
+    
 
     if (user === undefined) {
         return(
