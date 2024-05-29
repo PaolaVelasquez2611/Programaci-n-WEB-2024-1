@@ -42,7 +42,7 @@ export const Aboutus = () => {
    </figure>
    <figure className="our-vision-container">
    <AboutUsCard title = "Our Vision" 
-   text="At Unityxperience, we aspire to be recognized as a benchmark in the 
+                text="At Unityxperience, we aspire to be recognized as a benchmark in the 
                       industry, being the preferred choice for clients seeking innovative and 
                       high-quality solutions, as well as for freelancers looking to collaborate 
                       on stimulating and rewarding projects. We envision ourselves as a cohesive
@@ -56,7 +56,7 @@ export const Aboutus = () => {
   </figure>
   <figure className="our-mision-container">
    <AboutUsCard title = "Our Mission" 
-   text="At Unityxperience, our mission is to lead the software development and 
+                text="At Unityxperience, our mission is to lead the software development and 
                       digital experience design industry, being recognized for our innovation, 
                       quality, and commitment to excellence. We strive to be a meeting point
                       where talented freelancers come together to collaborate on projects that 
