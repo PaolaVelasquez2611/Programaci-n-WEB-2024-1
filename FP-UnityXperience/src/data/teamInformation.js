@@ -61,7 +61,7 @@ export const teamInformation = [
         description: "Hey there! I'm Andres Neira, a front-end web UI developer dedicated to continuous learning and growth. My goal isn't just to be another front-end developer, but to strive towards becoming an outstanding individual, a visionary designer, and a creative thinker. I'm committed to providing my clients with top-notch solutions to their problems, ensuring they are scalable, accessible, visually appealing, and, most importantly, impactful. Let's collaborate and create something remarkable together! ",
         experience: [
             {
-                job: "Branding and packaging designer",
+                job: "Branding and Packaging Designer",
                 company: "Happy & Soft",
                 time: "Feb 2024 - Actual",
                 job_description: "In charge of creating graphic pieces and editing previous ones to optimize them based on the brand's style guide."
@@ -127,7 +127,7 @@ export const teamInformation = [
                 job_description: "I work with various startup buisinesses to create branding and logos"
             },
             {
-                job: "Icesi undergraduate program of interactive media desig",
+                job: "Icesi undergraduate program of Mnteractive Media Design",
                 company: "Interactive Media Designer - Icesi University",
                 time: "2021-actual",
                 job_description: "University student"
