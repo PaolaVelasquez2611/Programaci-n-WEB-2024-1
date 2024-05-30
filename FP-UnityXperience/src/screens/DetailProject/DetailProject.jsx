@@ -1,5 +1,5 @@
 import './DetailProject.css'
-import { Footer, Header, ProjectDetails} from "../../components"
+import { ProjectDetails} from "../../components"
 import { useParams } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { Background } from '../../components/Background/Background'

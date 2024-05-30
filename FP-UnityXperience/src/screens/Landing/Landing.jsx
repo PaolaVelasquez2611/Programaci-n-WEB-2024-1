@@ -1,5 +1,4 @@
-import { useEffect, useState } from "react";
-import { Footer, Header, Skills, GradientHeading, BrandCard, BrandCards, IntroSection, TeamSection } from "../../components";
+import { Skills, GradientHeading, BrandCards, IntroSection, TeamSection } from "../../components";
 import { Background } from "../../components/Background/Background";
 import { Scroller } from "../../components/Scroller/Scroller";
 import { useGetProjects } from '../../hooks/useGetProjects';

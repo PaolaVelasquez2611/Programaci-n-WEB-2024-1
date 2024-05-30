@@ -1,9 +1,5 @@
 import { ExperienceLine,ProfileCard,GradientHeading, CardSlider, Background} from "../../components"
 import { useEffect, useState } from "react";
-import { collection, query, onSnapshot, getFirestore } from "firebase/firestore";
-import { app } from '../../services/firebase-config';
-
-const db = getFirestore(app);
 
 export const Profile = () => {
 

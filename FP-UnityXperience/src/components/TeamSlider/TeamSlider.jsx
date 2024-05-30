@@ -7,15 +7,19 @@ const MAX_VISIBILITY = 3;
 
 export const TeamSlider = () => {
   const [active, setActive] = useState(2);
-  const count = 4; // Number of team members
+  const count = 4;
 
   return (
     <div className="carousel-container">
       <div className="carousel">
-        {active > 0 && <button className='nav left' onClick={() => setActive(i => i - 1)}><TiChevronLeftOutline /></button>}
+        {active > 0 && 
+          <button 
+            className='nav left' 
+            onClick={() => setActive(i => i - 1)}>
+              <TiChevronLeftOutline />
+          </button>}
         <ul className="carrousel-partner">
           {[...Array(count)].map((_, i) => (
-      
             <li className='card-container' style={{
               '--active': i === active ? 1 : 0,
               '--offset': (active - i) / 3,
@@ -29,7 +33,12 @@ export const TeamSlider = () => {
           
           ))}
         </ul>
-        {active < count - 1 && <button className='nav right' onClick={() => setActive(i => i + 1)}><TiChevronRightOutline /></button>}
+        {active < count - 1 && 
+          <button 
+            className='nav right' 
+            onClick={() => setActive(i => i + 1)}>
+              <TiChevronRightOutline />
+          </button>}
       </div>
     </div>
   );

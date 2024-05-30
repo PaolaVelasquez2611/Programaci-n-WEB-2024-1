@@ -1,7 +1,6 @@
-import { BrowserRouter, Route, Routes,} from "react-router-dom"
-import { Aboutus, AddProject, AdminLogin, Contact, DetailProject, Error, Landing, Profile, Projects, Services } from "../screens"
+import { Route, Routes,} from "react-router-dom"
+import { Aboutus, AdminLogin, Contact, DetailProject, Error, Landing, Profile, Projects, Services } from "../screens"
 import { Footer, Header, PrivateRouter} from "../components"
-
 
 export const AppRouter = () => {
   return (

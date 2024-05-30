@@ -22,9 +22,5 @@ export const BrandCards = ( { text1, text2 }) => {
     </>
   )
 }
-
-
   <section className="card-seccion flex justify-center items-center h-screen">
-  
-            
   </section>

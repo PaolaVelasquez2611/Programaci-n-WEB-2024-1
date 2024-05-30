@@ -25,7 +25,6 @@ export const TagInput = ({ tags, setTags, labelText }) => {
     return (
         <div className="tag-input-box">
             <label className="label-title" htmlFor="tag-input">{labelText}</label>
-            {/* <p>Press enter to add a new keyword</p> */}
             <div className="tags-container">
                 {tags.map((tag, index) => (
                     <div className="tag" key={index}>

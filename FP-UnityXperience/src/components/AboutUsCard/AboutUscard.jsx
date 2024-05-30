@@ -9,8 +9,6 @@ export function AboutUsCard({ title, text, image }) {
 
     useLayoutEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-
-        // Animation for the title
         gsap.from(titleRef.current, {
             opacity: 0,
             y: 50,
@@ -23,7 +21,6 @@ export function AboutUsCard({ title, text, image }) {
             }
         });
 
-        // Animation for the paragraph
         gsap.from(pRef.current, {
             opacity: 0,
             y: 50,

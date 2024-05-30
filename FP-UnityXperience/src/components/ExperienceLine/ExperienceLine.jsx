@@ -9,7 +9,7 @@ export const ExperienceLine = () => {
 
   return (
     <section>
-        <h2>Experience</h2> {/* TODO: add gradient style */}
+        <h2>Experience</h2> 
         <article className="article-container px-2 mt-10">
             <ul className="relative border-l -border--blue-cian/50">
                 {experience.map(({ id, job, company, time, description })=>(

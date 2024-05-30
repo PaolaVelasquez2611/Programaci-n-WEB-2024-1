@@ -1,6 +1,6 @@
 import { Button, CardWrap, Input } from "../../components";
 import './Contact.css';
-import { ToastContainer, toast } from 'react-toastify';
+import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import { Background } from "../../components/Background/Background";
 import { useContactUs } from "../../hooks/useContactUs";

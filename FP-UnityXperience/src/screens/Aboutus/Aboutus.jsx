@@ -1,8 +1,7 @@
 import './Aboutus.css'
-import {AboutUsCard, BrandCard, BrandCards} from "../../components"
+import {AboutUsCard, BrandCards} from "../../components"
 import { Background } from '../../components/Background/Background'
 
-// todo: Map it, improve coding practices!!
 export const Aboutus = () => {
   return (
   <>
@@ -11,22 +10,6 @@ export const Aboutus = () => {
   <h1>UnityXperience</h1>
   <h1 className='heading-aboutus'>About Us</h1>
   </div>
-
-  
-{/*     {
-      aboutUsData.map(( { title, titleColored, text, id, className, image} )=> (
-      <span className="titles">
-        <h2><span className="title-1">{title}</span></h2>
-        <h2><span className="title-2">{titleColored}</span></h2>
-      </span>
-      <figure className={className}>
-       <AboutUsCard text={text}
-                    image={image}/>
-      </figure>
-      ))
-    } */}
-
-
 
   <figure className="what-is-container">
   <AboutUsCard  title = "Who are we?" text="UnityXperience isn't your typical design and development company. We’re a 
