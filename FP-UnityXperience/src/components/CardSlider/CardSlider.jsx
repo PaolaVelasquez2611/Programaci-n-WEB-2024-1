@@ -1,10 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import { ProjectCard } from "../index";
 import "./CardSlider.css";
-import { teamInformation } from "../../data/teamInformation";
 import { useGetProjects } from "../../hooks/useGetProjects";
-
-
 
 export const CardSlider = ({author}) => {
 
