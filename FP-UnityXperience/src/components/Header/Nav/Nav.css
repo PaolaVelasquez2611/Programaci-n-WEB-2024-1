@@ -1,5 +1,5 @@
 .text-sesion{
-  color: crimson;
+  color: var(--orange);
   cursor: pointer;
 }
 
