@@ -5,7 +5,9 @@ import './PartnerCard.css';
 export const PartnerCard = ({ person }) => {
   return (
     <div className="partner-card-container">
-      <img src={person.pic} alt={`${person.name} profile`} className="partner-image" />
+      <img 
+        src={person.pic} alt={`${person.name} profile`} 
+        className="partner-image" />
       <div className="content-card">
         <h2 className="name">{person.name}</h2>
         <p className="partner-info">{person.rol}</p>

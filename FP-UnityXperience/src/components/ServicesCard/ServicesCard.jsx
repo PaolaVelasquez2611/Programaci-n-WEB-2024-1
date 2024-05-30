@@ -13,7 +13,7 @@ export const ServicesCard = ({ img, title, description, services }) => {
       setIsDesktopScreen(window.innerWidth < 770);
     }
 
-    handleResize(); // Check initial screen width
+    handleResize();
     window.addEventListener('resize', handleResize);
 
     return () => window.removeEventListener('resize', handleResize);

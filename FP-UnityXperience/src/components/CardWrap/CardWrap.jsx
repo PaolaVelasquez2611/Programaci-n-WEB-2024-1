@@ -1,6 +1,5 @@
 import './CardWrap.css'
 
-
 export const CardWrap = ({ children, image }) => {
     return (
 

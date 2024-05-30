@@ -33,7 +33,9 @@ export const ProjectDetails = ({thumbnail, title, description, link, tag, author
         </section>
         <strong> <p className="section-text2">Preview</p> </strong>
         <section className="previews-project">
-            <img src={preview1} className="big-preview"/>
+            <img 
+                src={preview1} 
+                className="big-preview"/>
             <div className="mini-previews">
                 <img src={preview2}/>
                 <img src={preview3}/>
