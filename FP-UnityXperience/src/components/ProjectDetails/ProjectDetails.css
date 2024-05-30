@@ -20,12 +20,11 @@
     width: 100%;
     border-radius: 10px;
     margin: 0 auto;
-    background: linear-gradient(135deg, rgba(242, 103, 66, 1), rgba(131, 201, 244, 1));
 }
 
 .thumbnail-div img{
     width: 100vw;
-    padding: 25px;
+    border-radius: 10px;
 }
 
 .section-text{
