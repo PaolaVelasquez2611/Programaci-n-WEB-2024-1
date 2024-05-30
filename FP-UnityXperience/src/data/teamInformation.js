@@ -47,7 +47,7 @@ export const teamInformation = [
     },
     {
         name: "Andrés Felipe Neira Méndez",
-        pic: "../../src/assets/profile/AndresNeira.jpg",
+        pic: "../../src/assets/profile/AndresNeira.png",
         author_id: "zrtqenmWUhdR22rzVXZmkJLhGiX2",
         author_name: "Andres",
         rol: "Comedian",
@@ -70,7 +70,7 @@ export const teamInformation = [
     },
     {
         name: "Paola Andrea Velasquez Durán",
-        pic: "../../src/assets/profile/PaolaAndrea.jpg",
+        pic: "../../src/assets/profile/PaolaAndrea.png",
         author_id: "A6fGehCKpWhuiS2RVjKWrWn2qlh2",
         author_name: "Paola",
         rol: "UI/UX Designer", 
