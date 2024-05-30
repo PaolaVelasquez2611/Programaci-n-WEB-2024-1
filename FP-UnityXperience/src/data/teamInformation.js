@@ -50,7 +50,7 @@ export const teamInformation = [
         pic: "../../src/assets/profile/AndresNeira.png",
         author_id: "zrtqenmWUhdR22rzVXZmkJLhGiX2",
         author_name: "Andres",
-        rol: "Comedian",
+        rol: "Web UI Developer",
         tools: ["JS", "Figma", "React", "Node"],
         social_media: {
             linkedin: "https://www.linkedin.com/in/andresnei/",
@@ -61,11 +61,36 @@ export const teamInformation = [
         description: "Hey there! I'm Andres Neira, a front-end web UI developer dedicated to continuous learning and growth. My goal isn't just to be another front-end developer, but to strive towards becoming an outstanding individual, a visionary designer, and a creative thinker. I'm committed to providing my clients with top-notch solutions to their problems, ensuring they are scalable, accessible, visually appealing, and, most importantly, impactful. Let's collaborate and create something remarkable together! ",
         experience: [
             {
-                job: "Brand Designer (Freelance)", /* pending */
-                company: "Freelance",
+                job: "Branding and packaging designer",
+                company: "Happy & Soft",
                 time: "Feb 2024 - Actual",
                 job_description: "In charge of creating graphic pieces and editing previous ones to optimize them based on the brand's style guide."
-            }
+            },
+            {
+                job: "Web UI Developer",
+                company: "Freelance",
+                time: "Nov 2023 - Jan 2024",
+                job_description: "In charge of creating graphic pieces and editing previous ones to optimize them based on the brand's style guide."
+            },
+            {
+                job: "Freelancer",
+                company: "Freelance",
+                time: "Nov 2023 - Jan 2024",
+                job_description: "Branding and design to different clients focused on finding a place in the industry"
+            },
+            {
+                job: "Video Editor",
+                company: "Icesi University",
+                time: "Jun 2023 - Oct 2023",
+                job_description: "In charge to edit and film corporative videos for the university websites"
+            },
+            {
+                job: "Lead of Developer team",
+                company: "Icesi University",
+                time: "Mar 2023 - Jun 2023",
+                job_description: "Developer team leader on usign content manager pages and different web technologies"
+            },
+
         ]
     },
     {
