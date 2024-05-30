@@ -80,13 +80,13 @@ export const teamInformation = [
             },
             {
                 job: "Video Editor",
-                company: "Icesi University",
+                company: "ICESI University",
                 time: "Jun 2023 - Oct 2023",
                 job_description: "In charge to edit and film corporative videos for the university websites"
             },
             {
                 job: "Lead of Developer team",
-                company: "Icesi University",
+                company: "ICESI University",
                 time: "Mar 2023 - Jun 2023",
                 job_description: "Developer team leader on usign content manager pages and different web technologies"
             },
@@ -99,21 +99,39 @@ export const teamInformation = [
         author_id: "A6fGehCKpWhuiS2RVjKWrWn2qlh2",
         author_name: "Paola",
         rol: "UI/UX Designer", 
-        tools: ["Procreate", "Figma"], /* maybe would change */
+        tools: ["Procreate", "Figma", "Illustrator"], 
         social_media: {
             linkedin: "https://www.linkedin.com/feed/",
             github: "https://github.com/PaolaVelasquez2611",
             instagram: "https://www.instagram.com/paola_andrea1320/",
             behance: "https://www.behance.net/paolavelasquez4"
         },
-        description: "Pao descripton",
+        description: "Greetings! I'm Paola Velasquez, a designer fueled by their love for creating lovely user interfaces and great experiences. Beyond just making things pretty, I aspire to be an outstanding designer, a visionary designer, and a creative thinker. My goal is to provide top-notch solutions to my clients' problems, ensuring they are scalable, accessible, visually appealing,and impactful.",
         experience: [
             {
-                job: "pao job",
-                company: "pao company",
-                time: "time - timetime",
-                job_description: "pao job description"
-            }
+                job: "UI Designer - Eduteka",
+                company: "Icesi University",
+                time: "2024-actual",
+                job_description: "In charge of the events graphic pieces and editing of media"
+            },
+            {
+                job: "Graphic Designer",
+                company: "Humanity, Technology and Science department in University ICESI - CITRADI",
+                time: "2024-actual",
+                job_description: "Design consultant for various projects inside the organization"
+            },
+            {
+                job: "Freelance Designer",
+                company: "ICESI University",
+                time: "2023-actual",
+                job_description: "I work with various startup buisinesses to create branding and logos"
+            },
+            {
+                job: "Icesi undergraduate program of interactive media desig",
+                company: "Interactive Media Designer - Icesi University",
+                time: "2021-actual",
+                job_description: "University student"
+            },
         ]
     },
 
