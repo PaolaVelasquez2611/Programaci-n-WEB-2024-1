@@ -8,8 +8,6 @@
     display: flex;
     flex-direction: row;
     margin: 0 auto;
-    
-    
   }
   
   .carrousel-partner {
@@ -52,6 +50,10 @@
     user-select: none;
     background: unset;
     border: unset;
+  }
+
+  #btn.btn-partner-card{
+    margin-top: 8%;
   }
   
   .nav.left {

@@ -11,9 +11,22 @@
     display: flex;
     flex-direction: column;
     margin: 0 auto;
+    animation-name: fadeIn;
+    animation-duration: 1s; /* Duración de la animación */
+    animation-timing-function: ease-in; /* Función de temporización */
+    animation-fill-mode: forwards; 
     
     
 }
+
+@keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
 
 .image-container {
     width: 100%;

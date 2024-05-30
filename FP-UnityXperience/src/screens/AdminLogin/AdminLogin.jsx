@@ -22,12 +22,11 @@ export const AdminLogin = () => {
   return (
     <main>
       <Background />
-      <h1>UniteXperience Administrator Panels</h1>
+      <h1 className="adminlogin-title">Administrator Login</h1>
       <section>
         <CardWrap image="https://static.vecteezy.com/system/resources/previews/027/034/360/non_2x/abstract-square-blurred-background-elegant-gradient-mesh-red-dark-color-design-template-good-for-modern-website-wallpaper-cover-design-free-vector.jpg">
           <div className="children-container">
-            <h2>Hello, enter your account to go to the 
-              <span>administrator panel</span>
+            <h2 className="text-admin">Hello, enter your account to verify your administrator status
             </h2>
             <Input
               text="Your Email"
@@ -46,14 +45,10 @@ export const AdminLogin = () => {
               value={password}
               onChange={(e) => setPassword(e.target.value)}
             />
-            <Button
+            <Button className="button-adminlogin"
               text="Log in"
-              className="w-full"
               onClick={submitHandler}
             />
-            <span className="place-content-center text-center">
-              <p className="return-to">Return to Home Page</p>
-            </span>
           </div>
         </CardWrap>
         <ToastContainer />

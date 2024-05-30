@@ -22,7 +22,7 @@ export const SearchBar = ({ value, placeholder, onChange, onFilterChange }) => {
           placeholder={placeholder} 
           onChange={onChange}
         />
-        <button onClick={toggleFilters}>
+        <button className='button-filters' onClick={toggleFilters}>
           <img src="../src/assets/filter.png" alt="Filter"/>
         </button>
       </div>

@@ -1,3 +1,8 @@
 .text-sesion{
-  margin-left: -20px; 
+  color: crimson;
+  cursor: pointer;
+}
+
+.nav-header li :hover{
+  color: aqua;
 }

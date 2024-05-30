@@ -1,6 +1,9 @@
 .gradient-heading-2 {
-    background: linear-gradient(to bottom, rgba(255, 255, 255) 34%, #333333 );
-    -webkit-background-clip: text; 
+  background: linear-gradient(to right, rgb(107, 233, 209), rgb(67, 149, 173),rgb(135, 116, 250));
     background-clip: text;
-    color: transparent; 
+    -webkit-background-clip: text;
+    color: transparent;
+    font-size: 2.5rem;
+    margin-top: 25%;
+    margin-bottom: 10%;
   }

@@ -6,12 +6,37 @@
     border-radius: 10px;
     margin: 0 auto;
     margin-top: 3%;
+    padding: 5%;
 }
+
+.intro-container {
+    opacity: 0; /* Inicialmente oculto */
+    transform: translateY(20px); /* Inicialmente desplazado hacia abajo */
+  }
 
 .logo-unity{
     width: 50%;
     margin: 0 auto;
+    animation-name: spin;
+    animation-duration: 10s; /* Duración de la animación */
+    animation-timing-function: linear; /* Función de temporización */
+    animation-iteration-count: infinite;
 }
+
+#btn.btn-learn{
+    margin-left: 75%;   
+}
+
+
+
+@keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
 
 #btn-learn{
     margin: 6%;
@@ -22,11 +47,18 @@
 }
 
 @media (max-width: 768px) {
+
+    #intro-container{
+        padding: 10%;
+    }
     .logo-unity{
         margin: 0 auto;
     }
 
-    .btn-learn{
-        margin: 6%;
+    #btn.btn-learn{
+        margin: 2%; 
+        margin-top: 20px;
     }
+
+   
 }

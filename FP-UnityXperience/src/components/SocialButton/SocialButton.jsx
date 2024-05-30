@@ -1,4 +1,5 @@
 /* import { useHistory } from "react-router-dom"; */
+import './SocialButton.css'
 
 export const SocialButton = ({ imgUrl, name, link }) => {
 
@@ -9,10 +10,10 @@ export const SocialButton = ({ imgUrl, name, link }) => {
       }; */
     
   return (
-    <div className="flex mt-5 w-full justify-evenly [&>*]:cursor-pointer">
-        <div className="flex flex-col items-center ">
-            <button /* onClick={handleClick} */>
-                <img 
+    <div className="social-button-container">
+        <div className="social-wrap">
+            <button>
+                <img className="social-button" 
                 src={imgUrl}
                 alt={name} />
             </button>

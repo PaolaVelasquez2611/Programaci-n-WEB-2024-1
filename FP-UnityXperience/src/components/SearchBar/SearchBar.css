@@ -57,6 +57,25 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0 auto;
+    
+}
+
+#UI.filter{
+    margin-right: 20%;
+}
+#UX.filter{
+    margin-right: 20%;
+}
+#All.filter{
+    margin-right: 20%;
+}
+#Dev.filter{
+    margin-right: 20%;
+}
+
+.button-filters{
+    margin-left: -8%;
+    z-index: 2;
 }
 
 

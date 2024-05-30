@@ -1,0 +1,37 @@
+.social-button {
+    width: 100%;
+margin: 0 auto;
+}
+
+.social-button-container button{
+    width: 30px;
+    
+}
+
+.social-button-container{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-wrap{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-button img {
+    width: 100%;
+
+}
+
+@media (min-width: 600px){
+    .social-button-container button{
+        width: 60px;
+        
+    }
+  
+}

@@ -50,9 +50,9 @@ export function Footer (){
             </button>
         </section>
         </section>
-        <section>
+        <section className='admin-button-tologin'>
             <Link to={"/adminlogin"}>
-                <NavFooter title2="Administrator Panel"/>
+                <NavFooter title2="I'm an Administrator"/>
             </Link>
         </section>
         </div>

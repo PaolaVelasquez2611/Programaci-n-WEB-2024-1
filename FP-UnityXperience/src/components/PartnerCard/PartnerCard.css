@@ -22,7 +22,9 @@
     align-items: center;
 }
 
-
+.partner-image{
+  margin-bottom:5%;
+}
 
 .btn-parther-card{
     margin: 10% 0% 2% 0%;
@@ -37,7 +39,7 @@
     }
   
     .partner-card-container img {
-      width: 70%; /* Adjust image width for smaller screens */
+      width: 60%; /* Adjust image width for smaller screens */
     }
   
     .btn-parther-card {

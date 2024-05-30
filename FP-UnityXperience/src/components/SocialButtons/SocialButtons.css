@@ -1,0 +1,10 @@
+.social-buttons {
+    display: flex;
+    margin-top: 10%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding-bottom: 5%;
+}
+

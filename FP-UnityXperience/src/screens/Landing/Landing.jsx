@@ -11,8 +11,7 @@ export const Landing = () => {
       <Background />
       <GradientHeading text={"UnityXperience"} />
       <h1 className="text-center font-bold">UI / UX / Web Development</h1>
-      <p className="text-center mt-8 text-lg">Always exploring the needs</p>
-      <p className="text-center mb-20 text-lg">creating innovative ideas and unite the solutions</p>
+      <p className="text-center mt-8 text-lg">Always exploring the needs and creating innovative ideas and unite the solutions</p>
       <IntroSection />
       <BrandCards /> 
       <GradientHeading text={"Skills"} />
