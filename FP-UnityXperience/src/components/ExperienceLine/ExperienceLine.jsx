@@ -13,9 +13,9 @@ export const ExperienceLine = ({ experiences }) => {
 
   return (
     <section>
-      <article className="article-container px-2 mt-10">
+      <article className="article-container px-20 mt-10">
         <ul className="relative border-l -border--blue-cian/50">
-          {userExperiences.map(({ id, job, company, time, description }) => (
+          {userExperiences.map(({ id, job, company, time, job_description }) => (
             <li className="mb-8 md:mb-6 ml-8 " key={id}>
               <span className="span-calendar-icon">
                 <img className="calendar-icon w-5 h-5" src={calendarIcon} alt="Calendar" />
@@ -26,7 +26,7 @@ export const ExperienceLine = ({ experiences }) => {
                 <span className="company-text">{company}</span>
               </h3>
               <time className="time-text">{time}</time>
-              <p>{description}</p>
+              <p>{job_description}</p>
             </li>
           ))}
         </ul>
