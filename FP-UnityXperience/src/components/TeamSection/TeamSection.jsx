@@ -1,10 +1,10 @@
-import React from "react";
 import { TeamSlider } from "../TeamSlider/TeamSlider";
+import { teamInformation } from "../../data/teamInformation";
 
 export const TeamSection = () => {
   return (
-    <>
-      <TeamSlider />
-    </>
-  )
-}
+    <div className="team-section">
+      <TeamSlider items={teamInformation} />
+    </div>
+  );
+};

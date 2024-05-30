@@ -1,7 +1,9 @@
 export const teamInformation = [
     {
         name: "Santiago Perez Ramirez",
-        pic: "COLOCAR IMAGEN DE FOTO DE PERFIL",
+        pic: "../../src/assets/profile/SantiagoPerez.png",
+        author_id: "VyVl7IURtOU6JNXYToUKBS7RVQs1",
+        author_name: "Santiago",
         rol: "Front-end developer",
         tools: ["JS", "React", "Firebase"],
         social_media: {
@@ -22,7 +24,9 @@ export const teamInformation = [
     },
     {
         name: "Juan Esteban Ramirez Perdomo",
-        pic: "COLOCAR IMAGEN DE FOTO DE PERFIL",
+        pic: "../../src/assets/profile/JuanRamirez.png",
+        author_id: "9uNya4WGOUdj6Oya8SFWHdVlMvr1",
+        author_name: "Juan Esteban",
         rol: "Comedian",
         tools: ["JS", "React", "Figma"],
         social_media: {
@@ -43,7 +47,9 @@ export const teamInformation = [
     },
     {
         name: "Andrés Felipe Neira Méndez",
-        pic: "COLOCAR IMAGEN DE FOTO DE PERFIL",
+        pic: "../../src/assets/profile/AndresNeira.png",
+        author_id: "zrtqenmWUhdR22rzVXZmkJLhGiX2",
+        author_name: "Andres",
         rol: "Comedian",
         tools: ["JS", "Figma", "React", "Node"],
         social_media: {
@@ -64,9 +70,11 @@ export const teamInformation = [
     },
     {
         name: "Paola Andrea Velasquez Durán",
-        pic: "COLOCAR IMAGEN DE FOTO DE PERFIL",
+        pic: "../../src/assets/profile/PaolaAndrea.png",
+        author_id: "A6fGehCKpWhuiS2RVjKWrWn2qlh2",
+        author_name: "Paola",
         rol: "UI/UX Designer", 
-        tools: ["PRocreate", "Figma"], /* maybe would change */
+        tools: ["Procreate", "Figma"], /* maybe would change */
         social_media: {
             linkedin: "https://www.linkedin.com/feed/",
             github: "https://github.com/PaolaVelasquez2611",
@@ -76,7 +84,7 @@ export const teamInformation = [
         description: "Pao descripton",
         experience: [
             {
-                job: "pao jo",
+                job: "pao job",
                 company: "pao company",
                 time: "time - timetime",
                 job_description: "pao job description"

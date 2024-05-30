@@ -1,8 +1,14 @@
 import { useEffect, useRef, useState } from "react";
 import { ProjectCard } from "../index";
 import "./CardSlider.css";
+import { teamInformation } from "../../data/teamInformation";
+import { useGetProjects } from "../../hooks/useGetProjects";
 
-export const CardSlider = ({ projects }) => {
+
+
+export const CardSlider = ({author}) => {
+
+  const {projects } = useGetProjects();
   const carouselRef = useRef(null);
   const [isScrolling, setIsScrolling] = useState(false);
   const scrollInterval = 5000; 
@@ -48,19 +54,20 @@ export const CardSlider = ({ projects }) => {
     };
   }, []);
 
+  const filteredProjects = projects.filter(project => {
+    const results = (project.authors && project.authors.includes(author))
+    return results;
+  });
+ 
   return (
     <div className={`carousel-container-projects ${isScrolling ? "scrolling" : ""}`}>
       <div className="carousel-wrapper" ref={carouselRef}>
         <ul className="carousel-list">
-          {projects.map((project, index) => (
+          {filteredProjects.map((project, index) => (
             <li key={index}>
               <ProjectCard project={project} />
             </li>
-          ))}
-          {projects.map((project, index) => (
-            <li key={index}>
-              <ProjectCard project={project} />
-            </li>
+            
           ))}
         </ul>
       </div>

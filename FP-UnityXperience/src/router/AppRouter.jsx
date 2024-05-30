@@ -13,7 +13,7 @@ export const AppRouter = () => {
         <Route path="/addproject" element={<PrivateRouter />}></Route>
         <Route path="/adminlogin" element={<AdminLogin />}/>
         <Route path="/contact" element={<Contact />}/>
-        <Route path="/profile" element={<Profile />}/>
+        <Route path="/profile/:Author" element={<Profile />}/>
         <Route path="/projects" element={<Projects />}/>
         <Route path="/projects/:projectTitle" element={<DetailProject />}/>
         <Route path="/services" element={<Services />}/>
