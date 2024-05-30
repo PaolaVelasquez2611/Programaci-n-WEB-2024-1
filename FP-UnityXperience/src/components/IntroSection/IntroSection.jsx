@@ -31,7 +31,7 @@ export const IntroSection = () => {
     <section className="flex flex-col mb-20 w-8/12 m-auto align-center justify-center">
       <img 
         className="logo-unity" 
-        src="../src/assets/logos/logoUnityXperience.png" />
+        src="/assets/logos/logoUnityXperience.png" />
       <div 
         className="intro-container" 
         id="intro-container">

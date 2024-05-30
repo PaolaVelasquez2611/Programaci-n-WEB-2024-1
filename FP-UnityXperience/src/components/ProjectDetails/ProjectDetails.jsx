@@ -13,16 +13,16 @@ export const ProjectDetails = ({thumbnail, title, description, link, tag, author
                 <div className="info-tags">
                     <a href={link}>
                         <LabelTag
-                        icon="../src/assets/icons/projecturl.png"
+                        icon="/assets/icons/projecturl.png"
                         text="Project Link"
                         />
                     </a>
                     <LabelTag
-                        icon="../src/assets/icons/tag.png"
+                        icon="/assets/icons/tag.png"
                         text={tag.join(', ')} 
                     />
                     <LabelTag
-                        icon="../src/assets/icons/owners.png"
+                        icon="/assets/icons/owners.png"
                         text={authors.join(', ')}
                     />
                 </div>

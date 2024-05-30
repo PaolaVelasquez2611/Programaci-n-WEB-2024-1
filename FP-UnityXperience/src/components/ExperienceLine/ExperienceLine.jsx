@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import calendarIcon from '../../assets/SVG/calendar.svg';
+import calendarIcon from '/assets/SVG/calendar.svg';
 import './ExperienceLine.css';
 
 export const ExperienceLine = ({ experiences }) => {

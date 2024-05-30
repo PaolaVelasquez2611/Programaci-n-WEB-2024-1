@@ -19,28 +19,28 @@ export function ProfileCard({ text, imagen, title, socialMedia }) {
                         href={socialMedia.github} 
                         target="_blank" 
                         rel="noopener noreferrer">
-                        <img src="../../src/assets/github.png" alt="GitHub" />
+                        <img src="/assets/github.png" alt="GitHub" />
                     </a>
                     <a 
                         className='social-btn-card' 
                         href={socialMedia.instagram} 
                         target="_blank" 
                         rel="noopener noreferrer">
-                        <img src="../../src/assets/instagram.png" alt="Instagram" />
+                        <img src="/assets/instagram.png" alt="Instagram" />
                     </a>
                     <a 
                         className='social-btn-card' 
                         href={socialMedia.behance} 
                         target="_blank" 
                         rel="noopener noreferrer">
-                        <img src="../../src/assets/behance.png" alt="Behance" />
+                        <img src="/assets/behance.png" alt="Behance" />
                     </a>
                     <a 
                         className='social-btn-card' 
                         href={socialMedia.linkedin} 
                         target="_blank" 
                         rel="noopener noreferrer">
-                        <img src="../../src/assets/linkedin.png" alt="LinkedIn" />
+                        <img src="/assets/linkedin.png" alt="LinkedIn" />
                     </a>
                 </section>
             </div>

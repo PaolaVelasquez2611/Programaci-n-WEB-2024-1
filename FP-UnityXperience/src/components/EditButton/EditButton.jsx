@@ -17,7 +17,7 @@ export const EditButton = () => {
   return (
     <section>
       <button className="edit-button" onClick={handleClick}>
-        <img className="pencil-img" src="../../src/assets/SVG/pencil-button.svg" alt="Edit" />
+        <img className="pencil-img" src="/assets/SVG/pencil-button.svg" alt="Edit" />
       </button>
     </section>
   );

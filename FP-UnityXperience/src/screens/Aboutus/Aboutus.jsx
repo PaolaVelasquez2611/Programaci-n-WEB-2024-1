@@ -20,7 +20,7 @@ export const Aboutus = () => {
                        work delivered on time and within budget. So, if you need anything from 
                        a website to an app or branding, UnityXperience has the skills and 
                        dedication to make it happen."
-                image="../../src/assets/logos/logoUnity.png"
+                image="/assets/logos/logoUnity.png"
    />
    </figure>
    <figure className="our-vision-container">
@@ -34,7 +34,7 @@ export const Aboutus = () => {
                        digital experience design. Our vision is to continue leading the market, 
                        setting the standard in terms of creativity, technology, and excellence 
                        in customer service."
-                image="../../src/assets/aboutUsImage.jpg"
+                image="/assets/aboutUsImage.jpg"
   />
   </figure>
   <figure className="our-mision-container">
@@ -47,7 +47,7 @@ export const Aboutus = () => {
                       to understanding the vision and objectives of our clients to create 
                       customized solutions that align perfectly with them, prioritizing 
                       quality, precision, and attention to detail in every project."
-                image="../../src/assets/aboutUsImage2.jpg"/>
+                image="/assets/aboutUsImage2.jpg"/>
   </figure>
 
   <BrandCards 

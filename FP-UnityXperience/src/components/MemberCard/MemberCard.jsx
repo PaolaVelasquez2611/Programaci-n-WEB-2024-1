@@ -10,16 +10,16 @@ export const MemberCard = ({ img, name, role }) => {
         <p className="member-role">{role}</p>
         <div className="member-social">
             <button className="social-logo">
-                <img src="../src/assets/linkedin.png"/>
+                <img src="/assets/linkedin.png"/>
             </button>
             <button className="social-logo">
-                <img src="../src/assets/github.png"/>
+                <img src="/assets/github.png"/>
             </button>
             <button className="social-logo">
-                <img src="../src/assets/instagram.png"/>
+                <img src="/assets/instagram.png"/>
             </button>
             <button className="social-logo2">
-                <img src="../src/assets/behance.png"/>
+                <img src="/assets/behance.png"/>
             </button>
         </div>
     </article>

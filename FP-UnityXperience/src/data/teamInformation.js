@@ -1,7 +1,7 @@
 export const teamInformation = [
     {
         name: "Santiago Perez Ramirez",
-        pic: "../../src/assets/profile/SantiagoPerez.png",
+        pic: "/assets/Profile/SantiagoPerez.png",
         author_id: "VyVl7IURtOU6JNXYToUKBS7RVQs1",
         author_name: "Santiago",
         rol: "Front-end developer",
@@ -24,7 +24,7 @@ export const teamInformation = [
     },
     {
         name: "Juan Esteban Ramirez Perdomo",
-        pic: "../../src/assets/profile/JuanRamirez.png",
+        pic: "/assets/Profile/JuanRamirez.png",
         author_id: "9uNya4WGOUdj6Oya8SFWHdVlMvr1",
         author_name: "Juan Esteban",
         rol: "Comedian",
@@ -47,7 +47,7 @@ export const teamInformation = [
     },
     {
         name: "Andrés Felipe Neira Méndez",
-        pic: "../../src/assets/profile/AndresNeira.png",
+        pic: "/assets/Profile/AndresNeira.png",
         author_id: "zrtqenmWUhdR22rzVXZmkJLhGiX2",
         author_name: "Andres",
         rol: "Web UI Developer",
@@ -95,7 +95,7 @@ export const teamInformation = [
     },
     {
         name: "Paola Andrea Velasquez Durán",
-        pic: "../../src/assets/profile/PaolaAndrea.png",
+        pic: "/assets/Profile/PaolaAndrea.png",
         author_id: "A6fGehCKpWhuiS2RVjKWrWn2qlh2",
         author_name: "Paola",
         rol: "UI/UX Designer", 

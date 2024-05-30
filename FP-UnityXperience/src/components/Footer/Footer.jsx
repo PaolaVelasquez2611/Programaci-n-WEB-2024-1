@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom'
 export function Footer (){
     return(
         <div className="Container-footer">
-            <img className="logo-footer" src="../../src/assets/Logo-footer.png" alt="Logo UnityXperience" />
+            <img className="logo-footer" src="/assets/Logo-footer.png" alt="Logo UnityXperience" />
         <section>
             {footerData.map(({id,title,text, route})=>{
                 return(
@@ -33,19 +33,19 @@ export function Footer (){
             
         <section className='buttons-social'>
             <button className='social-btn'>
-                <img src="../../src/assets/github.png" 
+                <img src="/assets/github.png" 
                      alt="" />
             </button>
             <button className='social-btn'>
-                <img src="../../src/assets/instagram.png" 
+                <img src="/assets/instagram.png" 
                      alt="" />
             </button>
             <button className='social-btn'>
-                <img src="../../src/assets/behance.png" 
+                <img src="/assets/behance.png" 
                      alt="" />
             </button>
             <button className='social-btn'>
-                <img src="../../src/assets/linkedin.png" 
+                <img src="/assets/linkedin.png" 
                      alt="" />
             </button>
         </section>

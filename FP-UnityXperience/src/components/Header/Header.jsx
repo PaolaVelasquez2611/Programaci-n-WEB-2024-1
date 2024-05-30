@@ -4,8 +4,8 @@ import { Nav } from "../../components";
 import { headerData } from "../../data/headerData";
 import { Link } from "react-router-dom";
 
-import Logo from "../../assets/logos/Logo.png";
-import HamburguerMenu from "../../assets/SVG/hamburguer-menu.svg";
+import Logo from "/assets/logos/Logo.png";
+import HamburguerMenu from "/assets/SVG/hamburguer-menu.svg";
 
 export function Header() {
     const [showMenu, setShowMenu] = useState(false);
