@@ -30,6 +30,7 @@ export const Profile = () => {
         imagen={profile.pic}
         title={profile.name}
         text={profile.description}
+        socialMedia={profile.social_media} 
       />
       <GradientHeading text="My Experience" />
       <ExperienceLine experiences={profile.experience} />
