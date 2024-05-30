@@ -34,7 +34,7 @@ export const Profile = () => {
       <GradientHeading text="My Experience" />
       <ExperienceLine experiences={profile.experience} />
       <GradientHeading text="My Projects" />
-      <CardSlider projects={projects} />
+      <CardSlider author={profile.author_name} />
     </>
   );
 };
